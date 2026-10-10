@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PokéDeal Scanner — underpriced Pokémon cards, updated every 4 hours</title>
+<meta name="description" content="We scan eBay every 4 hours for Pokémon cards selling under market. Free, no account needed.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html">⚡ Poké<span>Deal</span> Scanner</a>
+    <nav>
+      <a href="index.html">Today's deals</a>
+      <a href="#pro">Pro</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>We find underpriced Pokémon cards so you don't have to.</h1>
+    <p>Every 4 hours this site scans eBay for cards selling under market, auctions
+       ending with no bids, and sealed boxes priced too low. The 40 best end up
+       here. Check back often — the list changes every scan.</p>
+    <p class="updated" id="updated">Loading today's deals…</p>
+  </section>
+
+  <p class="demo-banner" id="demo-banner" hidden>
+    <strong>Heads up:</strong> we're still plugging in live eBay data, so these
+    are sample listings for now. Real deals start flowing soon — bookmark this page.
+  </p>
+  <section class="deals" id="deals"></section>
+
+  <section class="pro" id="pro">
+    <h2>PokéDeal <span>Pro</span></h2>
+    <p>The free page updates every 4 hours, and everyone sees the same deals.
+       Pro sends you an alert the moment a high-score deal shows up, so you see
+       it first. You can also set up watchlists for specific cards and check
+       price history to know what's actually a good price.</p>
+    <ul>
+      <li>Email alerts when a 90+ deal drops</li>
+      <li>Watchlists for the exact cards you're hunting</li>
+      <li>Price history per card</li>
+      <li>New categories first as we add them</li>
+    </ul>
+    <div class="price-tag">$14.99</div>
+    <p class="fine">$14.99 once. Not a subscription.</p>
+    <p>
+      <a class="btn" href="https://payhip.com/order?link=Mt9pR" id="pro-buy">Get Pro</a>
+    </p>
+    <p class="fine">Checkout via Payhip. 7-day guarantee — find a better deal somewhere else and we'll refund you.</p>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 PokéDeal Scanner. Not affiliated with Nintendo, Creatures Inc., GAME FREAK, or eBay Inc.</span>
+    <span><a href="about.html">About &amp; contact</a> · Affiliate disclosure: links to eBay may earn us a commission at no cost to you.</span>
+  </div>
+</footer>
+
+<script>
+fetch('deals.json')
+  .then(r => { if (!r.ok) throw new Error('feed missing'); return r.json(); })
+  .then(feed => {
+    const updated = document.getElementById('updated');
+    const d = new Date(feed.generated_at);
+    updated.textContent = `Last scan: ${d.toLocaleString()} · ${feed.listings_scanned} listings checked · ${feed.deals_found} deals found`;
+
+    if (feed.mock_mode) {
+      document.getElementById('demo-banner').hidden = false;
+    }
+
+    const box = document.getElementById('deals');
+    if (!feed.deals.length) {
+      box.innerHTML = '<div class="empty">No deals this scan. New scan in 4 hours.</div>';
+      return;
+    }
+    const typeLabel = { mispriced_bin: 'Mispriced BIN', auction_snipe: 'Auction snipe', watch: 'Under market' };
+    box.innerHTML = feed.deals.map(deal => {
+      const save = deal.market_estimate && deal.price
+        ? Math.round((1 - deal.price / deal.market_estimate) * 100) : null;
+      return `<article class="deal">
+        <div class="deal-top">
+          <span class="score ${deal.deal_score < 85 ? 'mid' : ''}">${deal.deal_score} deal score</span>
+          <span class="type">${typeLabel[deal.deal_type] || deal.deal_type}</span>
+        </div>
+        <h3>${escapeHtml(deal.title)}</h3>
+        <div class="price-row">
+          <span class="price">$${deal.price?.toFixed(2)}</span>
+          ${deal.market_estimate ? `<span class="market">~$${deal.market_estimate.toFixed(0)} market</span>` : ''}
+          ${save && save > 0 ? `<span class="save">save ~${save}%</span>` : ''}
+        </div>
+        <div class="meta">Seller: ${escapeHtml(deal.seller)}${deal.ends_at ? ' · Ends ' + new Date(deal.ends_at).toLocaleString() : ''}${deal.bid_count != null ? ' · ' + deal.bid_count + ' bids' : ''}</div>
+        <a class="btn" href="${escapeHtml(deal.url)}" target="_blank" rel="nofollow sponsored noopener">View deal on eBay →</a>
+      </article>`;
+    }).join('');
+  })
+  .catch(() => {
+    document.getElementById('updated').textContent = 'Scanner is running — deals land here on their own.';
+    document.getElementById('deals').innerHTML = '<div class="empty">First scan is still running. Deals show up here automatically — give it a minute.</div>';
+  });
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+</script>
+</body>
+</html>
