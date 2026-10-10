@@ -22,6 +22,14 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
+      - name: Check eBay secrets
+        run: |
+          if [ -z "${{ secrets.EBAY_CLIENT_ID }}" ] || [ -z "${{ secrets.EBAY_CLIENT_SECRET }}" ]; then
+            echo "::error::EBAY_CLIENT_ID and/or EBAY_CLIENT_SECRET are missing. Add them under repo Settings -> Secrets and variables -> Actions -> Repository secrets, then re-run."
+            exit 1
+          fi
+          echo "eBay secrets present."
+
       - name: Run scanner
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
@@ -38,6 +46,11 @@ jobs:
 
       - name: Publish fresh deals
         run: |
+          MODE=$(python3 -c "import json; print(json.load(open('site/deals.json'))['mock_mode'])")
+          if [ "$MODE" = "True" ]; then
+            echo "::error::Scanner ran in mock mode (no live eBay data). Refusing to publish sample deals to the public site."
+            exit 1
+          fi
           cp site/deals.json deals.json
           git config user.name "cardclurb-bot"
           git config user.email "cardclurb-bot@localhost"
