@@ -24,15 +24,15 @@ jobs:
 
       - name: Check eBay secrets
         run: |
-          if [ -z "${{ secrets.EBAY_CLIENT_ID }}" ] || [ -z "${{ secrets.EBAY_CLIENT_SECRET }}" ]; then
-            echo "::error::EBAY_CLIENT_ID and/or EBAY_CLIENT_SECRET are missing. Add them under repo Settings -> Secrets and variables -> Actions -> Repository secrets, then re-run."
+          if [ -z "${{ secrets.EBAY_APP_ID }}" ] || [ -z "${{ secrets.EBAY_CLIENT_SECRET }}" ]; then
+            echo "::error::EBAY_APP_ID and/or EBAY_CLIENT_SECRET are missing. Add them under repo Settings -> Secrets and variables -> Actions -> Repository secrets, then re-run."
             exit 1
           fi
           echo "eBay secrets present."
 
       - name: Run scanner
         env:
-          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_APP_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
         run: |
           HOUR=$(date -u +%H)
