@@ -1,4 +1,4 @@
-/* PokéDeal Scanner — clean, trustworthy, fast. No frameworks, no build step. */
+/* Card Clurb — clean, trustworthy, fast. No frameworks, no build step. */
 :root {
   --bg: #0f1420;
   --card: #1a2233;
@@ -44,6 +44,7 @@ nav a:hover { color: var(--text); }
   transition: transform .15s ease, border-color .15s ease;
 }
 .deal:hover { transform: translateY(-3px); border-color: var(--accent); }
+.deal-img { width: 100%; height: 170px; object-fit: contain; background: rgba(255,255,255,.04); border-radius: 10px; }
 .deal-top { display: flex; justify-content: space-between; align-items: center; }
 .score {
   background: var(--green); color: #0b1220; font-weight: 800;

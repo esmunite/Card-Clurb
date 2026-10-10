@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PokéDeal Scanner — underpriced Pokémon cards, updated every 4 hours</title>
+<title>Card Clurb — underpriced Pokémon cards, updated every 4 hours</title>
 <meta name="description" content="We scan eBay every 4 hours for Pokémon cards selling under market. Free, no account needed.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site">
   <div class="wrap">
-    <a class="logo" href="index.html">⚡ Poké<span>Deal</span> Scanner</a>
+    <a class="logo" href="index.html">⚡ Card <span>Clurb</span></a>
     <nav>
       <a href="index.html">Today's deals</a>
-      <a href="#pro">Pro</a>
+      <a href="#pro">Upgrade</a>
       <a href="about.html">About</a>
     </nav>
   </div>
@@ -28,16 +28,12 @@
     <p class="updated" id="updated">Loading today's deals…</p>
   </section>
 
-  <p class="demo-banner" id="demo-banner" hidden>
-    <strong>Heads up:</strong> we're still plugging in live eBay data, so these
-    are sample listings for now. Real deals start flowing soon — bookmark this page.
-  </p>
   <section class="deals" id="deals"></section>
 
   <section class="pro" id="pro">
-    <h2>PokéDeal <span>Pro</span></h2>
+    <h2>Card Clurb</h2>
     <p>The free page updates every 4 hours, and everyone sees the same deals.
-       Pro sends you an alert the moment a high-score deal shows up, so you see
+       Card Clurb sends you an alert the moment a high-score deal shows up, so you see
        it first. You can also set up watchlists for specific cards and check
        price history to know what's actually a good price.</p>
     <ul>
@@ -49,7 +45,7 @@
     <div class="price-tag">$14.99</div>
     <p class="fine">$14.99 once. Not a subscription.</p>
     <p>
-      <a class="btn" href="https://payhip.com/order?link=Mt9pR" id="pro-buy">Get Pro</a>
+      <a class="btn" href="https://payhip.com/order?link=Mt9pR" id="pro-buy">Get lifetime access</a>
     </p>
     <p class="fine">Checkout via Payhip. 7-day guarantee — find a better deal somewhere else and we'll refund you.</p>
   </section>
@@ -57,7 +53,7 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 PokéDeal Scanner. Not affiliated with Nintendo, Creatures Inc., GAME FREAK, or eBay Inc.</span>
+    <span>© 2026 Card Clurb. Not affiliated with Nintendo, Creatures Inc., GAME FREAK, or eBay Inc.</span>
     <span><a href="about.html">About &amp; contact</a> · Affiliate disclosure: links to eBay may earn us a commission at no cost to you.</span>
   </div>
 </footer>
@@ -70,10 +66,6 @@ fetch('deals.json')
     const d = new Date(feed.generated_at);
     updated.textContent = `Last scan: ${d.toLocaleString()} · ${feed.listings_scanned} listings checked · ${feed.deals_found} deals found`;
 
-    if (feed.mock_mode) {
-      document.getElementById('demo-banner').hidden = false;
-    }
-
     const box = document.getElementById('deals');
     if (!feed.deals.length) {
       box.innerHTML = '<div class="empty">No deals this scan. New scan in 4 hours.</div>';
@@ -84,6 +76,7 @@ fetch('deals.json')
       const save = deal.market_estimate && deal.price
         ? Math.round((1 - deal.price / deal.market_estimate) * 100) : null;
       return `<article class="deal">
+        ${deal.image ? `<img class="deal-img" src="${escapeHtml(deal.image)}" alt="" loading="lazy">` : ''}
         <div class="deal-top">
           <span class="score ${deal.deal_score < 85 ? 'mid' : ''}">${deal.deal_score} deal score</span>
           <span class="type">${typeLabel[deal.deal_type] || deal.deal_type}</span>
