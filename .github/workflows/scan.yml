@@ -1,0 +1,46 @@
+name: Card Clurb Scan
+
+on:
+  schedule:
+    # Every 4 hours (UTC). Hours 04/12/20 run light scans, the rest run full.
+    - cron: '5 */4 * * *'
+  workflow_dispatch: # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run scanner
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" = "04" ] || [ "$HOUR" = "12" ] || [ "$HOUR" = "20" ]; then
+            echo "Light scan (priority-1 searches)"
+            python3 scanner/run_scan.py --priority 1
+          else
+            echo "Full scan (all searches)"
+            python3 scanner/run_scan.py
+          fi
+
+      - name: Publish fresh deals
+        run: |
+          cp site/deals.json deals.json
+          git config user.name "cardclurb-bot"
+          git config user.email "cardclurb-bot@localhost"
+          git add deals.json
+          git diff --cached --quiet || git commit -m "refresh deals feed"
+          git push
