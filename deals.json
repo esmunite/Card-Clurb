@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T19:02:58.656515+00:00",
+  "generated_at": "2026-10-10T19:12:46.331986+00:00",
   "mock_mode": true,
   "searches_run": 23,
   "listings_scanned": 276,
@@ -16,7 +16,7 @@
     "umbreon_prismatic_sir": "static-anchor",
     "moonbreon_psa10": "static-anchor",
     "gengar_151_sir": "static-anchor",
-    "venusaur_151_sir": "static-anchor",
+    "venusaur_151_sir": "tcgplayer-live",
     "blastoise_151_sir": "tcgplayer-live",
     "151_booster_box_sealed": "static-anchor",
     "151_etb_sealed": "static-anchor",
