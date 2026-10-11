@@ -45,6 +45,10 @@ nav a:hover { color: var(--text); }
 }
 .search input:focus { border-color: var(--accent); }
 .search input::placeholder { color: var(--muted); }
+details.pricing { margin: 10px 0 12px; font-size: .85rem; color: var(--muted); }
+details.pricing summary { cursor: pointer; color: var(--text); font-weight: 600; }
+details.pricing summary:hover { color: var(--accent); }
+details.pricing p { margin: 6px 0 0; }
 .demo-banner {
   display: block; margin: 18px auto 4px; max-width: 720px; padding: 14px 20px;
   background: rgba(255, 210, 63, .08); border: 1px solid var(--accent);

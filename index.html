@@ -23,7 +23,7 @@
   <section class="hero">
     <h1>We find underpriced Pokémon cards so you don't have to.</h1>
     <p>Every 4 hours this site scans eBay for cards selling under market, auctions
-       ending with no bids, and sealed boxes priced too low. The 150 best end up
+       ending with no bids, and sealed boxes priced too low. The 115 best end up
        here. Check back often — the list changes every scan.</p>
     <p class="next-refresh" id="next-refresh"></p>
   </section>
@@ -88,6 +88,13 @@ function renderDeals(deals) {
         ${save && save > 0 ? `<span class="save">save ~${save}%</span>` : ''}
       </div>
       <div class="meta">Seller: ${escapeHtml(deal.seller)}${deal.ends_at ? ' · Ends ' + new Date(deal.ends_at).toLocaleString() : ''}${deal.bid_count != null ? ' · ' + deal.bid_count + ' bids' : ''}</div>
+      ${deal.pricing ? `<details class="pricing">
+        <summary>Price details</summary>
+        <p>eBay market: ~$${Number(deal.pricing.market).toFixed(0)} — ${
+          deal.pricing.source === 'ebay-observed'
+            ? `median of ${deal.pricing.confirmed_sales} confirmed eBay sales in the last 30 days`
+            : `estimate while we collect confirmed eBay sales`}.</p>
+      </details>` : ''}
       <a class="btn" href="${escapeHtml(deal.url)}" target="_blank" rel="nofollow sponsored noopener">View deal on eBay →</a>
     </article>`;
   }).join('');
