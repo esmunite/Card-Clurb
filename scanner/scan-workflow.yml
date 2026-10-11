@@ -1,0 +1,71 @@
+name: Card Clurb Scan
+
+on:
+  schedule:
+    # Hourly (UTC). Hours 00/04/08/12/16/20 run full scans; the other hours
+    # run cheap recheck passes (expiring auctions + ledger sales confirmation).
+    # Quota budget: 6 full x ~200 + 18 recheck x ~35 ~= 1830 calls/day,
+    # inside the 3000 internal cap (eBay allows 5000). See scanner/run_scan.py.
+    - cron: '5 * * * *'
+  workflow_dispatch: # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Check eBay secrets
+        run: |
+          if [ -z "${{ secrets.EBAY_APP_ID }}" ] || [ -z "${{ secrets.EBAY_CLIENT_SECRET }}" ]; then
+            echo "::error::EBAY_APP_ID and/or EBAY_CLIENT_SECRET are missing. Add them under repo Settings -> Secrets and variables -> Actions -> Repository secrets, then re-run."
+            exit 1
+          fi
+          echo "eBay secrets present."
+
+      - name: Run scanner
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_APP_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+        run: |
+          HOUR=$(date -u +%H)
+          case "$HOUR" in
+            00|04|08|12|16|20)
+              echo "Full scan (all searches)"
+              python3 scanner/run_scan.py --mode full
+              ;;
+            *)
+              echo "Recheck pass (expiring auctions + ledger sales)"
+              python3 scanner/run_scan.py --mode recheck
+              ;;
+          esac
+
+      - name: Publish fresh deals
+        run: |
+          MODE=$(python3 -c "import json; print(json.load(open('site/deals.json'))['mock_mode'])")
+          if [ "$MODE" = "True" ]; then
+            echo "::error::Scanner ran in mock mode (no live eBay data). Refusing to publish sample deals to the public site."
+            exit 1
+          fi
+          cp site/deals.json deals.json
+          cp site/price_history.json price_history.json 2>/dev/null || true
+          git config user.name "cardclurb-bot"
+          git config user.email "cardclurb-bot@localhost"
+          git add deals.json
+          [ -f price_history.json ] && git add price_history.json
+          # Persist the sales ledger + watch list so eBay-observed comps
+          # survive across ephemeral runners and keep accumulating.
+          [ -f logs/sales_ledger.json ] && git add logs/sales_ledger.json
+          [ -f logs/seen_listings.json ] && git add logs/seen_listings.json
+          git diff --cached --quiet || git commit -m "refresh deals feed"
+          git push
