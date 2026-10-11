@@ -77,6 +77,8 @@
 
   <section class="deals" id="deals" aria-label="Deals"></section>
 
+  <nav class="pagination" id="pagination" aria-label="Deal pages"></nav>
+
   <section class="pro" id="pro">
     <h2>Card Clurb Pro</h2>
     <p>The free feed above is the whole scanner, free forever. Pro is for
@@ -302,6 +304,8 @@ function dealCard(deal) {
 
 /* ---- DOM wiring (browser only) ---- */
 let allDeals = [];
+let currentPage = 1;
+const PER_PAGE = 60;
 
 function currentFilters() {
   return {
@@ -314,13 +318,47 @@ function currentFilters() {
 }
 
 function applyFilters() {
+  currentPage = 1; // filtering always restarts on page 1
+  renderPage();
+}
+
+function renderPage() {
   const f = currentFilters();
   const shown = allDeals.filter(d => passesFilters(d, f));
-  renderDeals(shown);
+  const pages = Math.max(1, Math.ceil(shown.length / PER_PAGE));
+  if (currentPage > pages) currentPage = pages;
+  const start = (currentPage - 1) * PER_PAGE;
+  renderDeals(shown.slice(start, start + PER_PAGE));
+  renderPagination(pages);
   const rc = document.getElementById('result-count');
   rc.textContent = allDeals.length
     ? 'Showing ' + shown.length + ' of ' + allDeals.length + ' deals'
+      + (pages > 1 ? ' · page ' + currentPage + ' of ' + pages : '')
     : '';
+}
+
+function renderPagination(pages) {
+  const nav = document.getElementById('pagination');
+  if (!nav) return;
+  if (pages <= 1) { nav.innerHTML = ''; return; }
+  let h = '<button type="button" data-pg="prev"' + (currentPage === 1 ? ' disabled' : '') + '>← Prev</button>';
+  for (let p = 1; p <= pages; p++) {
+    h += '<button type="button" data-pg="' + p + '"'
+      + (p === currentPage ? ' class="current" aria-current="page"' : '')
+      + '>' + p + '</button>';
+  }
+  h += '<button type="button" data-pg="next"' + (currentPage === pages ? ' disabled' : '') + '>Next →</button>';
+  nav.innerHTML = h;
+  nav.querySelectorAll('button[data-pg]').forEach(b => {
+    b.addEventListener('click', () => {
+      const v = b.getAttribute('data-pg');
+      if (v === 'prev') currentPage = Math.max(1, currentPage - 1);
+      else if (v === 'next') currentPage = currentPage + 1;
+      else currentPage = parseInt(v, 10);
+      renderPage();
+      document.getElementById('deals').scrollIntoView({block: 'start'});
+    });
+  });
 }
 
 function renderDeals(deals) {

@@ -187,3 +187,8 @@ footer a { color: var(--muted); }
   .filter-group { flex: 1 1 45%; }
   nav a { margin-left: 14px; font-size: .9rem; }
 }
+.pagination { display: flex; gap: 8px; justify-content: center; align-items: center; margin: 28px 0 8px; flex-wrap: wrap; }
+.pagination button { min-width: 44px; min-height: 44px; padding: 8px 14px; border-radius: 10px; border: 1px solid #2a3650; background: var(--card); color: var(--text); font-size: 1rem; cursor: pointer; }
+.pagination button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.pagination button.current { background: var(--accent); border-color: var(--accent); color: #111; font-weight: 700; }
+.pagination button:disabled { opacity: .35; cursor: default; }
