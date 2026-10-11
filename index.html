@@ -25,8 +25,11 @@
     <p>Every 4 hours this site scans eBay for cards selling under market, auctions
        ending with no bids, and sealed boxes priced too low. The 40 best end up
        here. Check back often — the list changes every scan.</p>
-    <p class="updated" id="updated">Loading today's deals…</p>
     <p class="next-refresh" id="next-refresh"></p>
+  </section>
+
+  <section class="search">
+    <input type="search" id="deal-search" placeholder='Search these deals — try "mew" or "psa 10"' aria-label="Search deals" autocomplete="off">
   </section>
 
   <section class="deals" id="deals"></section>
@@ -60,43 +63,57 @@
 </footer>
 
 <script>
+let allDeals = [];
+const typeLabel = { mispriced_bin: 'Mispriced BIN', auction_snipe: 'Auction snipe', watch: 'Under market' };
+
+function renderDeals(deals) {
+  const box = document.getElementById('deals');
+  if (!deals.length) {
+    box.innerHTML = '<div class="empty">No deals match that search. Try something broader.</div>';
+    return;
+  }
+  box.innerHTML = deals.map(deal => {
+    const save = deal.market_estimate && deal.price
+      ? Math.round((1 - deal.price / deal.market_estimate) * 100) : null;
+    return `<article class="deal">
+      ${deal.image ? `<img class="deal-img" src="${escapeHtml(deal.image)}" alt="" loading="lazy">` : ''}
+      <div class="deal-top">
+        <span class="score ${deal.deal_score < 85 ? 'mid' : ''}">${deal.deal_score} deal score</span>
+        <span class="type">${typeLabel[deal.deal_type] || deal.deal_type}</span>
+      </div>
+      <h3>${escapeHtml(deal.title)}</h3>
+      <div class="price-row">
+        <span class="price">$${deal.price?.toFixed(2)}</span>
+        ${deal.market_estimate ? `<span class="market">~$${deal.market_estimate.toFixed(0)} market</span>` : ''}
+        ${save && save > 0 ? `<span class="save">save ~${save}%</span>` : ''}
+      </div>
+      <div class="meta">Seller: ${escapeHtml(deal.seller)}${deal.ends_at ? ' · Ends ' + new Date(deal.ends_at).toLocaleString() : ''}${deal.bid_count != null ? ' · ' + deal.bid_count + ' bids' : ''}</div>
+      <a class="btn" href="${escapeHtml(deal.url)}" target="_blank" rel="nofollow sponsored noopener">View deal on eBay →</a>
+    </article>`;
+  }).join('');
+}
+
 fetch('deals.json')
   .then(r => { if (!r.ok) throw new Error('feed missing'); return r.json(); })
   .then(feed => {
-    const updated = document.getElementById('updated');
-    const d = new Date(feed.generated_at);
-    updated.textContent = `Last scan: ${d.toLocaleString()} · ${feed.listings_scanned} listings checked · ${feed.deals_found} deals found`;
-
-    const box = document.getElementById('deals');
-    if (!feed.deals.length) {
-      box.innerHTML = '<div class="empty">No deals this scan. New scan in 4 hours.</div>';
+    allDeals = feed.deals || [];
+    if (!allDeals.length) {
+      document.getElementById('deals').innerHTML = '<div class="empty">No deals this scan. New scan in 4 hours.</div>';
       return;
     }
-    const typeLabel = { mispriced_bin: 'Mispriced BIN', auction_snipe: 'Auction snipe', watch: 'Under market' };
-    box.innerHTML = feed.deals.map(deal => {
-      const save = deal.market_estimate && deal.price
-        ? Math.round((1 - deal.price / deal.market_estimate) * 100) : null;
-      return `<article class="deal">
-        ${deal.image ? `<img class="deal-img" src="${escapeHtml(deal.image)}" alt="" loading="lazy">` : ''}
-        <div class="deal-top">
-          <span class="score ${deal.deal_score < 85 ? 'mid' : ''}">${deal.deal_score} deal score</span>
-          <span class="type">${typeLabel[deal.deal_type] || deal.deal_type}</span>
-        </div>
-        <h3>${escapeHtml(deal.title)}</h3>
-        <div class="price-row">
-          <span class="price">$${deal.price?.toFixed(2)}</span>
-          ${deal.market_estimate ? `<span class="market">~$${deal.market_estimate.toFixed(0)} market</span>` : ''}
-          ${save && save > 0 ? `<span class="save">save ~${save}%</span>` : ''}
-        </div>
-        <div class="meta">Seller: ${escapeHtml(deal.seller)}${deal.ends_at ? ' · Ends ' + new Date(deal.ends_at).toLocaleString() : ''}${deal.bid_count != null ? ' · ' + deal.bid_count + ' bids' : ''}</div>
-        <a class="btn" href="${escapeHtml(deal.url)}" target="_blank" rel="nofollow sponsored noopener">View deal on eBay →</a>
-      </article>`;
-    }).join('');
+    renderDeals(allDeals);
   })
   .catch(() => {
-    document.getElementById('updated').textContent = 'Scanner is running — deals land here on their own.';
     document.getElementById('deals').innerHTML = '<div class="empty">First scan is still running. Deals show up here automatically — give it a minute.</div>';
   });
+
+document.getElementById('deal-search').addEventListener('input', e => {
+  const q = e.target.value.trim().toLowerCase();
+  if (!q) { renderDeals(allDeals); return; }
+  renderDeals(allDeals.filter(d =>
+    ((d.title || '') + ' ' + (d.seller || '')).toLowerCase().includes(q)
+  ));
+});
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

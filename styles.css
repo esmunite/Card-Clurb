@@ -30,8 +30,21 @@ nav a:hover { color: var(--text); }
 .hero h1 { font-size: 2.4rem; line-height: 1.2; margin-bottom: 12px; }
 .hero h1 span { color: var(--accent); }
 .hero p { color: var(--muted); max-width: 640px; margin: 0 auto 8px; }
-.updated { font-size: .85rem; color: var(--muted); margin-top: 14px; }
 .next-refresh { font-size: .85rem; color: var(--muted); margin-top: 4px; }
+.search { padding: 6px 0 4px; }
+.search input {
+  width: 100%;
+  max-width: 520px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  outline: none;
+}
+.search input:focus { border-color: var(--accent); }
+.search input::placeholder { color: var(--muted); }
 .demo-banner {
   display: block; margin: 18px auto 4px; max-width: 720px; padding: 14px 20px;
   background: rgba(255, 210, 63, .08); border: 1px solid var(--accent);
