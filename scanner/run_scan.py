@@ -157,8 +157,8 @@ def run_scan(
     # Detail calls are capped to stay inside the quota budget (see RUNBOOK).
     # Variety cap: no single tracked search can take more than 3 of the 40
     # slots, so one hot card can't crowd out everything else.
-    MAX_VERIFY_CHECKS = 70
-    MAX_PER_SEARCH = 3
+    MAX_VERIFY_CHECKS = 180
+    MAX_PER_SEARCH = 5
     verified: list[dict] = []
     per_search: dict[str, int] = {}
     dropped = 0
@@ -211,8 +211,8 @@ def main() -> int:
     parser.add_argument("--priority", type=int, default=None,
                         help="only run searches with priority <= N")
     parser.add_argument("--max-per-search", type=int, default=100)
-    parser.add_argument("--top", type=int, default=40,
-                        help="how many live deals to publish (default 40)")
+    parser.add_argument("--top", type=int, default=150,
+                        help="how many live deals to publish (default 150)")
     args = parser.parse_args()
 
     try:
