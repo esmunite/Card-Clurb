@@ -172,3 +172,60 @@ searches:
     category: sealed
     priority: 2
     market_usd: 70.0
+
+  # ---- raw singles: Mega Evolution era (current chase cards, Oct 2026) ----
+  - name: mega_charizard_x_sir
+    query: "Mega Charizard X ex special illustration rare near mint"
+    category: raw_singles
+    priority: 1
+    market_usd: 650.0
+
+  - name: phantasmal_gold_hyper
+    query: "Phantasmal Flames gold hyper rare near mint"
+    category: raw_singles
+    priority: 2
+    market_usd: 215.0
+
+  # ---- raw singles: 30th Celebration (released Sep 2026, prices falling =
+  # prime flip territory) ----
+  - name: mew_30th_futuristic
+    query: "Mew ex Futuristic Rare near mint"
+    category: raw_singles
+    priority: 1
+    market_usd: 450.0
+
+  - name: crystal_lugia_30th
+    query: "Crystal Lugia 30th Celebration"
+    category: raw_singles
+    priority: 1
+    market_usd: 280.0
+
+  - name: mewtwo_30th_futuristic
+    query: "Mewtwo ex Futuristic Rare near mint"
+    category: raw_singles
+    priority: 2
+    market_usd: 300.0
+
+  - name: pikachu_30th_150
+    query: "Pikachu ex 30th Celebration 150 near mint"
+    category: raw_singles
+    priority: 2
+    market_usd: 150.0
+
+  - name: gengar_30th_154
+    query: "Gengar ex 30th Celebration 154 near mint"
+    category: raw_singles
+    priority: 2
+    market_usd: 170.0
+
+  - name: sylveon_30th_153
+    query: "Sylveon ex 30th Celebration near mint"
+    category: raw_singles
+    priority: 2
+    market_usd: 95.0
+
+  - name: mewtwo_30th_151
+    query: "Mewtwo ex 30th Celebration 151 near mint"
+    category: raw_singles
+    priority: 2
+    market_usd: 125.0
