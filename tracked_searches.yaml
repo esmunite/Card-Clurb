@@ -1,0 +1,174 @@
+# PokéDeal Scanner — starter tracked searches (niche: Pokémon TCG)
+#
+# Each entry: one eBay Browse API `q` search per scan run.
+#   name:        stable id, also the key into the market-price reference
+#   query:       the actual eBay search string
+#   category:    graded_singles | raw_singles | sealed | misspell
+#   priority:    1 (scan every run) | 2 (scan on alternating runs)
+#   tcg_id:      optional PokemonTCG.io card id -> live TCGplayer market price
+#                replaces the hand-set anchor for this search. Only for raw
+#                singles (graded/sealed need PriceCharting, which is paid).
+#                A card with no recent TCGplayer sales is treated as DEAD and
+#                the search is skipped that run — we only scan cards people
+#                are actually buying.
+#   tcg_kind:    which TCGplayer price bucket (holofoil | normal |
+#                reverseHolofoil). SIRs live under holofoil.
+#
+# Misspell variants exist because mislisted auctions get fewer bids and
+# close cheap — a classic, durable edge for deal scanners.
+
+searches:
+  # ---- graded singles: Charizard 151 ----
+  - name: charizard_151_psa10
+    query: "Charizard 151 PSA 10"
+    category: graded_singles
+    priority: 1
+    market_usd: 185.0
+
+  - name: charizard_151_psa9
+    query: "Charizard 151 PSA 9"
+    category: graded_singles
+    priority: 2
+    market_usd: 95.0
+
+  - name: charizard_151_bgs95
+    query: "Charizard 151 BGS 9.5"
+    category: graded_singles
+    priority: 2
+    market_usd: 110.0
+
+  # ---- raw singles ----
+  - name: charizard_151_sir
+    query: "Charizard 151 199/165 near mint"
+    category: raw_singles
+    priority: 1
+    market_usd: 28.0
+    tcg_id: sv3pt5-199
+    tcg_kind: holofoil
+
+  - name: umbreon_prismatic_sir
+    query: "Umbreon ex Prismatic Evolutions SIR 161/131"
+    category: raw_singles
+    priority: 1
+    market_usd: 420.0
+
+  - name: moonbreon_psa10
+    query: "Umbreon VMAX Alt Art PSA 10"
+    category: graded_singles
+    priority: 1
+    market_usd: 1150.0
+
+  - name: gengar_151_sir
+    query: "Gengar 151 special illustration rare 199"
+    category: raw_singles
+    priority: 2
+    market_usd: 45.0
+
+  - name: venusaur_151_sir
+    query: "Venusaur ex 151 special illustration rare"
+    category: raw_singles
+    priority: 2
+    market_usd: 38.0
+    tcg_id: sv3pt5-198
+    tcg_kind: holofoil
+
+  - name: blastoise_151_sir
+    query: "Blastoise ex 151 special illustration rare"
+    category: raw_singles
+    priority: 2
+    market_usd: 40.0
+    tcg_id: sv3pt5-200
+    tcg_kind: holofoil
+
+  # ---- sealed: Scarlet & Violet 151 ----
+  - name: 151_booster_box_sealed
+    query: "Pokemon 151 booster box sealed"
+    category: sealed
+    priority: 1
+    market_usd: 165.0
+
+  - name: 151_etb_sealed
+    query: "Pokemon 151 elite trainer box sealed ETB"
+    category: sealed
+    priority: 1
+    market_usd: 62.0
+
+  - name: 151_upc_sealed
+    query: "Pokemon 151 ultra premium collection sealed UPC"
+    category: sealed
+    priority: 2
+    market_usd: 120.0
+
+  # (binder collections pruned 2026-10-06: slow-moving accessory, low demand)
+
+  # ---- sealed: Prismatic Evolutions ----
+  - name: prismatic_evo_etb_sealed
+    query: "Prismatic Evolutions elite trainer box sealed"
+    category: sealed
+    priority: 1
+    market_usd: 78.0
+
+  - name: prismatic_evo_booster_box
+    query: "Prismatic Evolutions booster box sealed"
+    category: sealed
+    priority: 1
+    market_usd: 175.0
+
+  # (poster collections pruned 2026-10-06: slow-moving accessory, low demand)
+
+  # ---- misspell / mislist variants (auction snipe fuel) ----
+  - name: charizard_151_misspell
+    query: "charzard 151"
+    category: misspell
+    priority: 1
+    market_usd: 24.0
+
+  - name: prismatic_misspell
+    query: "prismastic evolutions"
+    category: misspell
+    priority: 2
+    market_usd: 30.0
+
+  - name: umbreon_misspell
+    query: "umbrean ex"
+    category: misspell
+    priority: 2
+    market_usd: 60.0
+
+  - name: etb_misspell
+    query: "elite traner box pokemon"
+    category: misspell
+    priority: 2
+    market_usd: 40.0
+
+  # ---- high-heat watchlist (informational; flags fakes) ----
+  - name: base_set_charizard_proxy_watch
+    query: "1st edition Charizard base set"
+    category: graded_singles
+    priority: 2
+    market_usd: 0.0  # too variant-dependent for an anchor; informational only
+
+  # ---- set-level sweeps ----
+  - name: destined_rivals_sealed
+    query: "Destined Rivals sealed booster box"
+    category: sealed
+    priority: 2
+    market_usd: 150.0
+
+  - name: twilight_masquerade_etb
+    query: "Twilight Masquerade elite trainer box sealed"
+    category: sealed
+    priority: 2
+    market_usd: 55.0
+
+  - name: stellar_crown_booster_box
+    query: "Stellar Crown booster box sealed"
+    category: sealed
+    priority: 2
+    market_usd: 130.0
+
+  - name: surging_sparks_etb
+    query: "Surging Sparks elite trainer box sealed"
+    category: sealed
+    priority: 2
+    market_usd: 70.0
