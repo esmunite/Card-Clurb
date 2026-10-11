@@ -99,11 +99,18 @@ def run_scan(
     pricer = MarketPricer(ledger, mock_mode=client.mock_mode)
     market = MarketReference()
     price_source: dict[str, str] = {}
+    pricing_detail: dict[str, dict] = {}
     for s in searches:
         price, source = pricer.price_for(s)
         if price:
             market.prices[s["name"]] = price
             price_source[s["name"]] = source
+            _, sale_count = ledger.median_for(s["name"])
+            pricing_detail[s["name"]] = {
+                "market": price,
+                "source": source,  # ebay-observed | static-anchor
+                "confirmed_sales": sale_count,
+            }
 
     scored: list[dict] = []
     seen: dict[str, dict] = {}
@@ -182,6 +189,12 @@ def run_scan(
         else:
             dropped += 1
     top = verified
+
+    # Per-deal pricing transparency for the site's price-details dropdown.
+    for deal in top:
+        det = pricing_detail.get(deal.get("search_name", ""))
+        if det:
+            deal["pricing"] = det
 
     feed = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
