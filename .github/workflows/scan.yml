@@ -55,5 +55,9 @@ jobs:
           git config user.name "cardclurb-bot"
           git config user.email "cardclurb-bot@localhost"
           git add deals.json
+          # Persist the sales ledger + watch list so eBay-observed comps
+          # survive across ephemeral runners and keep accumulating.
+          [ -f logs/sales_ledger.json ] && git add logs/sales_ledger.json
+          [ -f logs/seen_listings.json ] && git add logs/seen_listings.json
           git diff --cached --quiet || git commit -m "refresh deals feed"
           git push
