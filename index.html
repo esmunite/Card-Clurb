@@ -26,6 +26,7 @@
        ending with no bids, and sealed boxes priced too low. The 40 best end up
        here. Check back often — the list changes every scan.</p>
     <p class="updated" id="updated">Loading today's deals…</p>
+    <p class="next-refresh" id="next-refresh"></p>
   </section>
 
   <section class="deals" id="deals"></section>
@@ -100,6 +101,27 @@ fetch('deals.json')
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
+
+// Scans run every 4h at :05 UTC (cron: 5 */4 * * *). Countdown to the next one.
+function nextScanTime() {
+  const now = new Date();
+  const n = new Date(now);
+  n.setUTCMinutes(5, 0, 0);
+  while (n.getUTCHours() % 4 !== 0 || n <= now) n.setUTCHours(n.getUTCHours() + 1);
+  return n;
+}
+function tickRefresh() {
+  const el = document.getElementById('next-refresh');
+  if (!el) return;
+  const target = nextScanTime();
+  const ms = Math.max(0, target - new Date());
+  const h = Math.floor(ms / 3600000),
+        m = Math.floor(ms % 3600000 / 60000),
+        s = Math.floor(ms % 60000 / 1000);
+  el.textContent = `Next refresh in ${h}h ${m}m ${s}s · ${target.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'})} your time`;
+}
+tickRefresh();
+setInterval(tickRefresh, 1000);
 </script>
 </body>
 </html>
