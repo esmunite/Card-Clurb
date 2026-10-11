@@ -155,13 +155,20 @@ def run_scan(
     # from the next-best scored deals. A sold listing vanishes from search
     # results eventually, but this catches the ones that sold since the scan.
     # Detail calls are capped to stay inside the quota budget (see RUNBOOK).
+    # Variety cap: no single tracked search can take more than 3 of the 40
+    # slots, so one hot card can't crowd out everything else.
     MAX_VERIFY_CHECKS = 70
+    MAX_PER_SEARCH = 3
     verified: list[dict] = []
+    per_search: dict[str, int] = {}
     dropped = 0
     checks = 0
     pool = list(scored)  # highest score first
     while len(verified) < top_n and pool and checks < MAX_VERIFY_CHECKS:
         deal = pool.pop(0)
+        sname = deal.get("search_name", "")
+        if per_search.get(sname, 0) >= MAX_PER_SEARCH:
+            continue  # variety cap — no API call spent on this one
         checks += 1
         item_id = deal.get("item_id") or ""
         try:
@@ -171,6 +178,7 @@ def run_scan(
             alive = True
         if alive:
             verified.append(deal)
+            per_search[sname] = per_search.get(sname, 0) + 1
         else:
             dropped += 1
     top = verified
