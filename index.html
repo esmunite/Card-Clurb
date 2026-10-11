@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Card Clurb — underpriced Pokémon cards, updated every 4 hours</title>
-<meta name="description" content="We scan eBay every 4 hours for Pokémon cards selling under market. Free, no account needed.">
+<meta name="description" content="Underpriced Pokémon cards on eBay, scored against real sold prices. Free, no account needed.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,29 +22,74 @@
 <div class="wrap">
   <section class="hero">
     <h1>We find underpriced Pokémon cards so you don't have to.</h1>
-    <p>Every 4 hours this site scans eBay for cards selling under market, auctions
-       ending with no bids, and sealed boxes priced too low. The 115 best end up
-       here. Check back often — the list changes every scan.</p>
+    <p>Underpriced Pokémon cards on eBay — every listing scored against real sold
+       prices, with the evidence shown.</p>
+    <p class="scan-meta"><span id="last-scan"></span><span id="last-verify"></span></p>
     <p class="next-refresh" id="next-refresh"></p>
   </section>
 
-  <section class="search">
-    <input type="search" id="deal-search" placeholder='Search these deals — try "mew" or "psa 10"' aria-label="Search deals" autocomplete="off">
+  <div class="stale-banner" id="stale-banner" hidden></div>
+
+  <section class="filters" aria-label="Filter deals">
+    <div class="filter-row">
+      <div class="filter-search">
+        <label for="deal-search">Search these <span id="deal-count">–</span> deals</label>
+        <input type="search" id="deal-search" placeholder='Try "mew" or "psa 10"' autocomplete="off">
+      </div>
+      <div class="filter-group">
+        <label for="filter-type">Deal type</label>
+        <select id="filter-type">
+          <option value="all">All types</option>
+          <option value="mispriced_bin">Mispriced BIN</option>
+          <option value="auction_snipe">Auction snipe</option>
+          <option value="watch">Under market</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-discount">Min. discount</label>
+        <select id="filter-discount">
+          <option value="any">Any</option>
+          <option value="15">15%+</option>
+          <option value="25">25%+</option>
+          <option value="40">40%+</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-confidence">Confidence</label>
+        <select id="filter-confidence">
+          <option value="any">Any</option>
+          <option value="high">High</option>
+          <option value="medium_plus">Medium and up</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-product">Product type</label>
+        <select id="filter-product">
+          <option value="all">All</option>
+          <option value="raw_single">Raw</option>
+          <option value="graded_single">Graded</option>
+          <option value="sealed">Sealed</option>
+        </select>
+      </div>
+    </div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
   </section>
 
-  <section class="deals" id="deals"></section>
+  <section class="deals" id="deals" aria-label="Deals"></section>
 
   <section class="pro" id="pro">
-    <h2>Card Clurb</h2>
-    <p>The free page updates every 4 hours, and everyone sees the same deals.
-       Card Clurb sends you an alert the moment a high-score deal shows up, so you see
-       it first. You can also set up watchlists for specific cards and check
-       price history to know what's actually a good price.</p>
+    <h2>Card Clurb Pro</h2>
+    <p>The free feed above is the whole scanner, free forever. Pro is for
+       people who want to move faster than the feed: it locks in every premium
+       feature as it ships.</p>
     <ul>
-      <li>Email alerts when a 90+ deal drops</li>
-      <li>Watchlists for the exact cards you're hunting</li>
-      <li>Price history per card</li>
-      <li>New categories first as we add them</li>
+      <li><strong>Price history per card</strong> — sale-price trends are already
+          collecting behind every deal (see "Price details" on any card).</li>
+      <li><strong>Deal alerts</strong> — email the moment a 90+ deal drops.
+          In development; members get it first at no extra charge.</li>
+      <li><strong>Watchlists</strong> — track the exact cards you're hunting.
+          In development; members get it first at no extra charge.</li>
+      <li>New categories and searches before anyone else.</li>
     </ul>
     <div class="price-tag">$14.99</div>
     <p class="fine">$14.99 once. Not a subscription.</p>
@@ -63,75 +108,318 @@
 </footer>
 
 <script>
-let allDeals = [];
+'use strict';
+/* Pure helpers — no DOM access, safe to unit-test. */
 const typeLabel = { mispriced_bin: 'Mispriced BIN', auction_snipe: 'Auction snipe', watch: 'Under market' };
+const productLabel = { raw_single: 'Raw', graded_single: 'Graded', sealed: 'Sealed' };
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function effectivePrice(deal) {
+  const t = deal.total_price, p = deal.price;
+  if (typeof t === 'number' && t > 0) return t;
+  if (typeof p === 'number' && p > 0) return p;
+  return null;
+}
+
+function marketValue(deal) {
+  const m = deal.pricing && typeof deal.pricing.market === 'number'
+    ? deal.pricing.market : deal.market_estimate;
+  return (typeof m === 'number' && m > 0) ? m : null;
+}
+
+/* Apparent discount vs market, as a 0-100 number. Null when not computable. */
+function discountPct(deal) {
+  const price = effectivePrice(deal), market = marketValue(deal);
+  if (price == null || market == null) return null;
+  return Math.round((1 - price / market) * 100);
+}
+
+function timeAgo(iso, nowMs) {
+  const t = new Date(iso).getTime();
+  if (isNaN(t)) return null;
+  const now = typeof nowMs === 'number' ? nowMs : Date.now();
+  const s = Math.max(0, Math.floor((now - t) / 1000));
+  if (s < 60) return 'just now';
+  const m = Math.floor(s / 60);
+  if (m < 60) return m + 'm ago';
+  const h = Math.floor(m / 60);
+  if (h < 48) return h + 'h ago';
+  return Math.floor(h / 24) + 'd ago';
+}
+
+function gradeLabel(company, grade) {
+  const bits = [];
+  if (company) {
+    const c = String(company).toLowerCase();
+    const known = { psa: 'PSA', bgs: 'BGS', cgc: 'CGC', sgc: 'SGC', ace: 'ACE', tag: 'TAG', hga: 'HGA' };
+    bits.push(known[c] || String(company));
+  }
+  if (grade) bits.push(String(grade));
+  return bits.join(' ') || null;
+}
+
+/* Exact card identity line, or null when the feed has no identity block. */
+function identityLine(deal) {
+  const id = deal.identity;
+  if (!id || typeof id !== 'object') return null;
+  const parts = [];
+  if (id.product_name) parts.push(String(id.product_name));
+  const setBits = [id.set_name, id.card_number].filter(Boolean).map(String).join(' ');
+  if (setBits) parts.push(setBits);
+  const g = gradeLabel(id.grading_company, id.grade);
+  if (g) parts.push(g);
+  if (id.sealed_format) parts.push(String(id.sealed_format));
+  else if (id.product_type === 'sealed') parts.push('Sealed');
+  if (id.language && String(id.language).toLowerCase() !== 'english') parts.push(String(id.language));
+  return parts.length ? parts.join(' · ') : null;
+}
+
+/* Confidence badge + pricing-source note. Returns {badge, note} strings (may be empty). */
+function confidenceMeta(deal) {
+  const level = deal.match_confidence;
+  const badge = (level === 'high' || level === 'medium' || level === 'low')
+    ? '<span class="conf conf-' + level + '">' + level.charAt(0).toUpperCase() + level.slice(1) + ' confidence</span>'
+    : '';
+  let note = '', cls = '';
+  const pr = deal.pricing;
+  if (pr && pr.source === 'ebay-observed') {
+    const n = pr.confirmed_sales;
+    note = 'based on ' + (typeof n === 'number' ? n : '–') + ' eBay sales';
+    cls = 'ok';
+  } else if (pr && pr.source === 'stale') {
+    note = 'price may be stale';
+    cls = 'bad';
+  } else if (pr && pr.source === 'static-anchor') {
+    note = 'estimate';
+    cls = 'warn';
+  } else if (marketValue(deal) != null) {
+    note = 'estimate';
+    cls = 'warn';
+  }
+  const noteHtml = note ? '<span class="src src-' + cls + '">' + escapeHtml(note) + '</span>' : '';
+  return { badge, noteHtml };
+}
+
+function isAuction(deal) {
+  const bo = deal.buying_options;
+  if (Array.isArray(bo) && bo.length) return bo.includes('AUCTION');
+  return !!deal.ends_at;
+}
+
+function fmtMoney(n) {
+  return '$' + Number(n).toFixed(2);
+}
+
+function fmtDate(iso) {
+  const d = new Date(iso);
+  return isNaN(d.getTime()) ? null : d.toLocaleString();
+}
+
+/* All active filters AND together. */
+function passesFilters(deal, f) {
+  if (f.q) {
+    const id = deal.identity || {};
+    const hay = [deal.title, deal.seller, id.product_name, id.set_name, id.card_number]
+      .filter(Boolean).join(' ').toLowerCase();
+    if (!hay.includes(f.q)) return false;
+  }
+  if (f.type !== 'all' && deal.deal_type !== f.type) return false;
+  if (f.minDiscount !== 'any') {
+    const d = discountPct(deal);
+    if (d == null || d < Number(f.minDiscount)) return false;
+  }
+  if (f.confidence !== 'any') {
+    const c = deal.match_confidence;
+    if (f.confidence === 'high') { if (c !== 'high') return false; }
+    else if (c !== 'high' && c !== 'medium') return false;
+  }
+  if (f.product !== 'all') {
+    const pt = deal.identity && deal.identity.product_type;
+    if (pt !== f.product) return false;
+  }
+  return true;
+}
+
+function dealCard(deal) {
+  const price = effectivePrice(deal);
+  const market = marketValue(deal);
+  const save = discountPct(deal);
+  const ident = identityLine(deal);
+  const conf = confidenceMeta(deal);
+  const auction = isAuction(deal);
+  const ends = auction ? fmtDate(deal.ends_at) : null;
+  const checked = deal.verified_at ? timeAgo(deal.verified_at) : null;
+  const failed = deal.verification_status === 'check_failed';
+  const ship = deal.shipping_cost;
+  const margin = deal.net_margin_est;
+  const score = typeof deal.deal_score === 'number' ? deal.deal_score : null;
+
+  return '<article class="deal">'
+    + (deal.image
+        ? '<div class="deal-img-wrap"><img class="deal-img" src="' + escapeHtml(deal.image) + '" alt="' + escapeHtml(deal.title || 'Card listing photo') + '" loading="lazy"></div>'
+        : '')
+    + '<div class="deal-top">'
+    + (score != null ? '<span class="score' + (score < 85 ? ' mid' : '') + '">' + escapeHtml(score) + ' deal score</span>' : '')
+    + '<span class="type">' + escapeHtml(typeLabel[deal.deal_type] || deal.deal_type || 'deal') + '</span>'
+    + '</div>'
+    + '<h3>' + escapeHtml(deal.title || 'Untitled listing') + '</h3>'
+    + (ident ? '<p class="identity">' + escapeHtml(ident) + '</p>' : '')
+    + '<div class="price-row">'
+    + (price != null
+        ? '<span class="price">' + fmtMoney(price) + '</span>'
+          + (typeof ship === 'number' && ship > 0 ? '<span class="ship">+ ' + fmtMoney(ship) + ' shipping</span>' : '')
+          + (ship === 0 ? '<span class="ship">free shipping</span>' : '')
+        : '<span class="price-na">Price unavailable</span>')
+    + (market != null ? '<span class="market">~$' + Number(market).toFixed(0) + ' market</span>' : '')
+    + (save != null && save > 0 ? '<span class="save">save ~' + save + '%</span>' : '')
+    + '</div>'
+    + ((conf.badge || conf.noteHtml) ? '<div class="conf-row">' + conf.badge + conf.noteHtml + '</div>' : '')
+    + '<div class="meta">Seller: ' + escapeHtml(deal.seller || 'unknown')
+    + (ends ? ' · Ends ' + escapeHtml(ends) : '')
+    + (auction && deal.bid_count != null ? ' · ' + escapeHtml(deal.bid_count) + ' bids' : '')
+    + '</div>'
+    + (checked && !failed ? '<p class="checked">Checked ' + escapeHtml(checked) + '</p>' : '')
+    + (failed ? '<p class="verify-warn">⚠ Couldn\u2019t re-verify this listing — it may have sold.</p>' : '')
+    + (deal.why ? '<p class="why">' + escapeHtml(deal.why) + '</p>' : '')
+    + (margin && typeof margin.est_margin_pct === 'number'
+        ? '<p class="margin">est. net margin ~' + Math.round(margin.est_margin_pct) + '% after fees &amp; shipping</p>' : '')
+    + (deal.pricing
+        ? '<details class="pricing"><summary>Price details</summary><p>eBay market: ~$'
+          + Number(deal.pricing.market).toFixed(0) + ' — '
+          + (deal.pricing.source === 'ebay-observed'
+              ? 'median of ' + escapeHtml(deal.pricing.confirmed_sales) + ' confirmed eBay sales in the last 30 days'
+              : deal.pricing.source === 'stale'
+                ? 'this reference may be out of date'
+                : 'estimate while we collect confirmed eBay sales')
+          + '.</p></details>'
+        : '')
+    + '<a class="btn" href="' + escapeHtml(deal.url || '#') + '" target="_blank" rel="nofollow sponsored noopener">View deal on eBay →</a>'
+    + '</article>';
+}
+
+/* ---- DOM wiring (browser only) ---- */
+let allDeals = [];
+
+function currentFilters() {
+  return {
+    q: document.getElementById('deal-search').value.trim().toLowerCase(),
+    type: document.getElementById('filter-type').value,
+    minDiscount: document.getElementById('filter-discount').value,
+    confidence: document.getElementById('filter-confidence').value,
+    product: document.getElementById('filter-product').value
+  };
+}
+
+function applyFilters() {
+  const f = currentFilters();
+  const shown = allDeals.filter(d => passesFilters(d, f));
+  renderDeals(shown);
+  const rc = document.getElementById('result-count');
+  rc.textContent = allDeals.length
+    ? 'Showing ' + shown.length + ' of ' + allDeals.length + ' deals'
+    : '';
+}
 
 function renderDeals(deals) {
   const box = document.getElementById('deals');
   if (!deals.length) {
-    box.innerHTML = '<div class="empty">No deals match that search. Try something broader.</div>';
+    box.innerHTML = '<div class="empty">No deals match — try broadening your filters.</div>';
     return;
   }
-  box.innerHTML = deals.map(deal => {
-    const save = deal.market_estimate && deal.price
-      ? Math.round((1 - deal.price / deal.market_estimate) * 100) : null;
-    return `<article class="deal">
-      ${deal.image ? `<img class="deal-img" src="${escapeHtml(deal.image)}" alt="" loading="lazy">` : ''}
-      <div class="deal-top">
-        <span class="score ${deal.deal_score < 85 ? 'mid' : ''}">${deal.deal_score} deal score</span>
-        <span class="type">${typeLabel[deal.deal_type] || deal.deal_type}</span>
-      </div>
-      <h3>${escapeHtml(deal.title)}</h3>
-      <div class="price-row">
-        <span class="price">$${deal.price?.toFixed(2)}</span>
-        ${deal.market_estimate ? `<span class="market">~$${deal.market_estimate.toFixed(0)} market</span>` : ''}
-        ${save && save > 0 ? `<span class="save">save ~${save}%</span>` : ''}
-      </div>
-      <div class="meta">Seller: ${escapeHtml(deal.seller)}${deal.ends_at ? ' · Ends ' + new Date(deal.ends_at).toLocaleString() : ''}${deal.bid_count != null ? ' · ' + deal.bid_count + ' bids' : ''}</div>
-      ${deal.pricing ? `<details class="pricing">
-        <summary>Price details</summary>
-        <p>eBay market: ~$${Number(deal.pricing.market).toFixed(0)} — ${
-          deal.pricing.source === 'ebay-observed'
-            ? `median of ${deal.pricing.confirmed_sales} confirmed eBay sales in the last 30 days`
-            : `estimate while we collect confirmed eBay sales`}.</p>
-      </details>` : ''}
-      <a class="btn" href="${escapeHtml(deal.url)}" target="_blank" rel="nofollow sponsored noopener">View deal on eBay →</a>
-    </article>`;
-  }).join('');
+  box.innerHTML = deals.map(dealCard).join('');
 }
 
-fetch('deals.json')
-  .then(r => { if (!r.ok) throw new Error('feed missing'); return r.json(); })
-  .then(feed => {
-    allDeals = feed.deals || [];
-    if (!allDeals.length) {
-      document.getElementById('deals').innerHTML = '<div class="empty">No deals this scan. New scan in 4 hours.</div>';
-      return;
-    }
-    renderDeals(allDeals);
-  })
-  .catch(() => {
-    document.getElementById('deals').innerHTML = '<div class="empty">First scan is still running. Deals show up here automatically — give it a minute.</div>';
-  });
+function skeletons(n) {
+  let h = '';
+  for (let i = 0; i < (n || 6); i++) {
+    h += '<article class="deal skeleton" aria-hidden="true">'
+      + '<div class="sk sk-img"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div>'
+      + '</article>';
+  }
+  return h;
+}
 
-document.getElementById('deal-search').addEventListener('input', e => {
-  const q = e.target.value.trim().toLowerCase();
-  if (!q) { renderDeals(allDeals); return; }
-  renderDeals(allDeals.filter(d =>
-    ((d.title || '') + ' ' + (d.seller || '')).toLowerCase().includes(q)
-  ));
-});
+function showStaleBanner(feed) {
+  const el = document.getElementById('stale-banner');
+  const gen = feed.generated_at ? new Date(feed.generated_at).getTime() : NaN;
+  if (isNaN(gen)) {
+    el.hidden = false;
+    el.textContent = 'Couldn\u2019t determine feed freshness — this data may be stale.';
+    return;
+  }
+  if (Date.now() - gen > 6 * 3600 * 1000) {
+    el.hidden = false;
+    el.textContent = 'Feed is stale — last updated ' + (timeAgo(feed.generated_at) || 'a while ago') + '.';
+  } else {
+    el.hidden = true;
+  }
+}
 
-function escapeHtml(s) {
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function showScanMeta(feed, deals) {
+  const ls = document.getElementById('last-scan');
+  const lv = document.getElementById('last-verify');
+  const gen = feed.last_search_at || feed.generated_at;
+  ls.textContent = gen && !isNaN(new Date(gen).getTime())
+    ? 'Last full scan: ' + new Date(gen).toLocaleString() + '  ·  '
+    : '';
+  let latest = null;
+  for (const d of deals) {
+    if (!d.verified_at) continue;
+    if (!latest || d.verified_at > latest) latest = d.verified_at;
+  }
+  lv.textContent = (latest && !isNaN(new Date(latest).getTime()))
+    ? 'Prices rechecked: ' + new Date(latest).toLocaleString()
+    : '';
+}
+
+function init() {
+  const box = document.getElementById('deals');
+  box.innerHTML = skeletons(6);
+  ['deal-search', 'filter-type', 'filter-discount', 'filter-confidence', 'filter-product']
+    .forEach(id => document.getElementById(id).addEventListener('input', applyFilters));
+
+  fetch('deals.json')
+    .then(r => { if (!r.ok) throw new Error('feed missing'); return r.json(); })
+    .then(feed => {
+      allDeals = Array.isArray(feed.deals) ? feed.deals : [];
+      document.getElementById('deal-count').textContent = allDeals.length;
+      showStaleBanner(feed);
+      showScanMeta(feed, allDeals);
+      if (feed.mock_mode) {
+        box.innerHTML = '<div class="empty">The scanner is in demo mode right now — live deals will appear here automatically.</div>';
+        document.getElementById('result-count').textContent = '';
+        return;
+      }
+      if (!allDeals.length) {
+        box.innerHTML = '<div class="empty">No deals this scan. New deals land here after the next refresh.</div>';
+        document.getElementById('result-count').textContent = '';
+        return;
+      }
+      applyFilters();
+    })
+    .catch(() => {
+      box.innerHTML = '<div class="empty"><p><strong>Couldn\u2019t load the deals feed.</strong></p>'
+        + '<p>Check your connection and try again.</p>'
+        + '<p><button class="btn ghost-dark" id="retry" type="button">Retry</button></p></div>';
+      const rb = document.getElementById('retry');
+      if (rb) rb.addEventListener('click', () => window.location.reload());
+    });
+
+  tickRefresh();
+  setInterval(tickRefresh, 1000);
 }
 
 // Scans run every 4h at :05 UTC (cron: 5 */4 * * *). Countdown to the next one.
 function nextScanTime() {
+  // Workflow cron is hourly at :05 UTC ('5 * * * *'); full scans land on
+  // 00/04/08/12/16/20, other hours run recheck passes. Next :05 boundary.
   const now = new Date();
   const n = new Date(now);
   n.setUTCMinutes(5, 0, 0);
-  while (n.getUTCHours() % 4 !== 0 || n <= now) n.setUTCHours(n.getUTCHours() + 1);
+  if (n <= now) n.setUTCHours(n.getUTCHours() + 1);
   return n;
 }
 function tickRefresh() {
@@ -142,10 +430,13 @@ function tickRefresh() {
   const h = Math.floor(ms / 3600000),
         m = Math.floor(ms % 3600000 / 60000),
         s = Math.floor(ms % 60000 / 1000);
-  el.textContent = `Next refresh in ${h}h ${m}m ${s}s · ${target.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'})} your time`;
+  el.textContent = 'Next refresh in ' + h + 'h ' + m + 'm ' + s + 's · ' + target.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'}) + ' your time';
 }
-tickRefresh();
-setInterval(tickRefresh, 1000);
+
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+}
 </script>
 </body>
 </html>
