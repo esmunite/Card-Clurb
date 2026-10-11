@@ -58,6 +58,7 @@ _load_dotenv()
 
 from ebay_client import EbayClient, QuotaExhaustedError  # noqa: E402
 from market import MarketPricer  # noqa: E402
+from sales_ledger import SalesLedger, record_from_listing  # noqa: E402
 from scoring import (  # noqa: E402
     DEAL_THRESHOLD,
     MarketReference,
@@ -87,16 +88,15 @@ def run_scan(
     client = EbayClient()
     searches = load_searches(priority)
 
-    # Live market prices (TCGplayer via PokemonTCG.io, cached 24h) win over
-    # the hand-set anchors; dead cards (no recent sales) are skipped outright.
-    # Note: the free PokemonTCG.io API needs no keys, so live prices run even
-    # in mock mode (no eBay keys yet) — mock only fakes the listings, never
-    # the price lookup. Any API failure falls back to the static anchor.
-    pricer = MarketPricer(
-        cache_path=ROOT / "logs" / "market-cache.json",
-        mock_mode=False,
-    )
-    pricer.refresh(searches)
+    # eBay-observed market prices: the sales ledger (built from our own
+    # disappearance checks across runs) gives each search the median of its
+    # recent confirmed eBay sales. Until a search has enough history, the
+    # hand-set anchor is used and labeled "static-anchor". No third-party
+    # price sites. The ledger updates AFTER this run's scan (one-run lag),
+    # so pricing always rests on completed observations.
+    ledger = SalesLedger(ROOT / "logs", mock_mode=client.mock_mode)
+    ledger.load()
+    pricer = MarketPricer(ledger, mock_mode=client.mock_mode)
     market = MarketReference()
     price_source: dict[str, str] = {}
     for s in searches:
@@ -110,6 +110,7 @@ def run_scan(
     errors: list[str] = []
     skipped: list[str] = []
     scanned = 0
+    ledger_records: list[dict] = []
 
     for s in searches:
         name, query = s["name"], s["query"]
@@ -128,6 +129,9 @@ def run_scan(
             continue
         scanned += len(listings)
         for listing in listings:
+            rec = record_from_listing(listing, s)
+            if rec:
+                ledger_records.append(rec)
             deal = score_deal(listing, market, name,
                              search_category=s.get("category", ""))
             if is_deal(deal):
@@ -139,6 +143,13 @@ def run_scan(
                     seen[key] = deal
 
     scored = sorted(seen.values(), key=lambda d: d["deal_score"], reverse=True)
+
+    # Sales ledger: fold this run's listings into the watch list, confirm
+    # disappearances (gone auction-with-bids => confirmed eBay sale), and
+    # persist for the next run. This is what market prices are built from.
+    ledger.observe(ledger_records)
+    sales_added = ledger.confirm_gone(client.is_active)
+    ledger.save()
 
     # Sold-listing check: verify each candidate is still buyable, backfilling
     # from the next-best scored deals. A sold listing vanishes from search
@@ -175,6 +186,7 @@ def run_scan(
         "verify_checks": checks,
         "skipped_low_demand": skipped,
         "price_source": price_source,
+        "sales_ledger": ledger.summary() | {"new_sales_this_run": sales_added},
         "threshold": DEAL_THRESHOLD,
         "quota": client.quota.status(),
         "errors": errors,

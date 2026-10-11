@@ -1,18 +1,20 @@
-# PokéDeal Scanner — starter tracked searches (niche: Pokémon TCG)
+# Card Clurb — tracked searches (niche: Pokémon TCG)
 #
 # Each entry: one eBay Browse API `q` search per scan run.
-#   name:        stable id, also the key into the market-price reference
-#   query:       the actual eBay search string
-#   category:    graded_singles | raw_singles | sealed | misspell
-#   priority:    1 (scan every run) | 2 (scan on alternating runs)
-#   tcg_id:      optional PokemonTCG.io card id -> live TCGplayer market price
-#                replaces the hand-set anchor for this search. Only for raw
-#                singles (graded/sealed need PriceCharting, which is paid).
-#                A card with no recent TCGplayer sales is treated as DEAD and
-#                the search is skipped that run — we only scan cards people
-#                are actually buying.
-#   tcg_kind:    which TCGplayer price bucket (holofoil | normal |
-#                reverseHolofoil). SIRs live under holofoil.
+#   name:         stable id, also the key into the market-price reference
+#   query:        the actual eBay search string
+#   category:     graded_singles | raw_singles | sealed | misspell
+#   priority:     1 (scan every run) | 2 (scan on alternating runs)
+#   market_usd:   hand-set anchor; used until the search has enough
+#                 eBay-observed sales, then the observed median takes over.
+#   record_sales: false for misspell searches — their sold prices ARE the
+#                 deal prices (biased low), so they're never used as the
+#                 market reference. Default true.
+#
+# Market prices come from our own eBay observations only (sales_ledger.py):
+# auctions with bids that disappear => confirmed eBay sales. No third-party
+# price sites. A search with no confirmed sales for a long while while we
+# keep watching its listings is treated as DEAD and skipped that run.
 #
 # Misspell variants exist because mislisted auctions get fewer bids and
 # close cheap — a classic, durable edge for deal scanners.
@@ -43,8 +45,6 @@ searches:
     category: raw_singles
     priority: 1
     market_usd: 28.0
-    tcg_id: sv3pt5-199
-    tcg_kind: holofoil
 
   - name: umbreon_prismatic_sir
     query: "Umbreon ex Prismatic Evolutions SIR 161/131"
@@ -69,16 +69,12 @@ searches:
     category: raw_singles
     priority: 2
     market_usd: 38.0
-    tcg_id: sv3pt5-198
-    tcg_kind: holofoil
 
   - name: blastoise_151_sir
     query: "Blastoise ex 151 special illustration rare"
     category: raw_singles
     priority: 2
     market_usd: 40.0
-    tcg_id: sv3pt5-200
-    tcg_kind: holofoil
 
   # ---- sealed: Scarlet & Violet 151 ----
   - name: 151_booster_box_sealed
@@ -118,24 +114,28 @@ searches:
 
   # ---- misspell / mislist variants (auction snipe fuel) ----
   - name: charizard_151_misspell
+    record_sales: false
     query: "charzard 151"
     category: misspell
     priority: 1
     market_usd: 24.0
 
   - name: prismatic_misspell
+    record_sales: false
     query: "prismastic evolutions"
     category: misspell
     priority: 2
     market_usd: 30.0
 
   - name: umbreon_misspell
+    record_sales: false
     query: "umbrean ex"
     category: misspell
     priority: 2
     market_usd: 60.0
 
   - name: etb_misspell
+    record_sales: false
     query: "elite traner box pokemon"
     category: misspell
     priority: 2
