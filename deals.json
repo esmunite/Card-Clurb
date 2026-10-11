@@ -1,29 +1,42 @@
 {
-  "generated_at": "2026-10-10T20:14:14.492747+00:00",
+  "generated_at": "2026-10-11T00:24:23.056016+00:00",
   "mock_mode": false,
-  "searches_run": 9,
-  "listings_scanned": 814,
-  "deals_found": 148,
+  "searches_run": 23,
+  "listings_scanned": 1984,
+  "deals_found": 291,
   "verified_live": 40,
   "verified_dropped": 0,
   "verify_checks": 40,
   "skipped_low_demand": [],
   "price_source": {
     "charizard_151_psa10": "static-anchor",
+    "charizard_151_psa9": "static-anchor",
+    "charizard_151_bgs95": "static-anchor",
     "charizard_151_sir": "tcgplayer-live",
     "umbreon_prismatic_sir": "static-anchor",
     "moonbreon_psa10": "static-anchor",
+    "gengar_151_sir": "static-anchor",
+    "venusaur_151_sir": "static-anchor",
+    "blastoise_151_sir": "tcgplayer-live",
     "151_booster_box_sealed": "static-anchor",
     "151_etb_sealed": "static-anchor",
+    "151_upc_sealed": "static-anchor",
     "prismatic_evo_etb_sealed": "static-anchor",
     "prismatic_evo_booster_box": "static-anchor",
-    "charizard_151_misspell": "static-anchor"
+    "charizard_151_misspell": "static-anchor",
+    "prismatic_misspell": "static-anchor",
+    "umbreon_misspell": "static-anchor",
+    "etb_misspell": "static-anchor",
+    "destined_rivals_sealed": "static-anchor",
+    "twilight_masquerade_etb": "static-anchor",
+    "stellar_crown_booster_box": "static-anchor",
+    "surging_sparks_etb": "static-anchor"
   },
   "threshold": 70.0,
   "quota": {
-    "used": 57,
+    "used": 83,
     "provider_remaining": null,
-    "effective_remaining": 1443,
+    "effective_remaining": 1417,
     "daily_budget": 5000
   },
   "errors": [],
@@ -81,21 +94,155 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|128104018040|0",
-      "title": "Pokemon 2023 Japanese SV2A - 151 Charizard EX #006 PSA 10",
-      "price": 80.0,
+      "item_id": "v1|397991809827|0",
+      "title": "Charizard EX 006/165 Sv2a 151 Pokemon Japanese PSA 10",
+      "price": 79.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/128104018040?_skw=Charizard+151+PSA+10&hash=item1dd3983078:g:p6IAAeSwmE1quvVH",
-      "image": "https://i.ebayimg.com/images/g/p6IAAeSwmE1quvVH/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/397991809827?_skw=Charizard+151+PSA+10&hash=item5caa291323:g:F3IAAeSwZZBqFZlx",
+      "image": "https://i.ebayimg.com/images/g/F3IAAeSwZZBqFZlx/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "linage_sports_cards",
+      "seller": "rurap-9",
       "search_name": "charizard_151_psa10",
       "market_estimate": 185.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|307182899228|0",
+      "title": "2024 POKEMON MEW EN-151 CHARIZARD EX SUPER-PREMIUM COLLECTION CHARMANDER PSA 9",
+      "price": 34.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/307182899228?_skw=Charizard+151+PSA+9&hash=item478587101c:g:H34AAeSw~dlqqxcz",
+      "image": "https://i.ebayimg.com/images/g/H34AAeSw~dlqqxcz/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "psa",
+      "search_name": "charizard_151_psa9",
+      "market_estimate": 95.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|800426528411|0",
+      "title": "Pokemon 2025 Charizard EX Holo 175/151 PSA 9 - Chinese",
+      "price": 39.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/800426528411?_skw=Charizard+151+PSA+9&hash=itemba5d238e9b:g:9xEAAeSwhEBqacyE",
+      "image": "https://i.ebayimg.com/images/g/9xEAAeSwhEBqacyE/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "jrbcollectables530",
+      "search_name": "charizard_151_psa9",
+      "market_estimate": 95.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|860012594614|0",
+      "title": "2023 Pokemon Mew En-151 #183 Charizard Ex Ultra Rare PSA 9 Mint!",
+      "price": 54.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/860012594614?_skw=Charizard+151+PSA+9&hash=itemc83cbec5b6:g:r20AAeSwttBqxCCC",
+      "image": "https://i.ebayimg.com/images/g/r20AAeSwttBqxCCC/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "comegetthemallcollectibles",
+      "search_name": "charizard_151_psa9",
+      "market_estimate": 95.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|227558596189|0",
+      "title": "2024 POKEMON SVP EN SV BLACK STAR PROMO #161 CHARIZARD ex - PSA 9",
+      "price": 34.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/227558596189?_skw=Charizard+151+PSA+9&hash=item34fb8c9e5d:g:EZoAAeSwMk9qx81m",
+      "image": "https://i.ebayimg.com/images/g/EZoAAeSwMk9qx81m/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "gradeacollectables",
+      "search_name": "charizard_151_psa9",
+      "market_estimate": 95.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|298371496539|0",
+      "title": "2024 POKEMON MEW EN-151 CHARIZARD EX SUPER-PREMIUM COLLECTION CHARMANDER PSA 9",
+      "price": 50.0,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/298371496539?_skw=Charizard+151+PSA+9&hash=item457853ba5b:g:R9wAAeSwUC1qHE-k",
+      "image": "https://i.ebayimg.com/images/g/R9wAAeSwUC1qHE-k/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "psa",
+      "search_name": "charizard_151_psa9",
+      "market_estimate": 95.0,
       "deal_score": 83.8,
       "deal_type": "mispriced_bin",
       "components": {
@@ -112,7 +259,7 @@
       "title": "Umbreon ex - 161/131 161 - SV Prismatic Evolutions GLOSS DEBIT CARD SKIN",
       "price": 4.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/198277356263?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item2e2a405ae7:g:Cg4AAeSw88dp3GO8&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nGEgyCkNkryYcAPYCsvJFlig8rkz2c8DZdKMtjspVMyj7GdUad%2FjqX3JuF8Apg652srvou6IMsS1HdJ9u2bmgHXuwJnIsDF7rRNYao1G4m9bNRLKXGlsAVGHDfr3htjKyCM5ULZs8gRdFuHWf1%2BNxzR7Mp%2Fm56Dx%2BBd8FKwn%2FuL%2BpkRi01YMY4sZtREErxGSBaAY4%2B3cwPqPbB%2FjieDBmcg0pJpSa3TOHi8RDAYopJ9knrMxZArXReugfAW1HAgw1IPnFNzuXoR5XX9ADtsGw4OEFaMBrRtbOYPiw16VktZNLBy9R%2BeavqbvTqXhw8gfYMjZOkgUkXk47ETVnDhgku",
+      "url": "https://www.ebay.com/itm/198277356263?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item2e2a405ae7:g:Cg4AAeSw88dp3GO8&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nGEgyCkNkryYcAPYCsvJFlig8rkz2c8DZdKMtjspVMyj7GdUad%2FjqX3JuF8Apg652srvou6IMsS1HdJ9u2bmgHXuwJnIsDF7rRNYao1G4m9bNRLKXGlsAVGHDfr3htjKz0qCmuvd69h0fvlTGt3u0tVSvy6ciIa%2Fzxf9kHlYL6L3rWMAUdrZfC1CBxNCoud1NJmKKksG3uwOE0v0qWum46jSGz1LY4%2BhzDSK17armuNiZDP3iJy7yywK5KvXEqHI2PLvBc99aTHTNKxJuapBTIFujB9QEVLTtr%2FOs%2Bjf%2Fig%2B%2Fq%2F1cpUsxHke%2Fnms4f5VZHEnGAasehyxHTuoPG5VWu",
       "image": "https://i.ebayimg.com/images/g/Cg4AAeSw88dp3GO8/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -138,7 +285,7 @@
       "title": "Umbreon EX 161 Prismatic Evolution PSA BGS CGC TAG Extended Artwork Pokemon TCG",
       "price": 12.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/226887008815?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item34d385022f:g:qaQAAeSwad5ohBaJ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l32pWor2QIBFKjx8gBMof9SIJFClKT%2FH7AS3Q4SNjlUssaNbgBDWVBfWgYj0bAsTnldZxd8nNVyo7%2FWIyIJ25BKnQW0yaOoPA6GHpfhnkWJ7XpOmMqK8o57DcG70W%2Bw56LlgjYj0cpL5nAlTOeuHkH%2FYlAAr%2F4OhAsd5PGayvvlCLpIwhw%2FBGaHnz9up6RIIMZcBl6gaoZkDKYRO%2F32qtPlb6hSqilre1xqjoAJlpBOyokOvdV0R9UGEm0Z8KCPBl2n6SyWiINGQGNwWKCjNsBH1E4KuO%2FQ0dRVvLNeNJ0E6xFxEYrHxnCQg%2BPEjVOeUo%3D",
+      "url": "https://www.ebay.com/itm/226887008815?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item34d385022f:g:qaQAAeSwad5ohBaJ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l32pWor2QIBFKjx8gBMof9SIJFClKT%2FH7AS3Q4SNjlUssaNbgBDWVBfWgYj0bAsTnldZxd8nNVyo7%2FWIyIJ25BKnQW0yaOoPA6GHpfhnkWJ7XpOmMqK8o57DcG70W%2Bw55BxyujlcGunC3yV0of8SKT2U3bFr5cIT6GkunUcBRd%2B4IcGr1vhqrwMTxKB261Z%2FdgrTWplkVQLyis3lT%2BzvTJL5RflfIfN7xrJ4svIVvEiFmXBDPBXacDYTHXbyhRdiyGabBMWiDnelULv2plKodTKGfKOLodbqtQZjfZqBqY5uQPSTel5I4G2sUlmVbp5Ok%3D",
       "image": "https://i.ebayimg.com/images/g/qaQAAeSwad5ohBaJ/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -164,7 +311,7 @@
       "title": "Umbreon ex - (Prismatic Evolutions Stamp) 060/131 ",
       "price": 22.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/307071944020?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item477eea0554:g:ZasAAeSwQtRqXCGv&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7k%2Bfqzy%2FtY2rQFG1leumH%2FxqUjEAs%2BTix3H6PjtRPHsZPHxr3q0kqCLRr0EOqu5y%2BGk8OK2x1Ep%2FmvjiCJFXgtvl9XQ1AFuzbXagIZDKmenkzqWozSmlNLXULOtJ%2FPDHwCzJ3av6JM8awXFZT2l63koqNLU1Hh0n0BuN%2BsetL%2Bh9QilZ9cDhbtrwle%2FnKpm5CG7siUytHa5MlH90f2NCz4M0zi8f6Lyv0rDlDwhBqz4zBjdgoEgi3XH2F5%2B4LzyE4qiqcCxHQel9vVUtQ3ptHl0x%2Bicx%2FDM52olMl97UoZh7%2Br9Xc96kN%2FDRmjA3JzX2K23F1Bg28PlbAhevDpeVTjk",
+      "url": "https://www.ebay.com/itm/307071944020?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item477eea0554:g:ZasAAeSwQtRqXCGv&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7k%2Bfqzy%2FtY2rQFG1leumH%2FxqUjEAs%2BTix3H6PjtRPHsZPHxr3q0kqCLRr0EOqu5y%2BGk8OK2x1Ep%2FmvjiCJFXgtvl9XQ1AFuzbXagIZDKmenkzqWozSmlNLXULOtJ%2FPDHwAFVVkmRveSr9cgzc4cWz%2FoANBfxU3fY1ejK3LYSBCzFmudQm4uTWOK7xWgeB%2BDaXQp3v646jvrXSJeypQogpf4eyU5GvKcFAw5g28JfWTs%2FEMuDxBVSfg%2Fx%2BRZr0%2FDVR%2F8cyndnbniYJzTwCVwwXwQNe9qaqrHxIPcHkLl5PYZ4kpsoNwIXlkXeTEKUIYoEMyK%2BtwGorg2IsHsX%2Bo8iykv",
       "image": "https://i.ebayimg.com/images/g/ZasAAeSwQtRqXCGv/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -191,7 +338,7 @@
       "title": "2021 Pokemon Korean Umbreon V Alt Art 085 Eevee Heroes PSA 10 Gem Mint SR",
       "price": 219.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/178454313443?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item298cb4b9e3:g:EwMAAeSwwyJqeN~j&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l4%2FDhpKtxQ1KfqOHc952nXcVpruc%2Bj%2FSkSveBL13XB7YJ1P6LvmXluc9rx0YhqzdzwKKPDhpSSLZC4h9kRjtGGNwmI38Yyl96ruJEHCvabCVkRLmmEMcrUCGOaNo6yQSSniWpm8jacjFqiE13GqXDSipoOtMzA2BK8fBFe%2BX0SQUwoorNEm4IdK388BdCm6XPHGbVSN1XulgEeMZKQvURifF86CNOQKzphHp%2FfLS%2FvODewHJCMODwzfB5ySpeL59cKwdq9pkl%2BXM%2F7JE5F7D5dIA%2FHpGIxS%2FvYpVQg5F92by0GoUSTX9gjLNAkcB1%2B4vU%3D",
+      "url": "https://www.ebay.com/itm/178454313443?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item298cb4b9e3:g:EwMAAeSwwyJqeN~j&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l4%2FDhpKtxQ1KfqOHc952nXcVpruc%2Bj%2FSkSveBL13XB7YJ1P6LvmXluc9rx0YhqzdzwKKPDhpSSLZC4h9kRjtGGNwmI38Yyl96ruJEHCvabCVkRLmmEMcrUCGOaNo6yQSQeNbjkTkTElGyZW9YbAj0G55OOGoh3a5xL0jShNDa7b3FfqJ0sa1N7JgABq1UjrIfexi1r7lhJrc4zTwLjrMEptCafHSyCtnwbedG3pzK7E%2FHW6fB%2BUBRuhZJJifwxlgNzPkRutqCItXBzie75uNXAPHJv2lvHmvbK3tZmQnaKiAdFU4uXvVP8o7iC5fGknjU%3D",
       "image": "https://i.ebayimg.com/images/g/EwMAAeSwwyJqeN~j/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -200,86 +347,6 @@
       "bid_count": null,
       "ends_at": null,
       "seller": "mad_l05",
-      "search_name": "moonbreon_psa10",
-      "market_estimate": 1150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|117437841057|0",
-      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #095 FULL ART/UMBREON VMAX PSA 10",
-      "price": 169.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/117437841057?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item1b57d73ea1:g:idYAAeSwt7tqu9Tk",
-      "image": "https://i.ebayimg.com/images/g/idYAAeSwt7tqu9Tk/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "psa",
-      "search_name": "moonbreon_psa10",
-      "market_estimate": 1150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|298466610026|0",
-      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES SECRET FULL ART/UMBREON VMAX PSA 10",
-      "price": 299.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/298466610026?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item457dff0b6a:g:aWQAAeSw8MZqQ6uW",
-      "image": "https://i.ebayimg.com/images/g/aWQAAeSw8MZqQ6uW/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "psa",
-      "search_name": "moonbreon_psa10",
-      "market_estimate": 1150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|168673920285|0",
-      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #095 FULL ART/UMBREON VMAX PSA 10",
-      "price": 174.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/168673920285?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item2745bfc51d:g:XAkAAeSwcvRqoEkg",
-      "image": "https://i.ebayimg.com/images/g/XAkAAeSwcvRqoEkg/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "avc-numismatics",
       "search_name": "moonbreon_psa10",
       "market_estimate": 1150.0,
       "deal_score": 83.8,
@@ -321,19 +388,18 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|307205455242|0",
+      "item_id": "v1|168673920285|0",
       "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #095 FULL ART/UMBREON VMAX PSA 10",
-      "price": 189.99,
+      "price": 174.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/307205455242?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item4786df3d8a:g:ktwAAeSw60pqu-xy",
-      "image": "https://i.ebayimg.com/images/g/ktwAAeSw60pqu-xy/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/168673920285?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item2745bfc51d:g:XAkAAeSwcvRqoEkg",
+      "image": "https://i.ebayimg.com/images/g/XAkAAeSwcvRqoEkg/s-l225.jpg",
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "psa",
+      "seller": "avc-numismatics",
       "search_name": "moonbreon_psa10",
       "market_estimate": 1150.0,
       "deal_score": 83.8,
@@ -356,6 +422,33 @@
       "image": "https://i.ebayimg.com/images/g/IEwAAeSwNdtqoMG2/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "psa",
+      "search_name": "moonbreon_psa10",
+      "market_estimate": 1150.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|307205455242|0",
+      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #095 FULL ART/UMBREON VMAX PSA 10",
+      "price": 189.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/307205455242?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item4786df3d8a:g:ktwAAeSw60pqu-xy",
+      "image": "https://i.ebayimg.com/images/g/ktwAAeSw60pqu-xy/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "bid_count": null,
       "ends_at": null,
@@ -427,21 +520,20 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|920002981907|0",
-      "title": "IN STOCK Pokemon TCG S-Chinese Collect 151C Surprise Jumbo Booster Box Sealed #",
-      "price": 80.21,
+      "item_id": "v1|407279699973|0",
+      "title": "CGC 10 UMBREON V 189 EVOLVING SKIES ALT ART SWORD & SHIELD POKEMON GEM MINT",
+      "price": 689.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/920002981907?_skw=Pokemon+151+booster+box+sealed&hash=itemd634737013:g:DK0AAeSw4GFqwJRv",
-      "image": "https://i.ebayimg.com/images/g/DK0AAeSw4GFqwJRv/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/407279699973?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item5ed3c30805:g:G-AAAeSwWNRpGU-4",
+      "image": "https://i.ebayimg.com/images/g/G-AAAeSwWNRpGU-4/s-l225.jpg",
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "technology-mallflagship-store",
-      "search_name": "151_booster_box_sealed",
-      "market_estimate": 165.0,
+      "seller": "bjornshoptcg",
+      "search_name": "moonbreon_psa10",
+      "market_estimate": 1150.0,
       "deal_score": 83.8,
       "deal_type": "mispriced_bin",
       "components": {
@@ -539,7 +631,7 @@
       "title": "Pokemon TCG Simplified Chinese Collect 151C Hope Slim Booster Box Sealed",
       "price": 38.27,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/287588470313?_skw=Pokemon+151+booster+box+sealed&hash=item42f59bce29:g:ja0AAeSwiuJqdTEg&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n91uB0hzvo1vPd4q4Kh67b3T1d9OhnnPDZItB64nhnZLII%2FIASEx0m5veaXfKvEM0pB%2FZB3k3wbH0dmQxHwEcHsefp53QtwqSCQnXjrUgHlZ4Q92WXZ7qnbFcJE01K0hxJzG6v14HZ4SXJFfYJg5vosd2FPiYpOvMjYUTQPpgkPV0C71MA2PY9TMnpFMQC5YVAvI%2Fc2KFLqiDQr5ph5cNhI4nSdc5XeQJ3LVJh5OqTJyP9M%2FAOrcxgskob94GvUhYCTkwycd4BUPpkyhVXP5FDw8dw6gl8ZV6opLa2%2BVfF51193fiMvzCFWewtYmL2xpI%3D",
+      "url": "https://www.ebay.com/itm/287588470313?_skw=Pokemon+151+booster+box+sealed&hash=item42f59bce29:g:ja0AAeSwiuJqdTEg&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n91uB0hzvo1vPd4q4Kh67b3T1d9OhnnPDZItB64nhnZLII%2FIASEx0m5veaXfKvEM0pB%2FZB3k3wbH0dmQxHwEcHsefp53QtwqSCQnXjrUgHlZ4Q92WXZ7qnbFcJE01K0hzMh9GvoV%2B%2BVVDOtrWpAXBkth7Faq%2ByW34cB0mxb5l%2FTPed%2BkpL2e0j2%2F9pkq7rU8ruQM%2BDq%2F9RXHUdfaCkOWTH5xikVwWz7Y%2F56xiWFrzQsc5MVemxkCeL0e2pBcvkUTO8gmqZYYCuS6KH0q5n2orqTXzXllyIcSdcu4CjS5gFNbW%2BC8VDdym5uGX5PRYAe1A%3D",
       "image": "https://i.ebayimg.com/images/g/ja0AAeSwiuJqdTEg/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -562,63 +654,11 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|307224620143|0",
-      "title": "Pok\u00e9mon TCG Scarlet & Violet 151 Poster Collection Box 3 Packs + Promos Sealed",
-      "price": 85.55,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/307224620143?_skw=Pokemon+151+booster+box+sealed&hash=item478803ac6f:g:zmkAAeSwmZNqyljl",
-      "image": "https://i.ebayimg.com/images/g/zmkAAeSwmZNqyljl/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "bodawg",
-      "search_name": "151_booster_box_sealed",
-      "market_estimate": 165.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|226537566651|525720938673",
-      "title": "Pok\u00e9mon TCG Sealed Loose Booster Packs! Choose Your Set! XY-MEG Era!",
-      "price": 27.5,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/226537566651?_skw=Pokemon+151+booster+box+sealed&hash=item34beb0f1bb:g:XP0AAOSwUGdoG8rH",
-      "image": "https://i.ebayimg.com/images/g/XP0AAOSwUGdoG8rH/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "spegri_38",
-      "search_name": "151_booster_box_sealed",
-      "market_estimate": 165.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
       "item_id": "v1|366556915117|0",
       "title": "Pokemon S-Chinese Collection 151 Hope Slim Booster Box Sealed USA SELLER",
       "price": 59.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/366556915117?_skw=Pokemon+151+booster+box+sealed&hash=item55587ea5ad:g:pfoAAeSwfRBqX9Dj&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lQg1gvw23a5HMHBlokY5iPVCGTrlZ4kemzK0LTqs4W7kpNxlI34NwzS1igKWkCXgWwHFwfagVZRiOq9pl1U6FU5%2FLi8jbEf2q2%2FIHvvCY%2FzrrXFyGkTGnPeCORcJBoA%2FfjJ51HeSMffa%2BZNOnwuWOHICtnWcTDdFr2P33egBs0xwJWOPb9g5TPJ1uy6T4r98uVf2QvUZbe15fAqlA0UA8hAhTtn9I0nzwEkWwPXYoVoKykj6wsIn2lYuKb%2BvOk5fsvODQBTxg4KL9AvAb7pJ3x6nxWeIq5Axjvk1%2Fg2nQEBAwNrRxncLC8afgDrw%2BX7uw%3D",
+      "url": "https://www.ebay.com/itm/366556915117?_skw=Pokemon+151+booster+box+sealed&hash=item55587ea5ad:g:pfoAAeSwfRBqX9Dj&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lQg1gvw23a5HMHBlokY5iPVCGTrlZ4kemzK0LTqs4W7kpNxlI34NwzS1igKWkCXgWwHFwfagVZRiOq9pl1U6FU5%2FLi8jbEf2q2%2FIHvvCY%2FzrrXFyGkTGnPeCORcJBoA%2FdRnwahCLKgYqryp%2B9ytmOIZDvifrk4gxAg8Mi6eYdO9EBaGeMY9eINju501yoqJyzXYLWmh5gZa01sW9Q6aPzudyWhqOLS%2FcAoy7GJ1UMnZs9VQ%2BQ1t%2BVFvqgaS47BIVFPe4lsdVOiR90zHUBC7zv0ASZHzo8FPKiSixLB0HlmzQ%2FA%2F3IujpIenDNi5P8L6Cw%3D",
       "image": "https://i.ebayimg.com/images/g/pfoAAeSwfRBqX9Dj/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -641,9 +681,114 @@
       "is_deal": true
     },
     {
+      "item_id": "v1|800686317314|0",
+      "title": "Pok\u00e9mon 151 ULTRA PREMIUM COLLECTION MEW Deck Box NEW Sealed UPC",
+      "price": 13.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/800686317314?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=itemba6c9f9f02:g:z~oAAeSwpalqrsM5",
+      "image": "https://i.ebayimg.com/images/g/z~oAAeSwpalqrsM5/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "corridorcards",
+      "search_name": "151_upc_sealed",
+      "market_estimate": 120.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|188748437162|0",
+      "title": "SEALED Pokemon S&V 151 Ultra Premium Collection UPC Mewtwo ex 052 Promo",
+      "price": 70.0,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/188748437162?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item2bf24896aa:g:bWEAAeSwkN9qc3Wj",
+      "image": "https://i.ebayimg.com/images/g/bWEAAeSwkN9qc3Wj/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "hobiihouse",
+      "search_name": "151_upc_sealed",
+      "market_estimate": 120.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|177978077680|0",
+      "title": "Pokemon 151 Mew UPC Accessory Deck Box New SEALED",
+      "price": 9.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/177978077680?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item297051f1f0:g:kOwAAeSwiSFpvfwR",
+      "image": "https://i.ebayimg.com/images/g/kOwAAeSwiSFpvfwR/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "pokekingshopinc",
+      "search_name": "151_upc_sealed",
+      "market_estimate": 120.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
+      "item_id": "v1|389917803445|0",
+      "title": "Pokemon 151 Mew UPC Accessory Deck Box New SEALED",
+      "price": 9.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/389917803445?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item5ac8e983b5:g:2qIAAeSweM9p5w7c",
+      "image": "https://i.ebayimg.com/images/g/2qIAAeSweM9p5w7c/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "pokeast",
+      "search_name": "151_upc_sealed",
+      "market_estimate": 120.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
       "item_id": "v1|880004861451|0",
       "title": "Pokemon TCG: Prismatic Evolutions Surprise Box Factory Sealed!",
-      "price": 67.95,
+      "price": 66.95,
       "currency": "USD",
       "url": "https://www.ebay.com/itm/880004861451?_skw=Prismatic+Evolutions+booster+box+sealed&hash=itemcce4608e0b:g:4zAAAeSw2rlqyadn",
       "image": "https://i.ebayimg.com/images/g/4zAAAeSw2rlqyadn/s-l225.jpg",
@@ -693,33 +838,6 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|237117971642|0",
-      "title": "Pokemon TCG Prismatic Evolutions Booster Bundle Sealed New See Pics",
-      "price": 77.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/237117971642?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item3735551cba:g:520AAeSw9OVqkyFH&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lmnZj%2BO0Ur3fnufIt6jcbyn5yfEmv9RAEf0cGmI1FqXJOvg14SX1FKA1jOU5LgBVhnWeecn6jd7W8yAXt%2FGTZrLOC3W%2FVNgVIVapnp30TetKTko3tCHDfS8cqzInV3Gbr6CsZcuvO0sNu5%2B4cD6GBF%2FutgNzjt8oDAd%2Bd9uiqiJBKN153LZzXooa2CWzHmRnVc5SVih1%2Br%2Fi9%2FlDBRiJdYq%2FbiAxOr8CNo75A%2FtkkpGTVWfzKddy6YUliRZBX5Sg28RrXiXdJSk7n8%2ByDk3pkf8A3qZp3LNAkz5G7i7U8hfktzhz%2FTvNI3c6ikEeUkzrE%3D",
-      "image": "https://i.ebayimg.com/images/g/520AAeSw9OVqkyFH/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "kg4mvpx2",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
       "item_id": "v1|287607400458|0",
       "title": "Pokemon TCG Scarlet & Violet Prismatic Evolutions Factory Sealed Surprise Box",
       "price": 74.99,
@@ -732,32 +850,6 @@
       "bid_count": null,
       "ends_at": null,
       "seller": "bubbagweni",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|327385054789|0",
-      "title": "Pokemon TCG Prismatic Evolutions Booster Bundle English Factory Sealed",
-      "price": 89.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/327385054789?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item4c39ab7e45:g:x-8AAeSwdvtqvYv~",
-      "image": "https://i.ebayimg.com/images/g/x-8AAeSwdvtqvYv~/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "balkpatel814",
       "search_name": "prismatic_evo_booster_box",
       "market_estimate": 175.0,
       "deal_score": 83.8,
@@ -798,6 +890,32 @@
       "is_deal": true
     },
     {
+      "item_id": "v1|327385054789|0",
+      "title": "Pokemon TCG Prismatic Evolutions Booster Bundle English Factory Sealed",
+      "price": 89.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/327385054789?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item4c39ab7e45:g:x-8AAeSwdvtqvYv~",
+      "image": "https://i.ebayimg.com/images/g/x-8AAeSwdvtqvYv~/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "balkpatel814",
+      "search_name": "prismatic_evo_booster_box",
+      "market_estimate": 175.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true
+    },
+    {
       "item_id": "v1|198691828730|0",
       "title": "Pokemon Prismatic Evolutions Accessory Pouch Special Collection Box SEALED",
       "price": 84.99,
@@ -824,19 +942,19 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|257792466744|0",
-      "title": "Pokemon TCG Prismatic Evolutions Binder Collection 5 Packs Eevee Sealed",
-      "price": 99.24,
+      "item_id": "v1|237117971642|0",
+      "title": "Pokemon TCG Prismatic Evolutions Booster Bundle Sealed New See Pics",
+      "price": 77.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/257792466744?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item3c05a0df38:g:KPwAAeSw9vNqypRK",
-      "image": "https://i.ebayimg.com/images/g/KPwAAeSw9vNqypRK/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/237117971642?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item3735551cba:g:520AAeSw9OVqkyFH&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lmnZj%2BO0Ur3fnufIt6jcbyn5yfEmv9RAEf0cGmI1FqXJOvg14SX1FKA1jOU5LgBVhnWeecn6jd7W8yAXt%2FGTZrLOC3W%2FVNgVIVapnp30TetKTko3tCHDfS8cqzInV3Gbq17rTaUuicRhZqPu2OxPZQYeZ766vdL0ucTuDDtHvfEfVZJSC9vh%2FzVf5PgfdeRTZ2RBe4vK0eGqRvBwaf9E2fcbhOXp%2F4MNT1Baeb5XINlS5Ol6QwNSJfYqG5I9juYMYZPtB7qF6Q%2BquMJ%2Fo8Gcat1%2B9otzjk2BdhJDf98CytoQTA0m0gp3AeWYtsIxJru%2Bw%3D",
+      "image": "https://i.ebayimg.com/images/g/520AAeSw9OVqkyFH/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "okadaball",
+      "seller": "kg4mvpx2",
       "search_name": "prismatic_evo_booster_box",
       "market_estimate": 175.0,
       "deal_score": 83.8,
@@ -877,18 +995,18 @@
       "is_deal": true
     },
     {
-      "item_id": "v1|226537566651|525856106041",
-      "title": "Pok\u00e9mon TCG Sealed Loose Booster Packs! Choose Your Set! XY-MEG Era!",
-      "price": 15.0,
+      "item_id": "v1|920028144384|0",
+      "title": "Pokemon TCG Prismatic Evolutions Booster Bundle New & Sealed",
+      "price": 79.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/226537566651?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item34beb0f1bb:g:XP0AAOSwUGdoG8rH",
-      "image": "https://i.ebayimg.com/images/g/XP0AAOSwUGdoG8rH/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/920028144384?_skw=Prismatic+Evolutions+booster+box+sealed&hash=itemd635f36300:g:4fgAAeSwHa1qys4G&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nFD52SpazXwi%2BbzIT8unIJW2Yfu9%2B%2Fi83K9xMiN%2FUPk1oIabhtgkcHCLr%2BoD05friPPbAfW%2BPZd0%2BBVZ3ksP2UBo%2FKUdkcJmoiqw3vGxzOaAKhQRoI9%2Bbicxf7KJ2sEnEIxRNZD6PP5t6bAeMvMeW1ykP4NOadM25OnwxwKmZ48y5i7LJMwy9YI6OAPeYJdjc%2BmwnzZPVjtX1x494c33pSbtAB5lYx3Wed8aObAxQjNb%2ByEHN970f4xP2E5PDUNEAPZ3USeKog3V5pc1qlXXVl1UFaVJ4WmVTZ%2FyB4CMV5HV94r%2B%2BaFVFmQ1eevQst%2FxY%3D",
+      "image": "https://i.ebayimg.com/images/g/4fgAAeSwHa1qys4G/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "spegri_38",
+      "seller": "lunarliquidation",
       "search_name": "prismatic_evo_booster_box",
       "market_estimate": 175.0,
       "deal_score": 83.8,
@@ -934,7 +1052,7 @@
       "title": "Pokemon Crystal Gathering Booster Box Prismatic Evolutions (US SELLER) FAST SHIP",
       "price": 99.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/366651515213?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item555e22214d:g:~gEAAeSwhVlqnKrk&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lO4g1fTwAwZ6z9CTCLilum%2F0bBbtAwZ2tJ76oSH4n%2BDNC0MaVcs8WbXZYsjwp5mGh3IQciZAHr7NfCjQ1hUrXZRK9ZqVytT9Skm81DyzB2jwcSrpRNx1nK82mcOG6TSTOKddRx%2FDUEWtLGU3alB9kAtSm6SsoRLhKqsvS1K4XlaUN5bUUiy4d3rUtKbfBse2g5g6bcP2dXnRONY8EzjWuhiI1VBtLIy%2FtiIBBTifQhVkkbmrqJXNSDQK512Rmq8Mn7TrDmM1KhKeVIP%2BH%2B4T1wGvJ8yDSZuRzpSZ4%2Fg2ReLYfwk58XMwSbH8ptv2MP8nTIQueKc4VH%2F7sq0URhy6QR",
+      "url": "https://www.ebay.com/itm/366651515213?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item555e22214d:g:~gEAAeSwhVlqnKrk&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lO4g1fTwAwZ6z9CTCLilum%2F0bBbtAwZ2tJ76oSH4n%2BDNC0MaVcs8WbXZYsjwp5mGh3IQciZAHr7NfCjQ1hUrXZRK9ZqVytT9Skm81DyzB2jwcSrpRNx1nK82mcOG6TSTNZN4vnFric1G1CoDfa1nOjykHHH%2FApOVDdwGHj9VUAqybM2CErUOBILPRE%2BBQ6Q9Q33086ZetlEtcd%2BkQEqbyfAi0hZSC7BE4bt4o2qUkS8%2BDXBq0lkiSQK1wSIx20voWuQKLIcQF0Rw%2Fz0pVzGm%2Fd6XkeU7%2FTHoheb%2F8ktED32XdeE%2B%2FPmvb1VqhEx%2B2HvBRCAfzAWT%2BmO3Yj1oVR%2B3Ke",
       "image": "https://i.ebayimg.com/images/g/~gEAAeSwhVlqnKrk/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -961,7 +1079,7 @@
       "title": "2025 Pokemon Prismatic Evolutions Sealed Booster Pack PSA 9 Leafeon Glaceon Art",
       "price": 89.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/198623014844?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item2e3edaafbc:g:kKQAAeSwE~FqjeZM&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nR%2FPh%2BxC7ikPjm7R0dwNcQetT6oYqdfIVALDuusfpdrbfEKXhOYJ2hj0%2FnGKkuTf%2BPjlaXPD2FwcwKN%2Bl1W%2B1XFq6icDDL%2FrfV02%2FC9QBMAdUoSd96YFGwTqHo9SDCTF40d%2FybnV0RwO1flIhThDeWS8umenoIw2i49JOPBTBfqegqI3mJ%2BtxIJxyjJuc5ynuoMm3WQPd%2FYj69mX%2FBU%2BAxCWIDnKsCbjVMqCceVXrnBE8g1ttcOUqrM%2F819tAmwFi9vlzuNZVeJGWRJb3XnuAl%2BI0CcU1JfI%2BOEBDqtpy4t%2B0Gs91P%2BNr74eNZ0BrBF5ZVugIl10V%2F8Pn5TkHgvofV",
+      "url": "https://www.ebay.com/itm/198623014844?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item2e3edaafbc:g:kKQAAeSwE~FqjeZM&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nR%2FPh%2BxC7ikPjm7R0dwNcQetT6oYqdfIVALDuusfpdrbfEKXhOYJ2hj0%2FnGKkuTf%2BPjlaXPD2FwcwKN%2Bl1W%2B1XFq6icDDL%2FrfV02%2FC9QBMAdUoSd96YFGwTqHo9SDCTF7zZkOfU--7nYtujUAgSykKg%2Be3Ft7QelThOB70909wdqcbStb%2FOkOuTsT%2BzpfQ9rjJ8J43sz%2FVksmJlaNbupjHDIeZ4gnZAz%2Fy5w%2FVVoxrGrhdIQKdsyHUEmrfe0BSPgKHo0ZIRxCXUgeAWGFNTbLOahsCKvKlPqbvhBGW5XvrTWWbjqPW9CCIfYagnkNELle2lvoZFN8jLumlRCMMn50S",
       "image": "https://i.ebayimg.com/images/g/kKQAAeSwE~FqjeZM/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -969,112 +1087,6 @@
       "bid_count": null,
       "ends_at": null,
       "seller": "bigmacscards85",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|287478320820|0",
-      "title": "1x ~ESP~ SPANISH Prismatic Evolutions Pokemon Booster Factory Sealed Unweighed",
-      "price": 9.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/287478320820?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item42ef0b0eb4:g:1PcAAeSwBEtqYRUs",
-      "image": "https://i.ebayimg.com/images/g/1PcAAeSwBEtqYRUs/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "darkshadeoriginal",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|178568577844|0",
-      "title": "Prismatic Evolution Leafeon Glaceon Booster Pack PSA 8 New Sealed - Pokemon TCG",
-      "price": 69.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/178568577844?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item2993844334:g:xZYAAeSwjpdqyCxJ",
-      "image": "https://i.ebayimg.com/images/g/xZYAAeSwjpdqyCxJ/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "adhd4days",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|147511392017|0",
-      "title": "Pokemon TCG SV8.5 Prismatic Evolutions Poster Collection Box Factory Sealed",
-      "price": 42.41,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/147511392017?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item22585d3711:g:L5gAAeSwvk9qg2Ih",
-      "image": "https://i.ebayimg.com/images/g/L5gAAeSwvk9qg2Ih/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "mwmining",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true
-    },
-    {
-      "item_id": "v1|840004704774|0",
-      "title": "VERY HEAVY 161/162 Grams! Prismatic Evolutions Booster Bundle Pokemon TCG Sealed",
-      "price": 99.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/840004704774?_skw=Prismatic+Evolutions+booster+box+sealed&hash=itemc3942e9a06:g:x6MAAeSwGq5qyX2d",
-      "image": "https://i.ebayimg.com/images/g/x6MAAeSwGq5qyX2d/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "cherokee067",
       "search_name": "prismatic_evo_booster_box",
       "market_estimate": 175.0,
       "deal_score": 83.8,
