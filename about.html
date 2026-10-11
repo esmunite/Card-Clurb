@@ -24,19 +24,50 @@
     <h1>What is this?</h1>
     <p>Card Clurb is a bot that hunts down underpriced Pokémon cards on eBay.
        Every 4 hours it scans listings for graded cards, raw singles, and sealed
-       boxes, scores each one 0–100, and posts the 40 best deals on the homepage.
+       boxes, scores each one 0–100, and posts the 150 best deals on the homepage.
        That's the whole thing.</p>
 
-    <h2>How the scoring works</h2>
+    <h2>How it Works</h2>
+    <p>Card Clurb watches eBay around the clock. Every 4 hours it scans dozens
+       of tracked searches — graded singles, raw ungraded cards, sealed boxes —
+       pulls every live listing, and scores each one 0–100. The 150 highest
+       scores make the homepage.</p>
+    <p>The score starts with one question: what does this card actually sell for?
+       We don't guess and we don't copy prices from other sites. We watch eBay
+       itself — when an auction with real bids disappears, that's a confirmed
+       sale, and we log the price. Average the recent sales for a card and
+       you've got its true market value, straight from the source. The more
+       sales we observe, the sharper that number gets. (New cards start with a
+       researched estimate until we've seen enough real sales to take over.)</p>
+    <p>Once we know the market value, the deal score is a weighted mix of four
+       things:</p>
     <ul>
-      <li><strong>How cheap is it, really</strong> — the price vs. what the card actually sells for.</li>
-      <li><strong>Auction heat</strong> — ending soon with zero bids is usually where the lowest prices show up.</li>
-      <li><strong>Seller trust</strong> — feedback score and ratings. Sketchy sellers don't make the cut.</li>
-      <li><strong>Listing quality</strong> — real photos beat stock photos. Every time.</li>
+      <li><strong>Discount vs. market (45%)</strong> — how far under the real
+          selling price the listing sits. The biggest factor by far.</li>
+      <li><strong>Auction urgency (25%)</strong> — auctions ending soon with
+          little or no bidding usually close the cheapest.</li>
+      <li><strong>Seller trust (15%)</strong> — feedback score and ratings.
+          Sketchy sellers don't make the cut.</li>
+      <li><strong>Listing quality (15%)</strong> — real photos of the actual card
+          beat stock photos. Every time.</li>
     </ul>
-    <p>Anything that smells fake — "reprint," "proxy," "custom" — gets tossed,
-       no matter how cheap it looks. Same for beat-up cards hiding behind a
-       mint-condition price.</p>
+    <p>Each deal also gets a label so you know what kind of opportunity it is:</p>
+    <ul>
+      <li><strong>Mispriced BIN</strong> — a buy-it-now listing priced at least
+          15% under market. Someone listed it too low; first buyer wins.</li>
+      <li><strong>Auction snipe</strong> — an auction ending soon with barely any
+          bids. These are the ones that slip through cheap if nobody's watching.</li>
+      <li><strong>Under market</strong> — priced below market but not by enough
+          to trigger the other two. Worth a look, not a rush.</li>
+    </ul>
+    <p>Some listings can never score as deals, no matter how cheap they look.
+       Anything flagged as a reprint, proxy, custom, or fake gets tossed.
+       Same for beat-up cards — heavily played, damaged, creased — hiding
+       behind a mint-condition price. Graded listings have to name a real
+       grading company (PSA, BGS, CGC, SGC, and the rest) or they're out too.</p>
+    <p>One last thing: every listing is re-checked to make sure it's still
+       active before it goes on the page, so you won't click through to dead
+       auctions.</p>
 
     <h2>Affiliate disclosure</h2>
     <p>Some of our eBay links earn us a small commission if you buy through them.
