@@ -1,45 +1,26 @@
 {
-  "generated_at": "2026-10-15T00:35:11.502440+00:00",
+  "generated_at": "2026-10-15T04:27:16.096760+00:00",
   "mock_mode": false,
-  "searches_run": 32,
-  "listings_scanned": 2889,
-  "deals_found": 855,
-  "verified_live": 118,
+  "searches_run": 12,
+  "listings_scanned": 1116,
+  "deals_found": 273,
+  "verified_live": 41,
   "verified_dropped": 0,
-  "verify_checks": 118,
+  "verify_checks": 41,
   "skipped_low_demand": [],
   "price_source": {
     "charizard_151_psa10": "static-anchor",
-    "charizard_151_psa9": "static-anchor",
-    "charizard_151_bgs95": "static-anchor",
     "charizard_151_sir": "static-anchor",
     "umbreon_prismatic_sir": "static-anchor",
     "moonbreon_psa10": "static-anchor",
-    "gengar_151_sir": "static-anchor",
-    "venusaur_151_sir": "static-anchor",
-    "blastoise_151_sir": "static-anchor",
     "151_booster_box_sealed": "static-anchor",
     "151_etb_sealed": "static-anchor",
-    "151_upc_sealed": "static-anchor",
     "prismatic_evo_etb_sealed": "static-anchor",
     "prismatic_evo_booster_box": "static-anchor",
     "charizard_151_misspell": "static-anchor",
-    "prismatic_misspell": "static-anchor",
-    "umbreon_misspell": "static-anchor",
-    "etb_misspell": "static-anchor",
-    "destined_rivals_sealed": "static-anchor",
-    "twilight_masquerade_etb": "static-anchor",
-    "stellar_crown_booster_box": "static-anchor",
-    "surging_sparks_etb": "static-anchor",
     "mega_charizard_x_sir": "static-anchor",
-    "phantasmal_gold_hyper": "static-anchor",
     "mew_30th_futuristic": "static-anchor",
-    "crystal_lugia_30th": "static-anchor",
-    "mewtwo_30th_futuristic": "static-anchor",
-    "pikachu_30th_150": "static-anchor",
-    "gengar_30th_154": "static-anchor",
-    "sylveon_30th_153": "static-anchor",
-    "mewtwo_30th_151": "static-anchor"
+    "crystal_lugia_30th": "static-anchor"
   },
   "sales_ledger": {
     "searches_with_comps": 0,
@@ -48,9 +29,9 @@
   },
   "threshold": 70.0,
   "quota": {
-    "used": 199,
+    "used": 84,
     "provider_remaining": null,
-    "effective_remaining": 1301,
+    "effective_remaining": 1416,
     "daily_budget": 5000
   },
   "errors": [],
@@ -119,170 +100,11 @@
       }
     },
     {
-      "item_id": "v1|960008560530|0",
-      "title": "Charizard ex 183/165 Sv: Scarlet & Violet 151 Holo PSA 9",
-      "price": 50.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/960008560530?_skw=Charizard+151+PSA+9&hash=itemdf84f81f92:g:eBIAAeSwihBqwTM8",
-      "image": "https://i.ebayimg.com/images/g/eBIAAeSwihBqwTM8/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "tbmsportscards",
-      "search_name": "charizard_151_psa9",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|820190636822|0",
-      "title": "Charizard EX  Pokemon 151 Double Rare TAG 9 PSA #006/165",
-      "price": 34.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/820190636822?_skw=Charizard+151+PSA+9&hash=itembef72beb16:g:TcwAAeSw4tZqxJaC",
-      "image": "https://i.ebayimg.com/images/g/TcwAAeSw4tZqxJaC/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "cardboardlegendsonline",
-      "search_name": "charizard_151_psa9",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|298371496539|0",
-      "title": "2024 POKEMON MEW EN-151 CHARIZARD EX SUPER-PREMIUM COLLECTION CHARMANDER PSA 9",
-      "price": 50.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/298371496539?_skw=Charizard+151+PSA+9&hash=item457853ba5b:g:R9wAAeSwUC1qHE-k",
-      "image": "https://i.ebayimg.com/images/g/R9wAAeSwUC1qHE-k/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "psa",
-      "search_name": "charizard_151_psa9",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|960063269761|0",
-      "title": "3 x Lot 9.5 Beckett BGS & Charizard Japanese English VSTAR 151 SVP196 Collection",
-      "price": 49.5,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/960063269761?_skw=Charizard+151+BGS+9.5&hash=itemdf883aeb81:g:q0gAAeSwEkpquYW6",
-      "image": "https://i.ebayimg.com/images/g/q0gAAeSwEkpquYW6/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "montyshop26",
-      "search_name": "charizard_151_bgs95",
-      "market_estimate": 110.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 110.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|298287018026|0",
-      "title": "Charizard ex 006/165 Double Rare 151 Near Mint",
-      "price": 15.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/298287018026?_skw=Charizard+151+199%2F165+near+mint&hash=item45734ab02a:g:lQUAAeSwZqJp9-98&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nLrWAlA3nZqoJ%2BsCG8vsqVyBu9w5k6c8IoGDCgVZkg%2B%2BPKrZLQquJkFoCmhFdWCLbAFtR6LKWzUO1kCTbF40R3PR4%2B1zVVNziu407%2FlclZKdQ6V885ezl57bmg6NcPXGJBo0KJ9OHjnbv4bPpSCrb%2FSC6A7fP3J6lpEcKdgw88bNE88yJqsDouNrjjmc72f%2BilTt2xrSxQ2QcaGFf4%2BUFGCL77UKWRI4m0St2%2FMWqB3jdre5FHsA3wm2GtcS4bvu3Nr6YlnI9YhiqlP%2BtKE3rwYK%2FoJuGQKjZRvIn5KVoq7AeIDlMi9nvKjzCNM4XQjys%3D",
-      "image": "https://i.ebayimg.com/images/g/lQUAAeSwZqJp9-98/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "unlimitedtcgsllc",
-      "search_name": "charizard_151_sir",
-      "market_estimate": 28.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 28.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
       "item_id": "v1|198277356263|0",
       "title": "Umbreon ex - 161/131 161 - SV Prismatic Evolutions GLOSS DEBIT CARD SKIN",
       "price": 4.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/198277356263?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item2e2a405ae7:g:Cg4AAeSw88dp3GO8&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nGEgyCkNkryYcAPYCsvJFlig8rkz2c8DZdKMtjspVMyj7GdUad%2FjqX3JuF8Apg652srvou6IMsS1HdJ9u2bmgHXuwJnIsDF7rRNYao1G4m9bNRLKXGlsAVGHDfr3htjKzG0RHzO3HnSMT0wMIE88zTq3RAlx3JvHiLwtkpMpR84Owfa0lqNw06sDNSW9i3xqho1D5yAsqjvSCfM7rPDUWzIZxGG4Ni5RuYCuuzYf2lt4iCxIbP13VVuWZi8PwVAL8BHIRsxPAHb0gt6l6fFZ4Dzf68yB%2B97MLPptoBSCCaXVHB7GzKDnHPNlmCNqECd7ihNigVEND%2Bw7oYGalpGlSD",
+      "url": "https://www.ebay.com/itm/198277356263?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item2e2a405ae7:g:Cg4AAeSw88dp3GO8&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nGEgyCkNkryYcAPYCsvJFlig8rkz2c8DZdKMtjspVMyj7GdUad%2FjqX3JuF8Apg652srvou6IMsS1HdJ9u2bmgHXuwJnIsDF7rRNYao1G4m9bNRLKXGlsAVGHDfr3htjKyIr7QTSQlrYIUy%2B3T5xcnxBuX1bFOjalOeaxUwQCdIc6jWVLxFIol3o4Y3%2FNA1HvQqT3aRf1gMQdf33OxygzcxiVlsxFb0tOKDcb943JV84%2BdVJwoJmzCNpNwXcdD81shAVbcrL6Roh85rgx94IOBmLRHt3osq1Cgqf9Lzakusii5Mybb%2FVT74QOy2P%2Biz41dG0hMg137kH2EO9n57GKCo",
       "image": "https://i.ebayimg.com/images/g/Cg4AAeSw88dp3GO8/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -313,7 +135,7 @@
       "title": "Umbreon EX 161 Prismatic Evolution PSA BGS CGC TAG Extended Artwork Pokemon TCG",
       "price": 12.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/226887008815?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item34d385022f:g:qaQAAeSwad5ohBaJ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l32pWor2QIBFKjx8gBMof9SIJFClKT%2FH7AS3Q4SNjlUssaNbgBDWVBfWgYj0bAsTnldZxd8nNVyo7%2FWIyIJ25BKnQW0yaOoPA6GHpfhnkWJ7XpOmMqK8o57DcG70W%2Bw55LXSjtn4gMeLoE5Jket97fveqcvIn%2BOOljC8JrGp%2B5LZ%2B7UrNyOimGRcxyWbyyritFdGqxISVbQfoMBcmGaEHgatGJbEhumLBotdzHiRn2y6LmCLCxu8CIzON%2FajUUjsIHyeIoHDUTeD2mDdXD1DGunkTMwVuu7E3GbPWSXKY%2FvnmJ3AfAj6mQ3NEvRMN5OL0%3D",
+      "url": "https://www.ebay.com/itm/226887008815?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item34d385022f:g:qaQAAeSwad5ohBaJ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l32pWor2QIBFKjx8gBMof9SIJFClKT%2FH7AS3Q4SNjlUssaNbgBDWVBfWgYj0bAsTnldZxd8nNVyo7%2FWIyIJ25BKnQW0yaOoPA6GHpfhnkWJ7XpOmMqK8o57DcG70W%2Bw54U%2B8XsLvBnAWOU4Rt49Q1jKVXV9J2IO5m81hr26DCRfy6I4gXS78keP4TTFyItTOnTmly8dSi6qaDbRr%2BtNamjDkHtahicyJmthRTQf2drie5VU0fN4KP%2BiSeLPuvtLI%2Bsqabq0w1ecejlKdI%2BiOp2YSnFyd6jUN89OA%2FbPFDSzJiylMP7WckN%2BhcOueJgRHU%3D",
       "image": "https://i.ebayimg.com/images/g/qaQAAeSwad5ohBaJ/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -321,38 +143,6 @@
       "bid_count": null,
       "ends_at": null,
       "seller": "dragarious",
-      "search_name": "umbreon_prismatic_sir",
-      "market_estimate": 420.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 420.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|257798987173|0",
-      "title": "Umbreon ex - 060/131 - Pokemon Prismatic Evolutions Double Rare NM",
-      "price": 11.96,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/257798987173?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item3c06045da5:g:GtwAAeSwSQ9oSLqp&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7m5Eui0eZEYYHr9hkE8eUGY5O6nmHaaFGQI29ZKZyCqnA%2B0JlgNkIeoICCk2%2BctrMKlasTHN%2BtQ4icbh8JUi4WBE2eDPneu%2FG%2BxqA%2Fx04WQNIuzxFme5Ww83ZtEYqYmXvtD1qTqoPr7dw3AyFQHbuPCe5NkPFI3LbFnr6YrRZD0teb3linU4D199JUqFAWLf%2By%2FNdJ%2BwewHL9IQIKOdKBjweYqQp76LLo3T71Vf6oUrxvl9Zar1NVKWtObuBwRL7eDLbVzLoPupxsvfmm1hTeFvNGQd8Kd5KkkYsw%2FRP2D1LUQ9UPEJsx6mLgpQe8eCdLPSDnic3%2BkMlYMR0wyQP%2BAy",
-      "image": "https://i.ebayimg.com/images/g/GtwAAeSwSQ9oSLqp/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "gamefreezetcg",
       "search_name": "umbreon_prismatic_sir",
       "market_estimate": 420.0,
       "deal_score": 83.8,
@@ -403,12 +193,12 @@
       }
     },
     {
-      "item_id": "v1|366612361386|0",
-      "title": "Umbreon Prismatic Evolutions Holo Pok\u00e9mon TCG 059/131 Scarlet & Violet Rare",
-      "price": 4.99,
+      "item_id": "v1|366612365338|0",
+      "title": "Umbreon Prismatic Evolutions Reverse Holo Pok\u00e9mon TCG 059/131 Scarlet & Violet",
+      "price": 5.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/366612361386?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item555bccb0aa:g:v0gAAeSw~7pqg7TI&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7naivROG4vRMX5Vv3dIGh49Bu2g4wfmeO5026%2BvQ8fvC5QySD5BIdB1vrdBp0SrOxpIJTkzGRQZ560qbqv9VHK4GidhVPpFzr%2BE%2BWqn%2B9nZ64G8YIKawpJSS7LFKVpk7iawuJt%2BhDpusXAERUrLUsOicQ0PThb4ktituqVWk1Ek0tq1JbbSWaNRXF8FSA2kIQeH3wCY6aTI%2F6fPhIvOk45Yf43STr6agBKm2LBP%2Bc5B4CGb5TF45o4ni3virDzTn5vEKWlaPIjDJK1obDOezbIiddnYgaaialyQpN5JAnJQ9vpvu8bQkHCHxPCCJw9HjOjXLPXPTOpWfgsiQemEjgUh",
-      "image": "https://i.ebayimg.com/images/g/v0gAAeSw~7pqg7TI/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/366612365338?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item555bccc01a:g:7l8AAeSwndxqg7Wx&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nT6sx4bjBunyQJCRtsQ7uAnYG66rvAVLFPMqZ0MO%2FvyMtS3Cm%2BdY%2BDkSZroSDDPfOHTHSCNgF30NfspyihfX8e5orhSUXhV143rm2PAqtEw51zRf8eBPSUlbt9L%2BA587MVaIgMRzAs1h0KDoPhZoLTas8Ph9NdvpeFQyubgXR5Fu%2BJ4%2BBfv6%2FNiac9I7JHAv2AICBVojCv0l0Ubip64oTwebVotFRK4BrnzJqrJPIKKFRu0VURAVz3Vc7o6BdBiFByYN3qcaKh68xIqyGVLVNgIKuf8dMy9QhNUgikgl3%2FHkYjjfcjRyiAEF7vxlQbxb6U3Z8%2BCVcYtVA%2BayHCi6Id",
+      "image": "https://i.ebayimg.com/images/g/7l8AAeSwndxqg7Wx/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
       ],
@@ -429,6 +219,100 @@
       "is_deal": true,
       "pricing": {
         "market": 420.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|298702237570|0",
+      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES SECRET FULL ART/UMBREON VMAX PSA 10",
+      "price": 220.0,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/298702237570?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item458c0a6f82:g:esUAAeSw~UZqtIdg",
+      "image": "https://i.ebayimg.com/images/g/esUAAeSw~UZqtIdg/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "psa",
+      "search_name": "moonbreon_psa10",
+      "market_estimate": 1150.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 1150.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|307169748940|0",
+      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #095 FULL ART/UMBREON VMAX PSA 10",
+      "price": 195.0,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/307169748940?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item4784be67cc:g:IEwAAeSwNdtqoMG2",
+      "image": "https://i.ebayimg.com/images/g/IEwAAeSwNdtqoMG2/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "psa",
+      "search_name": "moonbreon_psa10",
+      "market_estimate": 1150.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 1150.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|298526450608|0",
+      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #188 FULL ART/UMBREON V PSA 10",
+      "price": 450.0,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/298526450608?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item45819023b0:g:afEAAeSwYlNqYXFm",
+      "image": "https://i.ebayimg.com/images/g/afEAAeSwYlNqYXFm/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "psa",
+      "search_name": "moonbreon_psa10",
+      "market_estimate": 1150.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 1150.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
@@ -492,132 +376,6 @@
       "is_deal": true,
       "pricing": {
         "market": 1150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|117457279786|0",
-      "title": "2021 POKEMON SWORD & SHIELD EVOLVING SKIES #094 UMBREON V PSA 10",
-      "price": 500.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/117457279786?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item1b58ffdb2a:g:D-kAAeSw~dRqyVai",
-      "image": "https://i.ebayimg.com/images/g/D-kAAeSw~dRqyVai/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "psa",
-      "search_name": "moonbreon_psa10",
-      "market_estimate": 1150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 1150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|227567642877|0",
-      "title": "Umbreon VMAX 214/203 Pokemon Evolving Skies (Secret Rare) PSA 10",
-      "price": 229.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/227567642877?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item34fc16a8fd:g:WGAAAeSwF-5qy4Bk",
-      "image": "https://i.ebayimg.com/images/g/WGAAAeSwF-5qy4Bk/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pokebon8567",
-      "search_name": "moonbreon_psa10",
-      "market_estimate": 1150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 1150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|158042669198|0",
-      "title": "Umbreon Vmax 214/203 Evolving Skies PSA 10 English Pokemon",
-      "price": 249.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/158042669198?_skw=Umbreon+VMAX+Alt+Art+PSA+10&hash=item24cc13c08e:g:NycAAeSw0BpqmKgG",
-      "image": "https://i.ebayimg.com/images/g/NycAAeSw0BpqmKgG/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "phantasmgaming",
-      "search_name": "moonbreon_psa10",
-      "market_estimate": 1150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 1150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366734571895|0",
-      "title": "Gengar 151 Holo Pok\u00e9mon TCG 094/165 Scarlet & Violet Rare",
-      "price": 11.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366734571895?_skw=Gengar+151+special+illustration+rare+199&hash=item5563157977:g:an4AAeSwqsFq0Al8&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7m%2Bv6F0S8H088pRyqAxyUc8gRmQEO6fePue58pOAA57%2Bv1ebip4QKY1mzOGuFGhJUu6xE8R4%2F9Ao0GXka5HyIk%2B089rI2ByQRBoIujZR3rDpSzdqARqoeM15uswFGBxPlBl0XYEuJF3O%2FqO5BsPUggd%2BOXRn0xNJFIKkP%2BSMzNdMXwUdsrVE%2F7sB57qLCsexzRRy9n3Wgisa8%2FXn5Qd45--Lz17e4wFn36RGquWSEKWTyvlZ4l3DmX3AeFMrsb05HlpTH4jkx1ZkPCmDDdii7DB2PxbigVeRff8BdfYfuFppCp8UAGGcdAP8ZReXNSZMeL9iow5O65disS38C0nJxvV",
-      "image": "https://i.ebayimg.com/images/g/an4AAeSwqsFq0Al8/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pokegenetics",
-      "search_name": "gengar_151_sir",
-      "market_estimate": 45.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 45.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
@@ -782,205 +540,18 @@
       }
     },
     {
-      "item_id": "v1|800686317314|0",
-      "title": "Pok\u00e9mon 151 ULTRA PREMIUM COLLECTION MEW Deck Box NEW Sealed UPC",
-      "price": 13.99,
+      "item_id": "v1|327405496926|0",
+      "title": "Pok\u00e9mon TCG Prismatic Evolutions Booster Bundle Scarlet & Violet SEALED",
+      "price": 79.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/800686317314?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=itemba6c9f9f02:g:z~oAAeSwpalqrsM5",
-      "image": "https://i.ebayimg.com/images/g/z~oAAeSwpalqrsM5/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/327405496926?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item4c3ae36a5e:g:nkoAAeSwwFtq0Clj&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kfKxvNVaLfBTgfwAGk0DlCTDkkwjvB3Vg1o%2FzrU2MUxV2hwQOPelIyS39NPaXUDithO5jr1WbMCziR63SDMd7bCmnq4%2FUH3yS35ouYjKm70GZ5dagrFb5WN5F4Ojk5TYxYrmM0dh6SmWettuHahowUCokyC11VxNZzwM9Vr6RZhATDqTK%2F9MraslMkOySnw5I7LFKt8V8Wuz6LcGmeKUUMjW86mnPfHeMYKgXpCHCTRI%2BmZZKxUQvTnohH0ZRWYc1tTy679HS19ln3Os39e3HumXdIaty6r9CrJ8QmgPVlBwh4BovCSexgvlUlHIydMjA%3D",
+      "image": "https://i.ebayimg.com/images/g/nkoAAeSwwFtq0Clj/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "corridorcards",
-      "search_name": "151_upc_sealed",
-      "market_estimate": 120.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 120.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|188748437162|0",
-      "title": "SEALED Pokemon S&V 151 Ultra Premium Collection UPC Mewtwo ex 052 Promo",
-      "price": 70.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/188748437162?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item2bf24896aa:g:bWEAAeSwkN9qc3Wj",
-      "image": "https://i.ebayimg.com/images/g/bWEAAeSwkN9qc3Wj/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "hobiihouse",
-      "search_name": "151_upc_sealed",
-      "market_estimate": 120.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 120.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|177978077680|0",
-      "title": "Pokemon 151 Mew UPC Accessory Deck Box New SEALED",
-      "price": 9.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/177978077680?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item297051f1f0:g:kOwAAeSwiSFpvfwR",
-      "image": "https://i.ebayimg.com/images/g/kOwAAeSwiSFpvfwR/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pokekingshopinc",
-      "search_name": "151_upc_sealed",
-      "market_estimate": 120.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 120.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|389917803445|0",
-      "title": "Pokemon 151 Mew UPC Accessory Deck Box New SEALED",
-      "price": 9.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/389917803445?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item5ac8e983b5:g:2qIAAeSweM9p5w7c",
-      "image": "https://i.ebayimg.com/images/g/2qIAAeSweM9p5w7c/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pokeast",
-      "search_name": "151_upc_sealed",
-      "market_estimate": 120.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 120.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|298732687357|0",
-      "title": "Prismatic Evolutions Booster Bundle Pokemon Scarlet Violet SEALED",
-      "price": 100.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/298732687357?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item458ddb0ffd:g:2w8AAeSwgZ1qwo66",
-      "image": "https://i.ebayimg.com/images/g/2w8AAeSwgZ1qwo66/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "arcanearchive",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 175.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|840006240970|0",
-      "title": "(1) Prismatic Evolutions Booster Bundle (6pks) Factory Sealed Sams Club Multiple",
-      "price": 80.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/840006240970?_skw=Prismatic+Evolutions+booster+box+sealed&hash=itemc394460aca:g:En0AAeSwnoVqygVl",
-      "image": "https://i.ebayimg.com/images/g/En0AAeSwnoVqygVl/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "sportscarddoctor",
-      "search_name": "prismatic_evo_booster_box",
-      "market_estimate": 175.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 175.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|287607400458|0",
-      "title": "Pokemon TCG Scarlet & Violet Prismatic Evolutions Factory Sealed Surprise Box",
-      "price": 74.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/287607400458?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item42f6bca80a:g:KJwAAeSwsfJqtias",
-      "image": "https://i.ebayimg.com/images/g/KJwAAeSwsfJqtias/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "bubbagweni",
+      "seller": "defensefieldgames",
       "search_name": "prismatic_evo_booster_box",
       "market_estimate": 175.0,
       "deal_score": 83.8,
@@ -1031,6 +602,68 @@
       }
     },
     {
+      "item_id": "v1|298732687357|0",
+      "title": "Prismatic Evolutions Booster Bundle Pokemon Scarlet Violet SEALED",
+      "price": 100.0,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/298732687357?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item458ddb0ffd:g:2w8AAeSwgZ1qwo66",
+      "image": "https://i.ebayimg.com/images/g/2w8AAeSwgZ1qwo66/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "arcanearchive",
+      "search_name": "prismatic_evo_booster_box",
+      "market_estimate": 175.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 175.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|287607400458|0",
+      "title": "Pokemon TCG Scarlet & Violet Prismatic Evolutions Factory Sealed Surprise Box",
+      "price": 74.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/287607400458?_skw=Prismatic+Evolutions+booster+box+sealed&hash=item42f6bca80a:g:KJwAAeSwsfJqtias",
+      "image": "https://i.ebayimg.com/images/g/KJwAAeSwsfJqtias/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "bubbagweni",
+      "search_name": "prismatic_evo_booster_box",
+      "market_estimate": 175.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 175.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
       "item_id": "v1|198691828730|0",
       "title": "Pokemon Prismatic Evolutions Accessory Pouch Special Collection Box SEALED",
       "price": 84.99,
@@ -1062,759 +695,11 @@
       }
     },
     {
-      "item_id": "v1|840022088280|0",
-      "title": "Hearthflame Mask Ogerpon EX 148/131 Prismastic Evolutions NM *FOIL*",
-      "price": 17.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/840022088280?_skw=prismastic+evolutions&hash=itemc39537da58:g:36YAAeSwBJdqz~g2",
-      "image": "https://i.ebayimg.com/images/g/36YAAeSwBJdqz~g2/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "scytheful",
-      "search_name": "prismatic_misspell",
-      "market_estimate": 30.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 30.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|177896078438|0",
-      "title": "Ortega Pokemon Prismastic Evolutions 141/131 Ultra Rare Full Art Holo SV NM",
-      "price": 1.34,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/177896078438?_skw=prismastic+evolutions&hash=item296b6ebc66:g:HSYAAeSwvpRp0XcI",
-      "image": "https://i.ebayimg.com/images/g/HSYAAeSwvpRp0XcI/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "void*tcg",
-      "search_name": "prismatic_misspell",
-      "market_estimate": 30.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 30.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|397482630784|0",
-      "title": "Heatran #68 2025 Scarlet - Violet Series - Prismatic Evolutions Uncommon Pokemon",
-      "price": 2.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/397482630784?_skw=prismastic+evolutions&hash=item5c8bcf9e80:g:9wwAAeSwjT9pYm7B&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kS%2Bg4M8C6zxgP7Wlcpc5Fx74QJu%2Bi7B85hWNvXxdeGvuRQyNQIRnPsY8RqwsxW30vG%2FdlIoKqfn%2Bcr%2F0fzzKzJJ4p%2FEmHr2YrjPg9SxAePvW21rjWOLPKDTWo%2B3MHQnT%2BzwtGx5Jd69U6JsbiCttGefBPYBFbEjXhv0WcNMxqWJc2nWVEUSBgGif%2FQNeVjo19sII03u1EJbpp%2BVPqnmypNOVAPeSZNA8FYeYrBjCssFd6pMz0vKS7%2BkaDX2Li8u0uaosrbNKcNWwj%2BSd2XGQc5Ce1qj2spHO1f9PZXEmiFWg%3D%3D",
-      "image": "https://i.ebayimg.com/images/g/9wwAAeSwjT9pYm7B/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "reaperripssportscards",
-      "search_name": "prismatic_misspell",
-      "market_estimate": 30.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 30.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|147545560464|0",
-      "title": "Pokemon - Noibat - 090/131 - S&V Prismastic Evolutions - Masterball \u2705",
-      "price": 7.28,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/147545560464?_skw=prismastic+evolutions&hash=item225a669590:g:9p0AAeSw5NJqmJuu",
-      "image": "https://i.ebayimg.com/images/g/9p0AAeSw5NJqmJuu/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "luckycollectiblesuk",
-      "search_name": "prismatic_misspell",
-      "market_estimate": 30.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 30.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|397482631526|0",
-      "title": "Heatran #68 2025 Scarlet - Violet Series - Prismatic Evolutions Uncommon Pokemon",
-      "price": 2.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/397482631526?_skw=prismastic+evolutions&hash=item5c8bcfa166:g:I-sAAeSwtiZpYm7q&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lVAzvpefCGMeM6ZUtACkNJxV4v1TG50CdJUcFeYaJjny6aOOSBBvoFIpniAj46qv7q2uBTH98FtfVrHF5HNezTyndXoJm96ALtaGZq4VgM0Jutb3fOxbhNaF%2FgkTfXST3MWY7aJ1megokMEFdnkWTW8ksz8%2BuHWMXnQwc%2BiwXGR3NmVo9shvrsTXSef5VI9r8hoTHfmr4CePQ8He69RLzYq6hAjqVKJBzuoXFZ9d85bIM3Syn6neSmoRK%2B0pO%2FqO3eFd8ow1%2BcDqO%2BjHFEZYrwPyueUSpXqrTVTcknMMz%2FXQ%3D%3D",
-      "image": "https://i.ebayimg.com/images/g/I-sAAeSwtiZpYm7q/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "reaperripssportscards",
-      "search_name": "prismatic_misspell",
-      "market_estimate": 30.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 30.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|960067787708|0",
-      "title": "Pokemon SV Black Star Promos Umbreon ex 2025 #176 NM",
-      "price": 29.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/960067787708?_skw=umbrean+ex&hash=itemdf887fdbbc:g:LCMAAeSwEjBqz-t7",
-      "image": "https://i.ebayimg.com/images/g/LCMAAeSwEjBqz-t7/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "palmettocards803",
-      "search_name": "umbreon_misspell",
-      "market_estimate": 60.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 60.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|336798749330|546142929246",
-      "title": "Pokemon ME05.5 30C 30th Celebration NM YouPICK! 1-158 Holo ex IR SIR HR",
-      "price": 6.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/336798749330?_skw=umbrean+ex&hash=item4e6ac51292:g:TOEAAeSwButqv0LH",
-      "image": "https://i.ebayimg.com/images/g/TOEAAeSwButqv0LH/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "biggyfish",
-      "search_name": "umbreon_misspell",
-      "market_estimate": 60.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 60.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|377551096153|0",
-      "title": "Miscellaneous Cards & Products #060/131 Umbreon ex",
-      "price": 28.59,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/377551096153?_skw=umbrean+ex&hash=item57e7cc8959:g:N7wAAeSw0DZql6g7",
-      "image": "https://i.ebayimg.com/images/g/N7wAAeSw0DZql6g7/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "xtremecollector78",
-      "search_name": "umbreon_misspell",
-      "market_estimate": 60.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 60.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|407264940494|0",
-      "title": "Umbreon ex 092/128 Me: 30th Celebration Holo",
-      "price": 1.74,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/407264940494?_skw=umbrean+ex&hash=item5ed2e1d1ce:g:XtcAAeSwS3Zqwd6X",
-      "image": "https://i.ebayimg.com/images/g/XtcAAeSwS3Zqwd6X/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "l_and_g_collectibles808",
-      "search_name": "umbreon_misspell",
-      "market_estimate": 60.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 60.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|168546599340|0",
-      "title": "Umbreon EX 55/124 Fates Collide Holo Ultra Rare ENG 2016 Pok\u00e9mon Foil Card - LP",
-      "price": 29.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/168546599340?_skw=umbrean+ex&hash=item273e2901ac:g:gsoAAeSw3mlqaCWC",
-      "image": "https://i.ebayimg.com/images/g/gsoAAeSw3mlqaCWC/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "happily-thrifty",
-      "search_name": "umbreon_misspell",
-      "market_estimate": 60.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 60.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|326045045983|0",
-      "title": "Online Code Card From Scarlet & Violet Paldean Fates Elite Traner Box Pokemon",
-      "price": 1.31,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/326045045983?_skw=elite+traner+box+pokemon&hash=item4be9cc94df:g:UbkAAOSwNrBlsupA",
-      "image": "https://i.ebayimg.com/images/g/UbkAAOSwNrBlsupA/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "dragoncardgames_2017",
-      "search_name": "etb_misspell",
-      "market_estimate": 40.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 40.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|326708856932|0",
-      "title": "Online Code Card From Scarlet & Violet Black Bolt Elite Traner Box Pokemon",
-      "price": 1.31,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/326708856932?_skw=elite+traner+box+pokemon&hash=item4c115d8864:g:UbkAAOSwNrBlsupA",
-      "image": "https://i.ebayimg.com/images/g/UbkAAOSwNrBlsupA/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "dragoncardgames_2017",
-      "search_name": "etb_misspell",
-      "market_estimate": 40.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 40.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|880000883793|0",
-      "title": "Pokemon Destined Rivals Scarlet & Violet Booster Bundle Sealed (FREE SHIPPING)",
-      "price": 59.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/880000883793?_skw=Destined+Rivals+sealed+booster+box&hash=itemcce423dc51:g:y9YAAeSwmaVqXuoE",
-      "image": "https://i.ebayimg.com/images/g/y9YAAeSwmaVqXuoE/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "retromodshops",
-      "search_name": "destined_rivals_sealed",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|880001962361|0",
-      "title": "Pokemon TCG Scarlet & Violet Destined Rivals Booster Bundle Sealed",
-      "price": 74.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/880001962361?_skw=Destined+Rivals+sealed+booster+box&hash=itemcce4345179:g:3YwAAeSwnN9qYmGF",
-      "image": "https://i.ebayimg.com/images/g/3YwAAeSwnN9qYmGF/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "ccttcg",
-      "search_name": "destined_rivals_sealed",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|398407798524|0",
-      "title": "Destined Rivals Booster Bundle Factory Sealed",
-      "price": 64.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/398407798524?_skw=Destined+Rivals+sealed+booster+box&hash=item5cc2f48efc:g:cg8AAeSw-CpqwlpM",
-      "image": "https://i.ebayimg.com/images/g/cg8AAeSw-CpqwlpM/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "the_chubby_house",
-      "search_name": "destined_rivals_sealed",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|178228260219|0",
-      "title": "Pokemon TCG Destined Rivals Booster Pack Sealed - (1) Random Pack Art",
-      "price": 9.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/178228260219?_skw=Destined+Rivals+sealed+booster+box&hash=item297f3b6d7b:g:g4cAAeSwZXNp-4ZE",
-      "image": "https://i.ebayimg.com/images/g/g4cAAeSwZXNp-4ZE/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "ccttcg",
-      "search_name": "destined_rivals_sealed",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|237122979044|0",
-      "title": "Pokemon TCG: Scarlet & Violet Destined Rivals Booster Bundle Box-Factory Sealed",
-      "price": 60.5,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/237122979044?_skw=Destined+Rivals+sealed+booster+box&hash=item3735a184e4:g:Sj8AAeSwi2pqzuwB",
-      "image": "https://i.ebayimg.com/images/g/Sj8AAeSwi2pqzuwB/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "merchalert",
-      "search_name": "destined_rivals_sealed",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|335808400902|545412415262",
-      "title": "CHOOSE YOUR SEALED SLEEVE PACK | ELITE TRAINER BOX ETB SLEEVES VARIOUS POKEMON",
-      "price": 4.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/335808400902?_skw=Twilight+Masquerade+elite+trainer+box+sealed&hash=item4e2fbd8e06:g:B2QAAOSwEvVnvL6g",
-      "image": "https://i.ebayimg.com/images/g/B2QAAOSwEvVnvL6g/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "kb3777",
-      "search_name": "twilight_masquerade_etb",
-      "market_estimate": 55.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 55.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|298704747716|0",
-      "title": "POKEMON Scarlet & Violet Stellar Crown Booster Bundle (6 Booster Packs) Sealed",
-      "price": 73.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/298704747716?_skw=Stellar+Crown+booster+box+sealed&hash=item458c30bcc4:g:zcEAAeSwQutqtX28",
-      "image": "https://i.ebayimg.com/images/g/zcEAAeSwQutqtX28/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "tcn_tcg",
-      "search_name": "stellar_crown_booster_box",
-      "market_estimate": 130.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 130.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|377489046184|0",
-      "title": "Pok\u00e9mon (German) Stellar Crown Booster Pack Sealed -  ART  SET (Set Of 4)",
-      "price": 36.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/377489046184?_skw=Stellar+Crown+booster+box+sealed&hash=item57e419baa8:g:gaAAAeSwY6FoSL-i&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lY8KR1vSeo2XfgZVLpi4DCok%2BrX8f57WP2Zbwg0vfBDieEqH%2BghGudx%2BEJi%2FxfLb77%2F0GLSLQCeIa0ti1xtlKh3%2FvvyODyjk0aJHjPGFvznf7I7oW%2F3tFiMs9E9jMjtc4NC53P0U7z2SvBJUbsaJqkNSmpzDD9lXhcj4jdeOV1wHiM1uAl05XkW41TF1XoUxsDmeMF%2FiNhRE94ab%2FeHWKxI5HybpnGZWJvD5EwgNTD1lO0lGCHW8MxhSXY74lDJQecN3xJ%2Bg9oBzoaoIY3%2FCKlc2sp4zx1rXrKTgNS%2Fb%2FPj8DDCXWAyRbuNtg5LDL336Y%3D",
-      "image": "https://i.ebayimg.com/images/g/gaAAAeSwY6FoSL-i/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "cwit_48",
-      "search_name": "stellar_crown_booster_box",
-      "market_estimate": 130.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 130.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|377571105106|0",
-      "title": "Pokemon Stellar Crown Sleeved Booster Pack (Set of 4) (From Sealed Case)",
-      "price": 40.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/377571105106?_skw=Stellar+Crown+booster+box+sealed&hash=item57e8fdd952:g:9gUAAeSwqRlqyRyK",
-      "image": "https://i.ebayimg.com/images/g/9gUAAeSwqRlqyRyK/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "ptj_collectibles_llc",
-      "search_name": "stellar_crown_booster_box",
-      "market_estimate": 130.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 130.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|128103870815|0",
-      "title": "Stellar Crown Booster Bundle Pokemon TCG Factory Sealed 6 Packs",
-      "price": 71.24,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/128103870815?_skw=Stellar+Crown+booster+box+sealed&hash=item1dd395f15f:g:MhwAAeSwthFqurjJ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n%2FOCAcSAaHgqbxtF3xMbnaNAa1KeRu%2BgsU8BmuFtMd7NcLZEBfN1u7Whrvrj733d8rJ3wLbmNw3mvEWlEoTosNpfHgx5ne6dls%2BxMmcCQX4UMJBsLzDki0uPMAyogZOeajcGTTzJnhwIRhhL5471dchwypmzdA72qe%2FCGDCxu5tyHB%2BfMHiJqhHQyo64FGgw9hOU9uSi5ml2l15P5gNIjuQAhDaT2kQRE3m8aP2VCL1xKCnfqfk%2BXyExmlDpuFs6AgBs8QY0j8j169VJqILrAHPEt4I2eDyiqSAVy6WGCmgGjROHXnYvmJq%2Fc6bTyEVyI%3D",
-      "image": "https://i.ebayimg.com/images/g/MhwAAeSwthFqurjJ/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "therespectablecollectable",
-      "search_name": "stellar_crown_booster_box",
-      "market_estimate": 130.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 130.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|920002253546|0",
-      "title": "Stellar Crown Booster Pack Factory Sealed",
-      "price": 18.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/920002253546?_skw=Stellar+Crown+booster+box+sealed&hash=itemd6346852ea:g:AgsAAeSwWsdqwDo1",
-      "image": "https://i.ebayimg.com/images/g/AgsAAeSwWsdqwDo1/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "the_chubby_house",
-      "search_name": "stellar_crown_booster_box",
-      "market_estimate": 130.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 130.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|800759173367|0",
-      "title": "Mega Charizard X ex 130/094 Mega Hyper Rare ME02: Phantasmal Flames NM",
-      "price": 275.49,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/800759173367?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=itemba70f750f7:g:G-AAAeSwAUNqw0QG&amdata=enc%3AAQALAAABIOf5zIIojhOf%2BkQK%2Bxzjn7lHtmJFrJSsSFUlu7M187lg6M2Jg8kl%2BishTZUmUoDYkpkJayzg2Cxda3P%2BNoy6fMtPLXyen3VI%2FO87VDy6SkLsHqi6ZTuefZdzCLzy7MxsBl6oIVN1fMgfhEUB%2FguIaBNjtNqQt6eMS%2FEoTUg7--LAblbvnAcaVUJvi1yrFXD2wv1lqxIf6M%2Bhw8yvKUnI%2B9q5SQ7D4LaZsOZBmNEc0wa60K0NkN9R7Ujn9xeAMQ4BBhenAvH%2FprGcvw4cs3nIFs77fERBLCOaHm4mU%2FOmZM1AyOng6JdraItadIM6E4%2BqsBfbIOn12owPOX2%2FCW574AAQh29XtOxfjTTwta8dJ1ir%2BhaZy%2FnkIVswnZVHRJ6aMQ%3D%3D",
-      "image": "https://i.ebayimg.com/images/g/G-AAAeSwAUNqw0QG/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "tenneygames",
-      "search_name": "mega_charizard_x_sir",
-      "market_estimate": 650.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 650.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
       "item_id": "v1|398405056153|0",
       "title": "Mega Charizard X ex 023 Holo Promo ME: Mega Evolution Promo Pokemon Near Mint",
       "price": 29.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/398405056153?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item5cc2cab699:g:3ZYAAeSw~dlqrEx6&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nnvFrHuG8JtQYw1CP4HtD8XMporoOLjgnfSzOa9CH8Tf2UPySCXfb9ngJj8aCWKvyRiF3PJYp8Nn8VAGNt0akZAfumsw5DicOeEMxYx8vpdzfGKnydR7TYYHMqtnPiA0dTmR07q6fziYhkcVrci9B03gSG6HtT50J%2BAO7WBIW%2BkWctFwPnQOU7ESi2apwJAOtOFBte%2B7bcFK45mB0G0RGOU6PO0%2BooGAP84zeY%2FpGQ4--YgkGrE4n0eUsviQYT2vaCnLfPJVI0PRDR%2BcFSkrArCkPPkpauz1tsVqMt2NMdSB37EaJ1iZ8gswjssPH1dx48fmgLkNQNsUmVulclyIEO",
+      "url": "https://www.ebay.com/itm/398405056153?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item5cc2cab699:g:3ZYAAeSw~dlqrEx6&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nnvFrHuG8JtQYw1CP4HtD8XMporoOLjgnfSzOa9CH8Tf2UPySCXfb9ngJj8aCWKvyRiF3PJYp8Nn8VAGNt0akZAfumsw5DicOeEMxYx8vpdzfGKnydR7TYYHMqtnPiA0dZy4471WxCdDFPoZ9X2M60AbiY182JcmSMjJ8Y0t8tY5ko1L%2BZtx3kOWFz0uTxarinT%2BzCDUgG229rl%2FIVj5PsWbBZEo09OPmNSyf6D3YfImkGx7pvRTYwN07oiCmSFDR%2F6PsoaJcrJW9Sw4%2BXuSK1a16E5I6HUhhO%2FSjb1%2FZPHf73BF%2FYoqfsAKEvOF0GDWEqLbuJeTUyCQBdm38gSwpW",
       "image": "https://i.ebayimg.com/images/g/3ZYAAeSw~dlqrEx6/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -1841,11 +726,73 @@
       }
     },
     {
+      "item_id": "v1|407285767881|0",
+      "title": "M Charizard EX 107/106 XY Flashfire Secret Rare Holo Mega Pok\u00e9mon TCG 2014 MP",
+      "price": 93.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/407285767881?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item5ed41f9ec9:g:ZscAAeSwtEVqzU34&amdata=enc%3AAQALAAABIOf5zIIojhOf%2BkQK%2Bxzjn7mYQt9yS4L3WOU%2Fru7uRzoA6y1p2gLMT5wb57SKBqdxX1so7jPaz1tZNd2ZJ1sbkPDYff8FlEWmdPNd7CP%2B0K%2FaM%2B0aNjazfqkNC35ddk8s%2FuPAqPlqJouPxuxCGM6GxdgsJOL%2F7Ai25mcZi0ou6rDrsyUDvKrNLs5WbENNQcmrvHlQRrFDUZOAJiJDlGKJtnfs32e1J9Z9ZQGXD9Af944d1Xi5ws8NPL7dAsRbTq8RxJwja35%2FI7aMh6TDBUsMu5VOmn4dnY0H%2Fshhbjeto4fuj4ynGlzud6X3ctm%2FoCj0Zqc0NTMIL56umO8c%2BsDMZpsNjfJG8CRXTRWgcBHa96UKOH5zeL3ayyixuZPOwm8zQQ%3D%3D",
+      "image": "https://i.ebayimg.com/images/g/ZscAAeSwtEVqzU34/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "pokefamilygaming",
+      "search_name": "mega_charizard_x_sir",
+      "market_estimate": 650.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 650.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|227428487702|0",
+      "title": "Pokemon Mega Charizard X  Phantasmal Flames 130/094 Gold Mega Hyper Rare EX - NM",
+      "price": 349.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/227428487702?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item34f3cb5216:g:0qEAAeSwzY5qU~tn",
+      "image": "https://i.ebayimg.com/images/g/0qEAAeSwzY5qU~tn/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "daddyandme_collectibles",
+      "search_name": "mega_charizard_x_sir",
+      "market_estimate": 650.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 650.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
       "item_id": "v1|178462759922|0",
       "title": "2025 Mega Evolution Phantasmal Flames Mega Charizard X ex Secret Rare #130/094",
       "price": 294.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/178462759922?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item298d359bf2:g:s2oAAeSwxwFqtX~F&amdata=enc%3AAQALAAABIOf5zIIojhOf%2BkQK%2Bxzjn7lukNaZX0W%2BMrBo2GoLYcodWAmci23HjpTbfmUS%2BnFV9WZJ92S0EKSFEH7cU3tGLJkQ%2FyhebDw%2Ff1s2%2BQpsJZkfcf3tBDwjjwgLOP%2FUiyEoDTXLfWCjdZH5L23yruTcaAyTL%2FN8l%2Fb6H5%2BjY1WHODZEf--TDbFJX6H81koZkUU3LFxFpdg9YCo0xjwlmnvZ%2BHTGC5mAXrWOjTsZvjop0c%2B%2FMwoIorkvLUT9uclndzhlgv2HKGXX%2FLIom4FLzi8VYUinIjP00fnEtKWT6FyIWRXwO2tcJ4bSpbvENkgSsFvESMTe7WgoO7vvVkGm%2FOSWXImYs7OEx%2BUdQ6IXadTg88ZYeWnnR3PgE9C4gePOHICslg%3D%3D",
+      "url": "https://www.ebay.com/itm/178462759922?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item298d359bf2:g:s2oAAeSwxwFqtX~F&amdata=enc%3AAQALAAABIOf5zIIojhOf%2BkQK%2Bxzjn7lukNaZX0W%2BMrBo2GoLYcodWAmci23HjpTbfmUS%2BnFV9WZJ92S0EKSFEH7cU3tGLJkQ%2FyhebDw%2Ff1s2%2BQpsJZkfcf3tBDwjjwgLOP%2FUiyEoDTXLfWCjdZH5L23yruTcaAyOPNMYoO2NpmnyqP7Ipj6bcZ0%2Fv6m89xxhv3SU%2BvNDX5Jf2pkcQEjPwbJKzR8joLUsmYtSDY1eSLF3BKXObDGGq8FcXp41PNMGKG50bciSefqQKgF6lqbTGO1maNj2QhkFsgltoeNZHDn3RfyWwXCUD1j9UQxYpn3%2FUBY3h7bxmtK0Cfhb4X0DDf%2F6GctnSJtxEQKfuMETTU74La7TEz9f96OaRsnpNVFVMDPSBUiTWg%3D%3D",
       "image": "https://i.ebayimg.com/images/g/s2oAAeSwxwFqtX~F/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -1873,20 +820,21 @@
       }
     },
     {
-      "item_id": "v1|297852790309|0",
-      "title": "Espeon EX + Umbreon EX SVP 175 176 Pokemon Prismatic Evolutions Promo Near Mint",
-      "price": 90.79,
+      "item_id": "v1|117467043020|0",
+      "title": "Mew ex 30th Celebration 158/128 Futuristic Rare Holo Pok\u00e9mon \u2014 English Near Mint",
+      "price": 69.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/297852790309?_skw=Phantasmal+Flames+gold+hyper+rare+near+mint&hash=item455968e625:g:WSoAAeSwG9lpoYG3",
-      "image": "https://i.ebayimg.com/images/g/WSoAAeSwG9lpoYG3/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/117467043020?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item1b5994d4cc:g:J3sAAeSwDohq0DYp",
+      "image": "https://i.ebayimg.com/images/g/J3sAAeSwDohq0DYp/s-l225.jpg",
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "gcrow300",
-      "search_name": "phantasmal_gold_hyper",
-      "market_estimate": 215.0,
+      "seller": "apcardworld",
+      "search_name": "mew_30th_futuristic",
+      "market_estimate": 450.0,
       "deal_score": 83.8,
       "deal_type": "mispriced_bin",
       "components": {
@@ -1898,7 +846,39 @@
       "flags": [],
       "is_deal": true,
       "pricing": {
-        "market": 215.0,
+        "market": 450.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|147579322290|0",
+      "title": "Pokemon Card 2026 Japanese 30th Celebration Mew ex FUR M6a-135/103 NM IN STOCK",
+      "price": 67.94,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/147579322290?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item225c69bfb2:g:2rkAAeSwi8lqq6eE&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l5waGvTyrwK%2FxqkZcQvjKyQqxABdjftrel9BfPA5MDmd%2BMpniLi%2FgCMYs1YnMix9A9rsghsOHumvVgzJ0uF4NeJx9rdhZ74FzZOVsSBH4TudhUGwZFTC70LgMoJTLRck%2BU7kBY1B%2Fsqx5kxx41FT6If68fH1vul2Bp0mcXxnL9ogvLWI97l4a7zjlUydvYWtSEAzxUGLXrNAuq0LAVGetmf5WHffWVpKzCv34gTgeNni%2BrpJDdKduEFfGZggoUBg4yVyo%2FHpRyQ9rbNEGhsMe3H9XYBOg1yRTYPOrKbdovNb3LwY61G56Zf%2FAI17B6zjE%3D",
+      "image": "https://i.ebayimg.com/images/g/2rkAAeSwi8lqq6eE/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "ctptcg-50",
+      "search_name": "mew_30th_futuristic",
+      "market_estimate": 450.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 450.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
@@ -1935,19 +915,18 @@
       }
     },
     {
-      "item_id": "v1|147579322290|0",
-      "title": "Pokemon Card 2026 Japanese 30th Celebration Mew ex FUR M6a-135/103 NM IN STOCK",
-      "price": 67.94,
+      "item_id": "v1|336812995551|0",
+      "title": "2026 Pokemon 30th Celebration Card 158/128 Mew EX Futuristic Rare FR Holo",
+      "price": 58.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/147579322290?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item225c69bfb2:g:2rkAAeSwi8lqq6eE&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l5waGvTyrwK%2FxqkZcQvjKyQqxABdjftrel9BfPA5MDmd%2BMpniLi%2FgCMYs1YnMix9A9rsghsOHumvVgzJ0uF4NeJx9rdhZ74FzZOVsSBH4TudhUGwZFTC70LgMoJTLRck80UxpzYBc9NmDGaOeEOcRuRBENJzZwmYC0Do2UXLjE9Xed2Lmxcce2h7ZKgEFHT%2F5tKBfGch1rhHkpfCi1pBWMhtQEoopusJhKLk5FNXQuIHkh%2F7U8sXrMfR08jPVltdg7EoNFrW1POiFnlFJAy5r%2BkmPgtWvEilNSD3c7GAm5UVrW%2FQYraMxOPpYtasZdXK8%3D",
-      "image": "https://i.ebayimg.com/images/g/2rkAAeSwi8lqq6eE/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/336812995551?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item4e6b9e73df:g:lYYAAeSwuWBquDFq",
+      "image": "https://i.ebayimg.com/images/g/lYYAAeSwuWBquDFq/s-l225.jpg",
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "ctptcg-50",
+      "seller": "bbcardstor",
       "search_name": "mew_30th_futuristic",
       "market_estimate": 450.0,
       "deal_score": 83.8,
@@ -1969,9 +948,9 @@
     {
       "item_id": "v1|307230303159|0",
       "title": "Mew ex [30C - 158/128] Futuristic Rare NM",
-      "price": 113.04,
+      "price": 111.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/307230303159?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item47885a63b7:g:Vi0AAeSwAmdqzxiH&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nxaUXzKc3czXCZ5f8gbjWucs5pGiCQH8MewPOAASeEavYB5atKbAWCQwqzxIC259O2vAshthunYrZQKK4t%2BL6mX7OdO%2F0za5GR4k%2BN7jiVMWZL%2Bkpi6DX6hQoUCr5idrS2lNc6eOwW8ac5yOyD3uV1iYwTrdqjaej13wFk5f%2BwaMgQGsjhS58YkE5x9x5CfILcE6kYWq7t49rH%2BtKXVnlkrJBOsL1zM9RHfaZ5lHagpEAZKEQLdqgj7Xerfmrj1eLa9MvWVaK0LJCsGP5uv1vWp8DgcnXymG%2B6g06VrbXt9%2BI2vmd%2F2%2FqomWTUsTr5MgA%3D",
+      "url": "https://www.ebay.com/itm/307230303159?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item47885a63b7:g:Vi0AAeSwAmdqzxiH&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nxaUXzKc3czXCZ5f8gbjWucs5pGiCQH8MewPOAASeEavYB5atKbAWCQwqzxIC259O2vAshthunYrZQKK4t%2BL6mX7OdO%2F0za5GR4k%2BN7jiVMWZL%2Bkpi6DX6hQoUCr5idrTacUZZrOFiYcO%2BVwDVIzhADa4NlhDOg%2BaO792eSjV6DCCuYVqZMHhKBQ9GaJi%2BOrGEpbVTOgboNs8Pau7UJXme%2B3T7WJlabzPPUl1jfe2A%2FJtCjP22U1Sib8p2%2BELz6ykhSUjPH0xcsYrZBbNRhrFIt%2FvpCmldEIJxJgCCdNRPne%2BMti5Ff5EX1xd3V6hgzXM%3D",
       "image": "https://i.ebayimg.com/images/g/Vi0AAeSwAmdqzxiH/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
@@ -1979,68 +958,6 @@
       "bid_count": null,
       "ends_at": null,
       "seller": "barkleyandbiscuitcollectibles",
-      "search_name": "mew_30th_futuristic",
-      "market_estimate": 450.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 450.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|147578281085|445845946452",
-      "title": "Pok\u00e9mon TCG 30th Celebration EX SIR Illustration Rare Classic Collection | NM",
-      "price": 99.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/147578281085?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=item225c59dc7d:g:yscAAeSwTctqqwU0",
-      "image": "https://i.ebayimg.com/images/g/yscAAeSwTctqqwU0/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "evcards",
-      "search_name": "mew_30th_futuristic",
-      "market_estimate": 450.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 450.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|820157092969|0",
-      "title": "Mew ex 158/128 Futuristic Rare - ME: 30th Celebration EN NM",
-      "price": 65.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/820157092969?_skw=Mew+ex+Futuristic+Rare+near+mint&hash=itembef52c1469:g:KsQAAeSwEFNqw-MJ",
-      "image": "https://i.ebayimg.com/images/g/KsQAAeSwEFNqw-MJ/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "miraicardshop",
       "search_name": "mew_30th_futuristic",
       "market_estimate": 450.0,
       "deal_score": 83.8,
@@ -2122,791 +1039,6 @@
       }
     },
     {
-      "item_id": "v1|366734382458|0",
-      "title": "Mewtwo ex - 157/128 30th Celebration Holo Futuristic Rare Pokemon - NM",
-      "price": 50.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366734382458?_skw=Mewtwo+ex+Futuristic+Rare+near+mint&hash=item556312957a:g:QJMAAeSw1ydqz-mG",
-      "image": "https://i.ebayimg.com/images/g/QJMAAeSw1ydqz-mG/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "keyitemscollectibles",
-      "search_name": "mewtwo_30th_futuristic",
-      "market_estimate": 300.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 300.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|377530348361|0",
-      "title": "Pokemon Mewtwo EX 157/128 SIR Futuristic Rare Pokemon 30th Near Mint",
-      "price": 89.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/377530348361?_skw=Mewtwo+ex+Futuristic+Rare+near+mint&hash=item57e68ff349:g:KGAAAeSw9g1quyrb&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mIuEk5Yu7agZ69SF01O9nmkplaJQlG49bjFFoTJaOuRRqq7RWsceNWZSFlLQjWTjmff2yYeDExdcVroZ7Jo6k438OCptwzMqJRApqNgCdjkeVwP%2FkKB68mO1BA9bs%2B17Ql8dQE%2By6cg%2F%2B3ZGMuBHV%2B9yggmxRIX4TSC3XMaUjArfIa8HTS2pIpRzUXe%2BEJ10LM%2B7Rl0lHwTHau3RwNPveRrQEQPGs9n6sqFJJh4PEC57vKJTlfkWGwUjFgTS0r3xSBumOMMswQp2U8faDFFRsnh9D3huVbN9S5q6t4FwxgdYyGZI0idlB18tZr9P88oPg%3D",
-      "image": "https://i.ebayimg.com/images/g/KGAAAeSw9g1quyrb/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "cardboardjunkies336",
-      "search_name": "mewtwo_30th_futuristic",
-      "market_estimate": 300.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 300.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366734383585|0",
-      "title": "Mewtwo ex - 157/128 30th Celebration Holo Futuristic Rare Pokemon - NM/MINT",
-      "price": 52.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366734383585?_skw=Mewtwo+ex+Futuristic+Rare+near+mint&hash=item55631299e1:g:HVoAAeSwik5qz-mk",
-      "image": "https://i.ebayimg.com/images/g/HVoAAeSwik5qz-mk/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "keyitemscollectibles",
-      "search_name": "mewtwo_30th_futuristic",
-      "market_estimate": 300.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 300.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|188950750829|0",
-      "title": "Mewtwo ex 157/128 Futuristic Rare ME: 30th Celebration Pokemon Holo Near Mint",
-      "price": 90.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/188950750829?_skw=Mewtwo+ex+Futuristic+Rare+near+mint&hash=item2bfe57a66d:g:W3gAAeSw32NqrlAP",
-      "image": "https://i.ebayimg.com/images/g/W3gAAeSw32NqrlAP/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "geektoystx",
-      "search_name": "mewtwo_30th_futuristic",
-      "market_estimate": 300.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 300.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|840019661793|0",
-      "title": "2026 Pokemon 30th Celebration Mewtwo ex Futuristic Rare #157/128",
-      "price": 45.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/840019661793?_skw=Mewtwo+ex+Futuristic+Rare+near+mint&hash=itemc39512d3e1:g:t4YAAeSwUyJqzuyM",
-      "image": "https://i.ebayimg.com/images/g/t4YAAeSwUyJqzuyM/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "cooperscardvault",
-      "search_name": "mewtwo_30th_futuristic",
-      "market_estimate": 300.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 300.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|940003685915|0",
-      "title": "Pokemon Pikachu ex #150/128 ME: 30th Celebration Near Mint or Better",
-      "price": 69.95,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/940003685915?_skw=Pikachu+ex+30th+Celebration+150+near+mint&hash=itemdadc95f61b:g:r8YAAeSwl4VqymIU",
-      "image": "https://i.ebayimg.com/images/g/r8YAAeSwl4VqymIU/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "hawkeye-hazels-curiosities",
-      "search_name": "pikachu_30th_150",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366719049316|636373497185",
-      "title": "Pok\u00e9mon 30th Celebration: Pick Your Card \u2013 Holo/Pikachu Rare/ex Near Mint TCG",
-      "price": 1.49,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366719049316?_skw=Pikachu+ex+30th+Celebration+150+near+mint&hash=item5562289e64:g:9VYAAeSwSaZqxsNX",
-      "image": "https://i.ebayimg.com/images/g/9VYAAeSwSaZqxsNX/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "teescardvault",
-      "search_name": "pikachu_30th_150",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366734383871|0",
-      "title": "Pikachu ex - 150/128 30th Celebration Special Illustration Pokemon - NM/MINT",
-      "price": 73.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366734383871?_skw=Pikachu+ex+30th+Celebration+150+near+mint&hash=item5563129aff:g:RnMAAeSwQwFqz-m2",
-      "image": "https://i.ebayimg.com/images/g/RnMAAeSwQwFqz-m2/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "keyitemscollectibles",
-      "search_name": "pikachu_30th_150",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|257777327252|0",
-      "title": "Pokemon 30th Anniversary Celebration : Pikachu ex SIR 150/128 Night Variant MINT",
-      "price": 79.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/257777327252?_skw=Pikachu+ex+30th+Celebration+150+near+mint&hash=item3c04b9dc94:g:nRAAAeSwt7tqvwJD&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kXix%2FKNhhZiv0d7L7UI3efrtTybSfzvapwNLVCsL%2B3l7phuGzWDoRuX7dgETNuKVwADkaojuejIm7PYqhk98y0zf6cy1RfOsecJQpslEee1j0pWPJ4i%2BfRbIQkn0K4M4CVmKIuReSWR7fRm6QGPglzTkb0ICUw7OcDAbxb01RsknFy4EoYvt8gJvNd5xm8Bq8sqmI6GFyMVieu7WlItHCKPotLpVCAr2PtGkvRoqSA4kyZEJPSNAi0cSAxy1rF%2F7H3mWDTiDVhFnowY9p5yMmaxeky9oJzZ3zN81CQPo0oytmFWXV%2B5QHyZIzd6k0qayZkKdyUj6rSR9weP6xhZm%2Fo",
-      "image": "https://i.ebayimg.com/images/g/nRAAAeSwt7tqvwJD/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "chopperb12",
-      "search_name": "pikachu_30th_150",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|960039343312|0",
-      "title": "Pikachu ex [30C - 150/128] SIR Holofoil NM ME: 30th Celebration",
-      "price": 75.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/960039343312?_skw=Pikachu+ex+30th+Celebration+150+near+mint&hash=itemdf86cdd4d0:g:ujEAAeSwqHZqyF9O",
-      "image": "https://i.ebayimg.com/images/g/ujEAAeSwqHZqyF9O/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "nearlyplayedtcg",
-      "search_name": "pikachu_30th_150",
-      "market_estimate": 150.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 150.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366734382351|0",
-      "title": "Gengar ex - 154/128 30th Celebration Holo Special Illustration Pokemon - NM/MINT",
-      "price": 84.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366734382351?_skw=Gengar+ex+30th+Celebration+154+near+mint&hash=item556312950f:g:RF4AAeSwsiZqz-mC",
-      "image": "https://i.ebayimg.com/images/g/RF4AAeSwsiZqz-mC/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "keyitemscollectibles",
-      "search_name": "gengar_30th_154",
-      "market_estimate": 170.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 170.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366734383227|0",
-      "title": "Gengar ex - 154/128 30th Celebration Holo Special Illustration Pokemon - NM/MINT",
-      "price": 84.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366734383227?_skw=Gengar+ex+30th+Celebration+154+near+mint&hash=item556312987b:g:PE4AAeSwmdJqz-md",
-      "image": "https://i.ebayimg.com/images/g/PE4AAeSwmdJqz-md/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "keyitemscollectibles",
-      "search_name": "gengar_30th_154",
-      "market_estimate": 170.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 170.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|287646707585|0",
-      "title": "Gengar ex Pokemon ME: 30th Celebration 30C #154/128 Holo Near Mint",
-      "price": 89.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/287646707585?_skw=Gengar+ex+30th+Celebration+154+near+mint&hash=item42f9146f81:g:jF0AAeSwpoBqzto3",
-      "image": "https://i.ebayimg.com/images/g/jF0AAeSwpoBqzto3/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "myflyisbreeezy",
-      "search_name": "gengar_30th_154",
-      "market_estimate": 170.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 170.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|147590668243|0",
-      "title": "2026 Pokemon Chinese Gengar ex 30th Celebration SAR 30thC-131/103 NM IN STOCK",
-      "price": 23.74,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/147590668243?_skw=Gengar+ex+30th+Celebration+154+near+mint&hash=item225d16dfd3:g:Zl4AAeSw0vRqsirc&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7m7H8KdB0%2FX6D%2B7pjjNw3Ch6dbaZdfIjyTkqVsIUxQFw8u1yLWdUOgCGApdoOdkA%2B%2Fl5cutmMmj5lZDIv%2Bshdd2xGUw%2B0NZCdqXlf0YqAgXhtg7%2Bxewzy1sXS1HbHfqXwRsm7lXf7%2B7h9U01%2FLPzVDrNSo9EQUdiVCbk6bVpr4HpS68Md73HlRM6Z2qrAUYQfqJEIUSEZyWQYcGJCQuPHZWnMRv0akb4wQtAOn7CFBU7Hoat%2Bk3oYK8Qo%2F8380fAIDJMX5cHXaGJz6qFTTGDezvTklVcICbZ0RNBVcs3tumV6PF05ep11MJuo%2BhWvxphbhVnv5W4itGOfhoF0s%2BpcF1",
-      "image": "https://i.ebayimg.com/images/g/Zl4AAeSw0vRqsirc/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "ctptcg-50",
-      "search_name": "gengar_30th_154",
-      "market_estimate": 170.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 170.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|940014331863|0",
-      "title": "Gengar ex 154/128 SIR 30th Celebration Anniversary Pokemon TCG English NM",
-      "price": 79.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/940014331863?_skw=Gengar+ex+30th+Celebration+154+near+mint&hash=itemdadd3867d7:g:GKIAAeSwkWNqz8bJ",
-      "image": "https://i.ebayimg.com/images/g/GKIAAeSwkWNqz8bJ/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pizzlesemporium",
-      "search_name": "gengar_30th_154",
-      "market_estimate": 170.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 170.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366733669539|0",
-      "title": "Pokemon 30th Celebration Sylveon ex 071/128 Double Rare Holo Near Mint",
-      "price": 1.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366733669539?_skw=Sylveon+ex+30th+Celebration+near+mint&hash=item556307b4a3:g:W04AAeSweptqz3yX",
-      "image": "https://i.ebayimg.com/images/g/W04AAeSweptqz3yX/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pitchfork23",
-      "search_name": "sylveon_30th_153",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|366733684292|0",
-      "title": "Pokemon 30th Celebration Sylveon ex 100 Black Star Promo Holo Near Mint",
-      "price": 2.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366733684292?_skw=Sylveon+ex+30th+Celebration+near+mint&hash=item556307ee44:g:kWEAAeSw~odqz35d",
-      "image": "https://i.ebayimg.com/images/g/kWEAAeSw~odqz35d/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "pitchfork23",
-      "search_name": "sylveon_30th_153",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|128129912698|0",
-      "title": "2025 PKM: MEP Sylveon ex - 100 (30th Celebration) (#100, Holo, Promo, Near Mint)",
-      "price": 2.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/128129912698?_skw=Sylveon+ex+30th+Celebration+near+mint&hash=item1dd5234f7a:g:yNQAAeSwxr9qzFAr",
-      "image": "https://i.ebayimg.com/images/g/yNQAAeSwxr9qzFAr/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "dirtpoorgames",
-      "search_name": "sylveon_30th_153",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|920039296043|0",
-      "title": "Sylveon ex 071/128 Holo Double Rare ME: 30th Celebration Pokemon Near Mint",
-      "price": 2.39,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/920039296043?_skw=Sylveon+ex+30th+Celebration+near+mint&hash=itemd6369d8c2b:g:M~IAAeSwBlRqz4v1",
-      "image": "https://i.ebayimg.com/images/g/M~IAAeSwBlRqz4v1/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "rurap-9",
-      "search_name": "sylveon_30th_153",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|307187846883|0",
-      "title": "Sylveon ex 130/103 SAR 30th Celebration M6a Pokemon Card Japanese Near Mint",
-      "price": 39.89,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/307187846883?_skw=Sylveon+ex+30th+Celebration+near+mint&hash=item4785d28ee3:g:~1cAAeSwCZ5qruja",
-      "image": "https://i.ebayimg.com/images/g/~1cAAeSwCZ5qruja/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "japan-ssdyuk",
-      "search_name": "sylveon_30th_153",
-      "market_estimate": 95.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|206627674122|0",
-      "title": "Mewtwo EX 151/128 Pokemon 30th anniversary Celebration SIR TCG NM",
-      "price": 59.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/206627674122?_skw=Mewtwo+ex+30th+Celebration+151+near+mint&hash=item301bf8180a:g:XaUAAeSw6Rxqz47c",
-      "image": "https://i.ebayimg.com/images/g/XaUAAeSw6Rxqz47c/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "welike2buyandsell",
-      "search_name": "mewtwo_30th_151",
-      "market_estimate": 125.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 125.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|960011045480|0",
-      "title": "Mewtwo ex [30C - 151/128] SIR Holofoil NM ME: 30th Celebration",
-      "price": 57.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/960011045480?_skw=Mewtwo+ex+30th+Celebration+151+near+mint&hash=itemdf851e0a68:g:OfYAAeSwfCZqxu3x",
-      "image": "https://i.ebayimg.com/images/g/OfYAAeSwfCZqxu3x/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "nearlyplayedtcg",
-      "search_name": "mewtwo_30th_151",
-      "market_estimate": 125.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 125.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|237102177518|0",
-      "title": "Pok\u00e9mon TCG Mewtwo ex 151/128 30th Celebration SIR MINT/Near Mint",
-      "price": 72.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/237102177518?_skw=Mewtwo+ex+30th+Celebration+151+near+mint&hash=item3734641cee:g:ym8AAeSwV71qvZq5",
-      "image": "https://i.ebayimg.com/images/g/ym8AAeSwV71qvZq5/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "phils_3pt-corner",
-      "search_name": "mewtwo_30th_151",
-      "market_estimate": 125.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 125.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|257798773095|0",
-      "title": "Mewtwo Ex #151 Pokemon 30th Celebration English Full Art Holo SIR A",
-      "price": 60.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/257798773095?_skw=Mewtwo+ex+30th+Celebration+151+near+mint&hash=item3c06011967:g:j0cAAeSw3Ydqz88T",
-      "image": "https://i.ebayimg.com/images/g/j0cAAeSw3Ydqz88T/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "thegamingoutpost",
-      "search_name": "mewtwo_30th_151",
-      "market_estimate": 125.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 125.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|398399564205|0",
-      "title": "IN STOCK 2026 Pokemon S-Chinese 30th Celebration Mewtwo ex 30thC-128/103 SAR NM",
-      "price": 22.62,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/398399564205?_skw=Mewtwo+ex+30th+Celebration+151+near+mint&hash=item5cc276e9ad:g:4ecAAeSwj~Zqqi~m&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nV%2FliCPoRzoke8tAKqSY%2FhT8x81B8uxoRA2EXjEt%2B7Gy2sOOXfgVT9Peoqq4Z7DZRBJ2sY%2F7XSQt7I5pye%2FpeYKrcKmo0r34saQ0uknkkOvOOqiqRKKxbXb6qWS1rnSRTvLatbO9b%2B%2FpcTNcWEV6ELmnc%2BfrgbjNECA1g5eczjE5h4qJRY8lcl2H0rf5lwPD82DXyzPCt8%2BBVBGwF%2BvI1ZcgovOf7FaNVOHBKYF2ueO0O5ujE%2FwMFjDiwflRJi%2FZWlXJTSzAeCIy%2FwiSVS7Sap1tiemvmrfXHb8YN7QIdSCp4gXZ5oq5%2FA%2BdMwagVvzJMU4HdmUn5lSVv5kTrQLdud",
-      "image": "https://i.ebayimg.com/images/g/4ecAAeSwj~Zqqi~m/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "premecollectibles",
-      "search_name": "mewtwo_30th_151",
-      "market_estimate": 125.0,
-      "deal_score": 83.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 100.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 125.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
       "item_id": "v1|336832893178|0",
       "title": "Pok\u00e9mon 2023 Charizard ex 185/165 SV2a 151 JP SR Holo PSA 10",
       "price": 99.0,
@@ -2938,20 +1070,20 @@
       }
     },
     {
-      "item_id": "v1|398434505634|0",
-      "title": "Pokemon TCG SV 151 Charizard ex 183/165 English Holo Full Art PSA 9 \ud83d\udd25\u2604\ufe0f\ud83d\udca5",
-      "price": 53.0,
+      "item_id": "v1|157654420490|459134834372",
+      "title": "Umbreon EX SIR 161/131 Prismatic Evolutions Extended Art Display Case",
+      "price": 25.0,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/398434505634?_skw=Charizard+151+PSA+9&hash=item5cc48c13a2:g:H7gAAeSwTy1qt~Ky",
-      "image": "https://i.ebayimg.com/images/g/H7gAAeSwTy1qt~Ky/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/157654420490?_skw=Umbreon+ex+Prismatic+Evolutions+SIR+161%2F131&hash=item24b4ef8c0a:g:-r4AAeSwf4JqXF2G&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mPn89lY87OJ6IksHliPFjOFbdUGPHBkivlET5mfCH7Uhu%2FV%2F8OznnfSm8WULAEAJfaW7X42I71kGmiXhxvA2m7516fH6JU9FDAAD62igUjTdaUjhh%2BkB%2Fo0svBJAfINZRcyKrj8kk94FzibDOZQSfIQnxkvEUFaiOh1fgfRQLOcN6tBBKwnxOHVFUt%2Fdeq%2Be%2FtWzxtSq%2FVR%2FYFat4wQClc8aSi%2BSI%2FQUr0IXVD8FzzFnFN9r0ixGHcNU3NqzWiub6zbmmnnG795KYUYUpY287QU1GRDOkICxsU9FUOGhMsrASe0JYXZqsFVWNChb4qozmrknYFagJkvKuNO3RG%2FTx7",
+      "image": "https://i.ebayimg.com/images/g/-r4AAeSwf4JqXF2G/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "decked..out",
-      "search_name": "charizard_151_psa9",
-      "market_estimate": 95.0,
+      "seller": "outback_originals",
+      "search_name": "umbreon_prismatic_sir",
+      "market_estimate": 420.0,
       "deal_score": 82.2,
       "deal_type": "mispriced_bin",
       "components": {
@@ -2963,260 +1095,7 @@
       "flags": [],
       "is_deal": true,
       "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|840004721912|0",
-      "title": "2023 Pokemon 151 Charizard ex 006/165 PSA 9 MINT Double Rare English",
-      "price": 29.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/840004721912?_skw=Charizard+151+PSA+9&hash=itemc3942edcf8:g:w3kAAeSwUR1qyX9o",
-      "image": "https://i.ebayimg.com/images/g/w3kAAeSwUR1qyX9o/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "theriptzone",
-      "search_name": "charizard_151_psa9",
-      "market_estimate": 95.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 95.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|406792632674|0",
-      "title": "2023 Pokemon Charizard ex 006/165 Japanese 151 RR Holo Beckett BGS 9.5",
-      "price": 44.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/406792632674?_skw=Charizard+151+BGS+9.5&hash=item5eb6baf962:g:Th4AAeSwmJBpwLQK",
-      "image": "https://i.ebayimg.com/images/g/Th4AAeSwmJBpwLQK/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "qfern7318",
-      "search_name": "charizard_151_bgs95",
-      "market_estimate": 110.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 110.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|206596305451|0",
-      "title": "Charizard ex 006/165 Japanese Pokemon 151 SV2a BGS 9.5 Gem Mint 2023",
-      "price": 49.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/206596305451?_skw=Charizard+151+BGS+9.5&hash=item301a19722b:g:TVEAAeSwG8ZqvxG8",
-      "image": "https://i.ebayimg.com/images/g/TVEAAeSwG8ZqvxG8/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "americais_37",
-      "search_name": "charizard_151_bgs95",
-      "market_estimate": 110.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 110.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|177497899180|0",
-      "title": "Charizard ex 199/165 Sv: Scarlet & Violet 151 Extended Art Display Case",
-      "price": 16.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/177497899180?_skw=Charizard+151+199%2F165+near+mint&hash=item2953b300ac:g:k18AAeSwYnFo9B8m",
-      "image": "https://i.ebayimg.com/images/g/k18AAeSwYnFo9B8m/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "ironwood-slabs",
-      "search_name": "charizard_151_sir",
-      "market_estimate": 28.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 28.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|188739184461|0",
-      "title": "Pokemon TCG SV 151 Gengar Holo Rare 094/165 English 130HP",
-      "price": 10.5,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/188739184461?_skw=Gengar+151+special+illustration+rare+199&hash=item2bf1bb674d:g:l~kAAeSwHm9qcSlW&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nHIzFlWeotLs3Z1b3H%2BjPRG7QnriYwHFQbsfahC4fSP1fsJ6a5PdlMPe9nvtrzTjEu8W7cekn2L18mK2R5ZBe3BgSxeqzG65HGLy6B5xMqh54a58SBOtJhLP8KvwkZVgG0WfrNEnDmbqT0i7WAA5IhPV%2FRrE0d%2FKfv1YtJuUkU0sdzGO3DKOIlP5%2B6IWyyOsKQr8mwqE5qkDPnuZauiz%2Fl4O5s1uzakP3i1KeFegce2bKVXwGNlDlxWzcd7tm4IYr8UJtQdi%2FN2lglq1AetQgqNsT9MIceGv9zaSHqLUdTQJxc0FutuoUr5d15ld%2FDSNp%2FGFe7QNpjf%2BpeqhBVrJcl",
-      "image": "https://i.ebayimg.com/images/g/l~kAAeSwHm9qcSlW/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "tjm_colletz",
-      "search_name": "gengar_151_sir",
-      "market_estimate": 45.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 45.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|318777813819|0",
-      "title": "Blastoise ex 184/165 SV 151 Holo \u2013 Scarlet & Violet Special Illustration",
-      "price": 5.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/318777813819?_skw=Blastoise+ex+151+special+illustration+rare&hash=item4a38a36b3b:g:RIAAAeSwhPJqjbL5",
-      "image": "https://i.ebayimg.com/images/g/RIAAAeSwhPJqjbL5/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "shopysol",
-      "search_name": "blastoise_151_sir",
-      "market_estimate": 40.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 40.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|287580472668|0",
-      "title": "Pok\u00e9mon 151 Ultra Premium Collection | Mew | *UPC Box & Accessories* | NO CARDS",
-      "price": 29.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/287580472668?_skw=Pokemon+151+ultra+premium+collection+sealed+UPC&hash=item42f521c55c:g:4EsAAeSwnkFqpCqX&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nfvKB2TD8ObQfAWe8PtoLd9TkUm61V2T9mkWJt%2FikLmBYG4rooHtl6fKyGdN7y2hoEEepnsCd6m6X0WS029ebF1C9eO3w%2BqNUgl3Ar7mVcJDgvKA2pWAsLKP7UhD4J0NFu2ftIkEZSTDPvQ6PSS3LhmC9WhH%2BJ1mSXPwFBeV8vMro5GsA0aD1tLDHO8tjQnAJrOApbz3DB5ZKmy9dcvsKliaMd0DZfSTASygiAMLN4BCKsvH19sbp7OfF1cIjeNo9bnrivzgCogixT%2Fo4DFTFNyutdy0u5AIHLDmfpTWBpyksvLxMDj0G0C5zX%2FlWv%2FEqCphhHvU%2BorshIa79STAXB",
-      "image": "https://i.ebayimg.com/images/g/4EsAAeSwnkFqpCqX/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "retrobibby",
-      "search_name": "151_upc_sealed",
-      "market_estimate": 120.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 120.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|397870681485|0",
-      "title": "X2 Online Code Card Scarlet & Violet Destined Rivals Elite Traner Box Pokemon",
-      "price": 1.4,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/397870681485?_skw=elite+traner+box+pokemon&hash=item5ca2f0cd8d:g:rCkAAeSwN-lp6YBW",
-      "image": "https://i.ebayimg.com/images/g/rCkAAeSwN-lp6YBW/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "shaypie182",
-      "search_name": "etb_misspell",
-      "market_estimate": 40.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 40.0,
+        "market": 420.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
@@ -3226,7 +1105,7 @@
       "title": "Mega Charizard X ex 109/094 Ultra Rare Phantasmal Flames Pokemon Holo Near Mint",
       "price": 28.14,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/227567089001?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item34fc0e3569:g:dmQAAeSwkxFqz1tb&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mtV3kdhRoHO7xvxFJdZweUrsH0TmI1OBj4QiD0HIXhXWUff8xGR0Rasw%2BgfWuh7exF2Qc%2FTtPqdzT5OWmfo5FeqqYBhfg8wjmgRDCAYCnNg%2FSfY0xspiVMVfFnQplMplAwKIi8YAZhp79b5HiNziPPVL9K9oDOMCCiKCfKYo1pwoOZXaXfOUD20Fv%2F7FmWIxFvjJbDWUKzzQIai8LyFCPka8F41tKinwPZlrxQJn6H4yi1ZIcP5XYee0zkxgER79T5i1%2BCyjUci5Ls%2B13rDu9Vw%2B2JdXGBJ9fIkBxB3m90nS%2F7WTYiWq8KnvZG9cmG%2BxuaXnXli7feg9acwrRrNgQW",
+      "url": "https://www.ebay.com/itm/227567089001?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=item34fc0e3569:g:dmQAAeSwkxFqz1tb&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mtV3kdhRoHO7xvxFJdZweUrsH0TmI1OBj4QiD0HIXhXWUff8xGR0Rasw%2BgfWuh7exF2Qc%2FTtPqdzT5OWmfo5FeqqYBhfg8wjmgRDCAYCnNg%2FSfY0xspiVMVfFnQplMplCGN7agU9qquzdsubHaHFANQQfRSOq2La2M%2F%2Bde6i2szFU%2BOPqURojYqB7S8xhXqpJ8CU0aqJUdk3DU%2BifsXK2DQFpYHOXeF2vZOMTj%2BqL%2B2uocip0VelvGvjwi4zekmBFPrUcn20qXFoZWvGOvJPyKrYk%2B5tmT%2Bhw1Ady8eCWl7Oopq0wJUo64DgXfJbL763s5QA23BgMIf22T747hxLTz",
       "image": "https://i.ebayimg.com/images/g/dmQAAeSwkxFqz1tb/s-l225.jpg",
       "buying_options": [
         "FIXED_PRICE",
@@ -3249,132 +1128,6 @@
       "is_deal": true,
       "pricing": {
         "market": 650.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|860045335531|0",
-      "title": "Pokemon Mega Charizard EX Flash Fire 2014",
-      "price": 65.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/860045335531?_skw=Mega+Charizard+X+ex+special+illustration+rare+near+mint&hash=itemc83eb25beb:g:ahEAAeSw-Z1q0Ahr&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mQ8hjlKgolCf0oWiIiWa5EblUNKDzIn7RVJqrSmI580Emi9Ib1DU7PgwCCVqFL8QJPzekVZgmJsPtCvz9vKFHsjzb4rFV4hll7xEhiu6OzT3YfVaThXID0AUOsFaUDkFYlV8o5OJ201BxPxFUbbFP5AmWGSSW2LS2DMAIuTTkgZjo8HE5YPLVeD3RiRFTZK7mXqbn9RBOgtM2AGi08KkafkUjH8BLLZyRsDdt%2F6owXqRsvI3DUH9MVGcsdgxPmDqjL6ZYiErw%2BXW7yq2hWrzvg25BGVWUhsF6b%2BhfAVIlcHvWS3VgbQID3soM5duoUr2SkxoOup%2FpchU6aAmvdlAyE",
-      "image": "https://i.ebayimg.com/images/g/ahEAAeSw-Z1q0Ahr/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "rachoxd",
-      "search_name": "mega_charizard_x_sir",
-      "market_estimate": 650.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 650.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|157504854736|0",
-      "title": "Mega Charizard X ex Gold Hyper Rare 130/094 Phantasmal Flames- EXTENDED ART CASE",
-      "price": 12.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/157504854736?_skw=Phantasmal+Flames+gold+hyper+rare+near+mint&hash=item24ac055ad0:g:6A0AAeSwHn1qeCOT&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7khs4LEbGeLeienCcw8kZKGd8V19scJt9jYpUdMHYxTyZP%2Beo3gKtKmEQqEvr%2F1BAYZ221L42mQplG8lBbTCFW%2BBS%2FWLy7gksWTZ1WyZ%2F5T8GCHCMFzZCay25vBH4xFBJ%2BRNwF%2Be4t%2F1byWVoyv%2BY2N8zxGYXKxLP9lhlvSgk8UXGr%2Bv1xn%2BOD5UxnhnjuJ%2BBvHTG0WQ3hvKisfHRN6hQ7uah8y34%2FVHWr9ZVkCTV0csK6ASRQK0GyHRhXBuI7Y818qYhBG8tgtAbV5DeUASZ8ckQxYYjw0exfYwe8Oq4FFUZ7yiMApV1EP%2Boakyko2rKpmDXTX2FiZu10meNCL3FFi",
-      "image": "https://i.ebayimg.com/images/g/6A0AAeSwHn1qeCOT/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "outback_originals",
-      "search_name": "phantasmal_gold_hyper",
-      "market_estimate": 215.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 215.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|157573037893|0",
-      "title": "Mega Charizard X ex Gold Hyper Rare 130/094Phantasmal Flames- EXTENDED ART CASE",
-      "price": 12.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/157573037893?_skw=Phantasmal+Flames+gold+hyper+rare+near+mint&hash=item24b015bf45:g:Dl4AAeSwG7dqTr2T",
-      "image": "https://i.ebayimg.com/images/g/Dl4AAeSwG7dqTr2T/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "outback_originals",
-      "search_name": "phantasmal_gold_hyper",
-      "market_estimate": 215.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 215.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|188854344137|0",
-      "title": "POKEMON 102/094 PALDEAN WOOPER EX HOLO FOIL FULL ART GOLD HOLO STAR SECRET RARE",
-      "price": 6.79,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/188854344137?_skw=Phantasmal+Flames+gold+hyper+rare+near+mint&hash=item2bf89899c9:g:GUQAAeSwfPFqkeF3",
-      "image": "https://i.ebayimg.com/images/g/GUQAAeSwfPFqkeF3/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "tmunchkins",
-      "search_name": "phantasmal_gold_hyper",
-      "market_estimate": 215.0,
-      "deal_score": 82.2,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 90.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 215.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
@@ -3443,38 +1196,6 @@
       }
     },
     {
-      "item_id": "v1|287411052861|0",
-      "title": "Charizard ex - Pokemon 151 (JP) - BGS 9.5 - 006/165",
-      "price": 59.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/287411052861?_skw=Charizard+151+BGS+9.5&hash=item42eb08a13d:g:FR0AAeSwbtlqOPhf",
-      "image": "https://i.ebayimg.com/images/g/FR0AAeSwbtlqOPhf/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "matsmi71547",
-      "search_name": "charizard_151_bgs95",
-      "market_estimate": 110.0,
-      "deal_score": 80.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 80.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 110.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
       "item_id": "v1|147208133241|0",
       "title": "Charizard EX 199/165 SV: 151 Art Insert for PSA / Graded Guard No Card",
       "price": 15.0,
@@ -3501,102 +1222,6 @@
       "is_deal": true,
       "pricing": {
         "market": 28.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|198507400685|0",
-      "title": "Pokemon 151 ETB Protector Case 3D Printed Display Box Sealed TCG Collector",
-      "price": 29.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/198507400685?_skw=Pokemon+151+elite+trainer+box+sealed+ETB&hash=item2e37f68ded:g:M8sAAeSw7EhqW~dA",
-      "image": "https://i.ebayimg.com/images/g/M8sAAeSw7EhqW~dA/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "ydprints",
-      "search_name": "151_etb_sealed",
-      "market_estimate": 62.0,
-      "deal_score": 80.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 80.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 62.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|357934290401|0",
-      "title": "pokemon elite trainer box open Box Incomplete",
-      "price": 15.5,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/357934290401?_skw=elite+traner+box+pokemon&hash=item53568bd5e1:g:qQ4AAeSw-ctpIUdY",
-      "image": "https://i.ebayimg.com/images/g/qQ4AAeSw-ctpIUdY/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "saval1224",
-      "search_name": "etb_misspell",
-      "market_estimate": 40.0,
-      "deal_score": 80.8,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 80.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 40.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|860044754960|0",
-      "title": "Charizard ex RR SV2a 006/165 PSA 10 Pokemon Card 151 Japanese",
-      "price": 53.36,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/860044754960?_skw=Charizard+151+PSA+10&hash=itemc83ea98010:g:GPYAAeSw5r9qz7YI",
-      "image": "https://i.ebayimg.com/images/g/GPYAAeSw5r9qz7YI/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "akibadesk",
-      "search_name": "charizard_151_psa10",
-      "market_estimate": 185.0,
-      "deal_score": 80.0,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 75.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 185.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
@@ -3634,70 +1259,6 @@
       }
     },
     {
-      "item_id": "v1|366703957679|0",
-      "title": "Pokemon 151 Charizard ex RR 006/165 Japanese SV2a BGS 9.5 Gem Mint",
-      "price": 47.0,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/366703957679?_skw=Charizard+151+BGS+9.5&hash=item55614256af:g:A94AAeSwFJ9qvmex",
-      "image": "https://i.ebayimg.com/images/g/A94AAeSwFJ9qvmex/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "gbcollects99",
-      "search_name": "charizard_151_bgs95",
-      "market_estimate": 110.0,
-      "deal_score": 80.0,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 75.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 110.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
-      "item_id": "v1|168770691146|0",
-      "title": "Nintendo Gengar 094/151 Sv: Scarlet & Violet 151 Holo Illustration Rare CHN",
-      "price": 2.99,
-      "currency": "USD",
-      "url": "https://www.ebay.com/itm/168770691146?_skw=Gengar+151+special+illustration+rare+199&hash=item274b84604a:g:NeMAAeSwTPNqxb5D",
-      "image": "https://i.ebayimg.com/images/g/NeMAAeSwTPNqxb5D/s-l225.jpg",
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "bid_count": null,
-      "ends_at": null,
-      "seller": "jushin12",
-      "search_name": "gengar_151_sir",
-      "market_estimate": 45.0,
-      "deal_score": 80.0,
-      "deal_type": "mispriced_bin",
-      "components": {
-        "discount_vs_market": 100.0,
-        "auction_urgency": 50.0,
-        "seller_trust": 75.0,
-        "listing_quality": 75.0
-      },
-      "flags": [],
-      "is_deal": true,
-      "pricing": {
-        "market": 45.0,
-        "source": "static-anchor",
-        "confirmed_sales": 0
-      }
-    },
-    {
       "item_id": "v1|398400059843|0",
       "title": "Pokemon TCG Lugia 142/103 Crystal Type S-Chinese 30thC 30th Celebration NM",
       "price": 69.01,
@@ -3729,33 +1290,32 @@
       }
     },
     {
-      "item_id": "v1|178449009332|0",
-      "title": "EN Twilight Masquerade Elite Traner Box {B001-001}",
-      "price": 29.0,
+      "item_id": "v1|358902206565|0",
+      "title": "Charizard EX 185/165 PSA 10 Super Rare Sv2a Card 151 Pokemon Japanese",
+      "price": 119.99,
       "currency": "USD",
-      "url": "https://www.ebay.com/itm/178449009332?_skw=elite+traner+box+pokemon&hash=item298c63cab4:g:1cAAAeSwrHRp3Dfc",
-      "image": "https://i.ebayimg.com/images/g/1cAAAeSwrHRp3Dfc/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/358902206565?_skw=Charizard+151+PSA+10&hash=item53903d1065:g:tUwAAeSwoUJqd6uK",
+      "image": "https://i.ebayimg.com/images/g/tUwAAeSwoUJqd6uK/s-l225.jpg",
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
       "bid_count": null,
       "ends_at": null,
-      "seller": "quicktrends",
-      "search_name": "etb_misspell",
-      "market_estimate": 40.0,
-      "deal_score": 77.0,
+      "seller": "nextgencollect",
+      "search_name": "charizard_151_psa10",
+      "market_estimate": 185.0,
+      "deal_score": 75.5,
       "deal_type": "mispriced_bin",
       "components": {
         "discount_vs_market": 85.0,
         "auction_urgency": 50.0,
-        "seller_trust": 100.0,
+        "seller_trust": 90.0,
         "listing_quality": 75.0
       },
       "flags": [],
       "is_deal": true,
       "pricing": {
-        "market": 40.0,
+        "market": 185.0,
         "source": "static-anchor",
         "confirmed_sales": 0
       }
