@@ -1,39 +1,77 @@
 {
-  "generated_at": "2026-10-26T04:31:01.835577+00:00",
+  "generated_at": "2026-10-26T08:40:41.411408+00:00",
   "mock_mode": false,
-  "searches_run": 12,
-  "listings_scanned": 0,
-  "deals_found": 0,
-  "verified_live": 0,
+  "searches_run": 32,
+  "listings_scanned": 9,
+  "deals_found": 2,
+  "verified_live": 2,
   "verified_dropped": 0,
-  "verify_checks": 0,
+  "verify_checks": 2,
   "skipped_low_demand": [
     "charizard_151_psa10",
+    "charizard_151_psa9",
+    "charizard_151_bgs95",
     "charizard_151_sir",
     "umbreon_prismatic_sir",
     "moonbreon_psa10",
+    "venusaur_151_sir",
+    "blastoise_151_sir",
     "151_booster_box_sealed",
     "151_etb_sealed",
+    "151_upc_sealed",
     "prismatic_evo_etb_sealed",
     "prismatic_evo_booster_box",
     "charizard_151_misspell",
+    "prismatic_misspell",
+    "umbreon_misspell",
+    "etb_misspell",
+    "base_set_charizard_proxy_watch",
+    "destined_rivals_sealed",
+    "twilight_masquerade_etb",
+    "stellar_crown_booster_box",
+    "surging_sparks_etb",
     "mega_charizard_x_sir",
+    "phantasmal_gold_hyper",
     "mew_30th_futuristic",
-    "crystal_lugia_30th"
+    "crystal_lugia_30th",
+    "mewtwo_30th_futuristic",
+    "pikachu_30th_150",
+    "gengar_30th_154",
+    "sylveon_30th_153",
+    "mewtwo_30th_151"
   ],
   "price_source": {
     "charizard_151_psa10": "static-anchor",
+    "charizard_151_psa9": "static-anchor",
+    "charizard_151_bgs95": "static-anchor",
     "charizard_151_sir": "static-anchor",
     "umbreon_prismatic_sir": "static-anchor",
     "moonbreon_psa10": "static-anchor",
+    "gengar_151_sir": "static-anchor",
+    "venusaur_151_sir": "static-anchor",
+    "blastoise_151_sir": "static-anchor",
     "151_booster_box_sealed": "static-anchor",
     "151_etb_sealed": "static-anchor",
+    "151_upc_sealed": "static-anchor",
     "prismatic_evo_etb_sealed": "static-anchor",
     "prismatic_evo_booster_box": "static-anchor",
     "charizard_151_misspell": "static-anchor",
+    "prismatic_misspell": "static-anchor",
+    "umbreon_misspell": "static-anchor",
+    "etb_misspell": "static-anchor",
+    "destined_rivals_sealed": "static-anchor",
+    "twilight_masquerade_etb": "static-anchor",
+    "stellar_crown_booster_box": "static-anchor",
+    "surging_sparks_etb": "static-anchor",
     "mega_charizard_x_sir": "static-anchor",
+    "phantasmal_gold_hyper": "static-anchor",
     "mew_30th_futuristic": "static-anchor",
-    "crystal_lugia_30th": "static-anchor"
+    "crystal_lugia_30th": "static-anchor",
+    "mewtwo_30th_futuristic": "static-anchor",
+    "pikachu_30th_150": "static-anchor",
+    "gengar_30th_154": "static-anchor",
+    "sylveon_30th_153": "static-anchor",
+    "mewtwo_30th_151": "static-anchor"
   },
   "sales_ledger": {
     "searches_with_comps": 0,
@@ -42,11 +80,75 @@
   },
   "threshold": 70.0,
   "quota": {
-    "used": 20,
+    "used": 23,
     "provider_remaining": null,
-    "effective_remaining": 1480,
+    "effective_remaining": 1477,
     "daily_budget": 5000
   },
   "errors": [],
-  "deals": []
+  "deals": [
+    {
+      "item_id": "v1|366734571895|0",
+      "title": "Gengar 151 Holo Pok\u00e9mon TCG 094/165 Scarlet & Violet Rare",
+      "price": 11.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/366734571895?_skw=Gengar+151+special+illustration+rare+199&hash=item5563157977:g:an4AAeSwqsFq0Al8&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7m%2Bv6F0S8H088pRyqAxyUc8Shhqy1qW6MFCOwf0DrXEEhMhjFLyGTlFmUHZIvK7EMd%2BE%2FwCJ2flbAE%2Bcf9y2%2BUX3dnRVHqgAX9tEdaAPwOiigfOjZwQnmtkJdcL%2FTjn%2BPqwlYLYRqyx5ExTuKaqfXZc3Efzrvkljrb03TMSuEsK8Wiqu1HEy33rg1rQ4xHQGEDJhnadurFFgovdX%2BjmOmmUVikyAdJcD%2FUfPIQN2KP%2BZgOD60qzxF9NZswU4wSGNJ8ZCYAfwjwt9DrwGWK6%2BnO69lz0%2FsKbaglFLBMGkgCjq6VvTZz4AP3E%2BPhroDsXIlGhqpDkc3A6xxCB%2BdCEobP0",
+      "image": "https://i.ebayimg.com/images/g/an4AAeSwqsFq0Al8/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "pokegenetics",
+      "search_name": "gengar_151_sir",
+      "market_estimate": 45.0,
+      "deal_score": 83.8,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 100.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 45.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    },
+    {
+      "item_id": "v1|168770691146|0",
+      "title": "Nintendo Gengar 094/151 Sv: Scarlet & Violet 151 Holo Illustration Rare CHN",
+      "price": 2.99,
+      "currency": "USD",
+      "url": "https://www.ebay.com/itm/168770691146?_skw=Gengar+151+special+illustration+rare+199&hash=item274b84604a:g:NeMAAeSwTPNqxb5D",
+      "image": "https://i.ebayimg.com/images/g/NeMAAeSwTPNqxb5D/s-l225.jpg",
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "bid_count": null,
+      "ends_at": null,
+      "seller": "jushin12",
+      "search_name": "gengar_151_sir",
+      "market_estimate": 45.0,
+      "deal_score": 80.0,
+      "deal_type": "mispriced_bin",
+      "components": {
+        "discount_vs_market": 100.0,
+        "auction_urgency": 50.0,
+        "seller_trust": 75.0,
+        "listing_quality": 75.0
+      },
+      "flags": [],
+      "is_deal": true,
+      "pricing": {
+        "market": 45.0,
+        "source": "static-anchor",
+        "confirmed_sales": 0
+      }
+    }
+  ]
 }
